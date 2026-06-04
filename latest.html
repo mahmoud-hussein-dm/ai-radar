@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Radar — 03 Jun 2026 — 2 drops, 4 ecom-relevant</title>
+<title>AI Radar — 04 Jun 2026 — 5 drops, 4 ecom-relevant</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#0e0f13;color:#e8eaf0;
@@ -16,37 +16,34 @@ a{color:#a98bff;word-break:break-word}
 .foot{margin-top:40px;border-top:1px solid #2a2e3a;padding-top:14px;color:#6b7180;font-size:12px}
 </style></head>
 <body><div class="wrap">
-<div class="top"><h1>📡 AI Radar</h1><div class="sub">03 Jun 2026 · 2 drops · 4 ecom-relevant</div></div>
-<h2>AI RADAR — MORNING BRIEF</h2>
-<p>03 Jun 2026 | 2 confirmed drops · 4 ecom-relevant (2 confirmed · 1 unconfirmed · 1 flagged outside window)</p>
-<p>TL;DR: Quiet 30-hour window. Two confirmed Anthropic Claude API drops on June 2 — one cuts your AI support costs, one gives you tighter multi-agent pipelines. Also flagging a Gemini video-to-image GA (May 28, just outside window, highly relevant) and unconfirmed OpenAI memory + Gmail updates.</p>
-<h2>ECOM-RELEVANT</h2>
-<p>[CONFIRMED · FEATURE-DROP] Anthropic · 2 Jun 2026<br>Claude API: No Charge for Refused Requests</p>
-<p>API calls that return stop_reason: &quot;refusal&quot; with zero output tokens are now billed at $0. Your AI support bot refuses a dodgy query → you pay nothing.</p>
-<p>YouTube Angle: &quot;Anthropic Just Made AI Customer Support Cheaper — Here&#x27;s the Silent Billing Change&quot;<br>Hook: show a real API billing breakdown → &quot;every time your bot says no, you were paying for it. Now you&#x27;re not.&quot; Model the savings at 1k / 10k / 100k refused queries/month. Omniuss offer: pitch as an AI support cost audit for ecom brands.<br>Source: <a href="https://platform.claude.com/docs/en/release-notes/overview">https://platform.claude.com/docs/en/release-notes/overview</a></p>
-<p>[CONFIRMED · FEATURE-DROP] Anthropic · 2 Jun 2026<br>Claude API: Advisor Tool Gets a Token Cap</p>
-<p>The advisor tool (a secondary subagent you call from within a Claude agent for a &quot;second opinion&quot;) now takes a max_tokens parameter. Clamp the advisor&#x27;s verbosity → cut latency + output token costs on every multi-agent loop.</p>
-<p>YouTube Angle: &quot;Build Cheaper AI Agents for Your Ecom Store — 1 API Parameter That Changes the Math&quot;<br>Hook: live-build a product description agent + quality-check advisor → show the token bill → cap max_tokens → show the saving. Omniuss: every client agent pipeline you build gets cheaper. Build a reusable template, sell the implementation.<br>Source: <a href="https://platform.claude.com/docs/en/release-notes/overview">https://platform.claude.com/docs/en/release-notes/overview</a></p>
-<p>[UNCONFIRMED DATE] OpenAI · Early Jun 2026<br>ChatGPT Memory Now Pulls From Your Gmail</p>
-<p>ChatGPT Plus/Pro memory now ingests past chats, saved memories, files, AND connected Gmail to personalise responses. All memory sources visible and editable across consumer plans.</p>
-<p>YouTube Angle: &quot;I Connected My Gmail to ChatGPT and Asked It to Write My Next Email Campaign — Here&#x27;s What Happened&quot;<br>Hook: connect Gmail → write a RABBIO promo email matching brand voice from past campaign sends. Show before/after. Money clip: &quot;ChatGPT remembered my last 6 campaigns and nailed the tone.&quot;<br>Source: <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">https://help.openai.com/en/articles/6825453-chatgpt-release-notes</a> (exact date unconfirmed)</p>
-<p>[OUTSIDE 30H WINDOW — FLAGGED] Google · 28 May 2026<br>Gemini API: Video-to-Image Generation Goes GA</p>
-<p>gemini-3.1-flash-image (&#x27;Nano Banana 2&#x27;) now GA. Feed a YouTube URL + text prompt → generate thumbnails, cinematic posters, or summary infographics. Preview models deprecated Jun 25.</p>
-<p>YouTube Angle: &quot;Turn Any Product Video Into 10 Thumbnail Options in 10 Seconds — Google&#x27;s Gemini API Just Changed the Game&quot;<br>Hook: grab a RABBIO product video URL → paste into Gemini API → generate thumbnails live. Omniuss workflow: auto-generate 10 thumbnails per new product video → A/B test → auto-pick winner. A proper productised service.<br>Source: <a href="https://ai.google.dev/gemini-api/docs/changelog">https://ai.google.dev/gemini-api/docs/changelog</a></p>
-<h2>OTHER DROPS</h2>
-<p>ANTHROPIC / CLAUDE CODE · Jun 2 (confirmed)<br>Security: Claude Code now prompts before writing to shell startup files (.zshenv, .bash_login) and build-tool configs (.npmrc, .bazelrc) in acceptEdits mode. Bug fixes: Windows WSL clipboard copy-on-select; re-attached overnight sessions keep full chat history.</p>
-<p>OPENAI API · Early Jun (unconfirmed)<br>GPT-5.4 mini and GPT-5.4 nano released to Chat Completions + Responses API — GPT-5.4-class smarts at faster/cheaper scale. New return_token_budget param for web search in Responses API for longer research runs.</p>
-<p>SHOPIFY · Deadline Reminder<br>Shopify Scripts deprecated June 30. If you or clients still use Scripts for discounts, migrate to Shopify Functions NOW — 27 days left. Sidekick expanded to write ShopifyQL queries for analytics.</p>
-<p>XAI GROK · May 6 (outside window)<br>Connectors launched in Grok Web: SharePoint, Outlook, OneDrive, Google Workspace, Notion, GitHub, Linear + custom MCP servers. Grok Imagine API Quality Mode for enterprise image generation now live.</p>
-<p>MISTRAL · Late May (outside window)<br>Le Chat rebranded to Vibe. Voxtral TTS released: zero-shot voice cloning + multilingual real-time streaming. Full-stack enterprise play with Airbus, BMW as named customers.</p>
-<p>CURSOR · June (unconfirmed)<br>Teams plan restructured with new Premium seat for heavy agent users. Bugbot now purely usage-based billing. New: split staged changes into multiple PRs from chat context; pin skills as quick-access pills.</p>
-<h2>CLAUDE CODE TIP OF THE DAY</h2>
-<p>PARALLEL SUBAGENTS — Research 5 Things Simultaneously</p>
-<p>When you need to cover multiple vendors, audit several pages, or handle independent tasks, don&#x27;t work sequentially. In Claude Code, spawn multiple Agent calls in a single message — they run concurrently in parallel. A 20-minute sequential research sprint becomes a 4-minute parallel one.</p>
-<p>Example prompt:<br>&quot;Research ElevenLabs pricing AND HeyGen pricing AND Descript alternatives — spawn each as a separate agent in parallel and report back with a comparison table.&quot;</p>
-<p>Operator use-case: pre-brief before a client call — research their competitors, ad angles, and current tools simultaneously. Walk in ready.</p>
-<h2>SOURCES CHECKED (03 Jun 2026)</h2>
-<p>Claude Platform Release Notes · Claude Code CHANGELOG (GitHub) · Anthropic News · ChatGPT Release Notes · OpenAI Platform Changelog · OpenAI News · Gemini API Changelog · Google AI Blog · Cursor Changelog · Higgsfield AI Blog · Vercel Changelog · Perplexity Changelog · xAI News · Mistral News · Meta AI Blog · ElevenLabs Changelog · HeyGen Blog · Klaviyo Product News · Shopify Changelog</p>
-<p>AI Radar · Built for RABBIO + Omniuss · mahmmuod60@gmail.com</p>
-<div class="foot">AI Radar · generated for RABBIO + Omniuss · 03 Jun 2026</div>
+<div class="top"><h1>📡 AI Radar</h1><div class="sub">04 Jun 2026 · 5 drops · 4 ecom-relevant</div></div>
+<p>AI RADAR — 04 JUN 2026 — 5 drops, 4 ecom-relevant</p>
+<p>TL;DR: GPT-5.5 Instant got a quiet in-place upgrade (free, same prompts = better output), Nous Hermes shipped a native desktop app for a free persistent-memory agent, Anthropic launched an official agency tier program with a client-matching hub, and Codex now clicks through Windows apps. Klaviyo, Shopify, HeyGen: nothing new in the 30-hour window.</p>
+<p>ECOM-RELEVANT (4 items)</p>
+<p>1. GPT-5.5 Instant — In-Place Style &amp; Quality Upgrade<br>   OpenAI | 3 Jun 2026 | feature-drop</p>
+<p>   OpenAI upgraded GPT-5.5 Instant in ChatGPT and the API — easier to read, more natural tone, fewer bullet-heavy responses, fewer hallucinations on product/brand copy. Same prompts, free upgrade. Also confirmed: GPT-4.5 retires 27 Jun, o3 retires 26 Aug.</p>
+<p>   YOUTUBE ANGLE: &quot;ChatGPT Just Got a Silent Upgrade — Re-Run Your Best Product Descriptions RIGHT NOW&quot;<br>   Your same prompts now produce better output for free. Pull your 10 worst-converting PDPs, re-run them, do a side-by-side. Old vs new = viral ecom content.<br>   RABBIO proof: Re-run current PDPs today, A/B test output vs live listings.<br>   Source: <a href="https://www.ghacks.net/2026/06/03/openai-upgrades-gpt-5-5-instant-and-confirms-retirement-of-o3-and-gpt-4-5-models/">https://www.ghacks.net/2026/06/03/openai-upgrades-gpt-5-5-instant-and-confirms-retirement-of-o3-and-gpt-4-5-models/</a></p>
+<p>2. Hermes Desktop v0.15.2 — Free Persistent-Memory AI Agent, Now with a Native App<br>   Nous Research | 3 Jun 2026 | feature-drop</p>
+<p>   Hermes Agent ships a native macOS/Windows/Linux desktop app. Persistent multi-level memory, streaming tool output, file browser, voice I/O. Sessions sync across desktop, CLI, and TUI. Open-source, no subscription.</p>
+<p>   YOUTUBE ANGLE: &quot;Free AI Agent With Memory Just Got a Desktop App — I&#x27;m Building a 24/7 Shopify Research Bot With It&quot;<br>   You&#x27;re paying £200/month for tools that forget your brand every new chat. This remembers your SKUs, tone, and margins across every session — and it&#x27;s free. Show the install, feed it your catalogue, demo the memory.<br>   Omniuss offer: We deploy Hermes-based agents for Shopify brands — product research, PDP writing, CS drafts. From £750 one-time.<br>   Source: <a href="https://www.marktechpost.com/2026/06/03/nous-research-releases-hermes-desktop-a-native-cross-platform-front-end-for-hermes-agent-v0-15-2-with-streaming-tool-output/">https://www.marktechpost.com/2026/06/03/nous-research-releases-hermes-desktop-a-native-cross-platform-front-end-for-hermes-agent-v0-15-2-with-streaming-tool-output/</a></p>
+<p>3. Claude Partner Network — Services Track + Partner Hub Live<br>   Anthropic | 3 Jun 2026 | feature-drop</p>
+<p>   Anthropic launched a 3-tier agency program: Select (10 certified, 2 deployed clients, 1 case study) → Preferred (100 certified, 15 clients) → Global Premier (1,000 certified, 100 clients). Partner Hub is live — enterprise clients search and find vetted Claude agencies. $100M backing. Promotions: Jan 1 + Jul 1.</p>
+<p>   YOUTUBE ANGLE: &quot;Anthropic Just Created an Official Tier for AI Agencies — Here&#x27;s How to Get Certified Before It Gets Crowded&quot;<br>   Select tier is achievable now if you have 2 deployed Claude projects and a case study. The Partner Hub sends inbound leads to you. This is your Clutch.co for AI agency work. Get in before the crowd.<br>   Omniuss play: Apply for Select tier immediately. Next promotion window: 1 Jul 2026.<br>   Source: <a href="https://www.anthropic.com/news/services-track-partner-hub">https://www.anthropic.com/news/services-track-partner-hub</a></p>
+<p>4. Codex — Computer Use on Windows Live  [48h ago]<br>   OpenAI | 2 Jun 2026 | feature-drop</p>
+<p>   Codex agents can now see, click, and type in any Windows app. Remote continuation from mobile/Mac added. New Codex Profiles track usage + token activity. Codex Sites (preview) lets you deploy interactive apps directly from Codex.</p>
+<p>   YOUTUBE ANGLE: &quot;OpenAI Codex Can Now Click Through Your Windows Desktop — I Automated 3 Hours of Shopify Admin in 10 Minutes&quot;<br>   Codex isn&#x27;t just a code tool anymore — it can control your desktop. Shopify admin, bulk Excel edits, supplier portals — all automatable with natural language. Show a live demo.<br>   RABBIO proof: Build a Codex agent that pulls new stock from your supplier portal and posts to Slack — no coding needed.<br>   Source: <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">https://help.openai.com/en/articles/6825453-chatgpt-release-notes</a></p>
+<p>OTHER DROPS (grouped by vendor)</p>
+<h2>ANTHROPIC (2 Jun)</h2>
+<p>- Project Glasswing expanded to 200 total orgs incl. power, water, healthcare — Claude Mythos Preview + Claude Security for codebase scanning<br>- Advisor tool now supports max_tokens to cap output cost per call; no billing for refusal-only responses (API)</p>
+<h2>PERPLEXITY (2 Jun)</h2>
+<p>- Hybrid Reasoning announced for Personal Computer: sensitive data processed on-device, complex queries routed to cloud. Intel + NVIDIA RTX Spark partnerships. Rollout: July 2026.</p>
+<p>XAI / GROK (unconfirmed — pre-June 3)<br>- Grok V9-Medium (1.5T parameters, 3× current production model) has completed training. Public release expected mid-June per Elon Musk. Watch this space.</p>
+<p>CLAUDE CODE TIP OF THE DAY — Parallel Subagents &amp; waitingFor</p>
+<p>When you spawn parallel subagents for a batch task (scraping 10 supplier sites, generating 50 product descriptions, auditing a full email flow), use:</p>
+<p>  claude agents --json | jq &#x27;.[].waitingFor&#x27;</p>
+<p>The new waitingFor field (Claude Code 2.1.x) shows exactly which agent is blocked and why — no more waiting out a timeout to find the stalled subagent in a long-running multi-agent pipeline.</p>
+<h2>SOURCES CHECKED</h2>
+<p>Claude Code CHANGELOG.md | platform.claude.com release notes | anthropic.com/news | openai.com/news | platform.openai.com/docs/changelog | ai.google.dev/gemini-api/docs/changelog | cursor.com/changelog | higgsfield.ai | vercel.com/changelog | perplexity.ai/changelog | x.ai/news | mistral.ai/news | ai.meta.com/blog | elevenlabs.io/docs/changelog | heygen.com/blog | klaviyo.com/blog | changelog.shopify.com</p>
+<p>AI Radar | automated brief for Mahmoud | RABBIO + Omniuss</p>
+<div class="foot">AI Radar · generated for RABBIO + Omniuss · 04 Jun 2026</div>
 </div></body></html>
