@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Radar — 26 Jul 2026 — 3 drops, 3 ecom-relevant</title>
+<title>AI Radar — 27 Jul 2026 — 2 drops, 2 ecom-relevant</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#0e0f13;color:#e8eaf0;
@@ -16,38 +16,37 @@ a{color:#a98bff;word-break:break-word}
 .foot{margin-top:40px;border-top:1px solid #2a2e3a;padding-top:14px;color:#6b7180;font-size:12px}
 </style></head>
 <body><div class="wrap">
-<div class="top"><h1>📡 AI Radar</h1><div class="sub">26 Jul 2026 · 3 drops · 3 ecom-relevant</div></div>
-<p>AI RADAR — 26 Jul 2026 — 3 drops, 3 ecom-relevant</p>
-<p>TL;DR: July 25-26 was light on new drops. The big story is Claude Opus 5 (Jul 24) — 1M context, same price as before. Grok embedded itself in Google Workspace on the same day. Shopify shipped a Liquid dev preview (Jul 21) that lets you build dynamic pages without JavaScript.</p>
-<h2>🚨 ECOM-RELEVANT</h2>
-<h2>1. CLAUDE OPUS 5</h2>
-<p>Vendor: Anthropic | Date: 24 Jul 2026 | Type: new-model</p>
-<p>1M token context window (default + max), thinking on by default, 128k max output — at the same $5/$25 per MTok as Opus 4.8. Step-change improvement over Opus 4.8. Available on Claude API, Bedrock, Vertex, and Microsoft Foundry.</p>
-<p>YouTube Angle:<br>&quot;Same Price, 10x Smarter: How Claude Opus 5&#x27;s 1M-Token Context Changes Ecom AI Forever&quot;<br>Hook: Feed your entire Shopify catalog, 2 years of email sequences, and every top-performing ad creative into ONE prompt. No chunking. Thinking on by default = better segmentation, pricing strategy, copy — without changing a single prompt.<br>RABBIO proof: Bulk-generate SEO descriptions for 500+ SKUs from one CSV. Show old 200K ceiling vs new 1M window live.</p>
-<p>Source: <a href="https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/overview&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/overview&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a></p>
-<h2>2. GROK IN GOOGLE WORKSPACE (FREE)</h2>
-<p>Vendor: xAI | Date: 24 Jul 2026 | Type: feature-drop</p>
-<p>Free Grok add-on for Google Docs, Sheets, and Slides — also available for Microsoft 365. Answers from spreadsheets with cited cells, builds formulas and charts, drafts and refines documents in place.</p>
-<p>YouTube Angle:<br>&quot;Free AI Just Appeared in Your Google Sheets — Here&#x27;s the Ecom Store Operator Setup&quot;<br>Hook: No API costs. Install once. Interrogate your Shopify analytics export, calculate reorder points, generate ad copy, build pitch decks — all inside Google Workspace.<br>RABBIO proof: Export SKU sales → Grok → best-sellers + bundle pricing suggestions with cited cells. Full demo under 5 min.</p>
-<p>Source: <a href="https://www.google.com/url?q=https://workspace.google.com/marketplace/app/grok/660927092109&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=https://workspace.google.com/marketplace/app/grok/660927092109&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a></p>
-<h2>3. SHOPIFY LIQUID JULY &#x27;26 DEV PREVIEW</h2>
-<p>Vendor: Shopify | Date: 21 Jul 2026 | Type: feature-drop<br>(Note: 5 days old — flagged as recent context, not strictly last 30 hrs)</p>
-<p>New {% block %} and {% partial %} tags. Build dynamic storefront pages in pure Liquid. The {% partial %} tag lets JS refresh server-rendered HTML regions without a full page reload — live stock counters, variant swaps, cart updates — no React, no bloated JS bundles.</p>
-<p>YouTube Angle:<br>&quot;Shopify Just Let Devs Build Dynamic Store Pages Without JavaScript — Block + Partial Tags Explained&quot;<br>Hook: Better Core Web Vitals, lower dev complexity, zero JS framework dependency. Show before/after PageSpeed score on a rebuilt collection page.<br>RABBIO proof: Rebuild collection page with partials, cut JS bundle, PageSpeed comparison live.</p>
-<p>Source: <a href="https://www.google.com/url?q=https://shopify.dev/changelog/developer-preview-liquid-block-and-partial-tags&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=https://shopify.dev/changelog/developer-preview-liquid-block-and-partial-tags&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a></p>
-<p>OTHER DROPS (not strictly ecom-relevant)</p>
-<h2>ANTHROPIC / CLAUDE (Jul 24):</h2>
-<p>- Mid-conversation tool changes beta: Add/remove tools between turns without breaking prompt cache. On Fable 5, Mythos 5, Opus 4.8, Opus 5. Beta header: mid-conversation-tool-changes-2026-07-01<br>- Fallbacks &quot;default&quot; mode: Pass fallbacks: {&quot;mode&quot;: &quot;default&quot;} and Anthropic auto-picks fallback model by refusal category. Beta header required.<br>- Fast mode REMOVED for Opus 4.7: Breaking change — speed: &quot;fast&quot; on claude-opus-4-7 now returns an error (does not fall back). Migrate to Opus 5 or Opus 4.8.</p>
-<p>CLAUDE CODE (recent, undated):<br>- v2.1.219: Claude Opus 5 is now the default model. Fast mode at $10/$50 per MTok. MCP server error reporting improvements.<br>- v2.1.220: Bug fixes and reliability improvements.</p>
-<h2>CLAUDE MANAGED AGENTS (Jul 22):</h2>
-<p>- Set effort levels on agent model config (pass effort in model object)<br>- Webhooks for environment.* and memory_store.* lifecycle events — no more polling<br>- Seed sessions with up to 50 initial events on POST /v1/sessions</p>
-<p>GOOGLE (Jul 21):<br>- Gemini 3.6 Flash: $1.50/$7.50 per MTok, 1M context, 17% fewer output tokens than 3.5 Flash. In AI Studio, Gemini API, and Gemini app. Also: 3.5 Flash-Lite and 3.5 Flash Cyber released same day.</p>
-<p>CLAUDE TIP OF THE DAY: Verifiable Done-Criteria</p>
-<p>End every agentic prompt with &quot;Done when:&quot; + a specific, verifiable condition.</p>
-<p>Bad: &quot;Write product descriptions for all my SKUs.&quot;<br>Good: &quot;Done when: all 50 product descriptions are saved to output.csv, each is 80-120 words, no two start with the same sentence, and the first 3 rows match the live Shopify titles exactly.&quot;</p>
-<p>Claude stops drifting, stops over-delivering, and you can verify completion in 30 seconds. Works in Claude Code, API agents, and <a href="https://www.google.com/url?q=http://claude.ai&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=http://claude.ai&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a> tasks alike.</p>
+<div class="top"><h1>📡 AI Radar</h1><div class="sub">27 Jul 2026 · 2 drops · 2 ecom-relevant</div></div>
+<p>AI RADAR — 27 Jul 2026 — 2 drops, 2 ecom-relevant</p>
+<p>TL;DR: Kimi K3&#x27;s 2.8T open weights land TODAY (world&#x27;s first open 3T-class model, $15/M output — 70% cheaper than Claude Fable). FLUX 3 Video in gated early access — native video + audio from one model, no separate TTS. Claude Opus 5 (July 24) just outside the window but too big to skip.</p>
+<h2>🚨 ECOM-RELEVANT DROPS</h2>
+<h2>1. KIMI K3 OPEN WEIGHTS</h2>
+<p>   Moonshot AI | 27 Jul 2026 | new-model</p>
+<p>   World&#x27;s first open 3T-class model (2.8T params) on HuggingFace today under Modified MIT license. 1M token context. $15/M output via API (vs Claude Fable 5 at $50/M). Beats Opus 4.8 and GPT-5.5 on coding/agent benchmarks. Self-hosting needs 1.4TB in MXFP4.</p>
+<h2>   ▶ YOUTUBE ANGLE</h2>
+<p>   Hook: &quot;The Free 2.8-Trillion AI Dropped Today — Build Your Shopify Support Agent for 70% Less Than Claude&quot;<br>   Why: Frontier reasoning at open-weight prices. 1M ctx = entire catalog + all FAQs in one window.<br>   RABBIO proof: Swap your store agent&#x27;s LLM to Kimi K3 API — show live cost calculator on screen.<br>   MizanAI: Offer a &quot;model audit&quot; service — identify which client agents can cut inference costs 60-70%.<br>   Source: <a href="https://www.google.com/url?q=https://huggingface.co/moonshotai/Kimi-K3&amp;source=gmail&amp;ust=1785212100948000&amp;sa=E">https://www.google.com/url?q=https://huggingface.co/moonshotai/Kimi-K3&amp;source=gmail&amp;ust=1785212100948000&amp;sa=E</a></p>
+<h2>2. FLUX 3 VIDEO — GATED EARLY ACCESS</h2>
+<p>   Black Forest Labs | 25 Jul 2026 | feature-drop [borderline ~48h]</p>
+<p>   First model to natively generate video + synchronized audio from one set of weights. 20-second clips. No separate TTS step. FLUX 3 Image + open weights planned for &quot;coming weeks.&quot;</p>
+<h2>   ▶ YOUTUBE ANGLE</h2>
+<p>   Hook: &quot;AI Just Made Product Videos WITH Audio in One Click — Your TikTok Ad Spend Is About to Collapse&quot;<br>   Why: Collapses a 3-tool workflow (video gen + TTS + sync edit) into one prompt.<br>   RABBIO proof: RABBIO pet accessory promo video, one prompt — time/cost vs current 3-tool workflow.<br>   MizanAI: Help ecom clients get early access + build productised video ad automation pipeline.<br>   Source: <a href="https://www.google.com/url?q=https://www.techtimes.com/articles/321552/20260725/flux-3-launches-black-forest-labs-enters-video-audio-physical-ai-one-model.htm&amp;source=gmail&amp;ust=1785212100948000&amp;sa=E">https://www.google.com/url?q=https://www.techtimes.com/articles/321552/20260725/flux-3-launches-black-forest-labs-enters-video-audio-physical-ai-one-model.htm&amp;source=gmail&amp;ust=1785212100948000&amp;sa=E</a></p>
+<p>WORTH NOTING — July 24 (just outside 30h window)</p>
+<p>Claude Opus 5 (Anthropic) — 1M ctx, 128k max output, thinking on by default, $5/$25 MTok (same price as Opus 4.8). SOTA on Frontier-Bench and GDPval-AA coding benchmarks. Available on Claude API, Bedrock, Vertex, Foundry.<br>Hook: &quot;Claude Got a Library-Sized Brain — I Fed It My Entire Shopify Catalog and This Happened&quot;<br>Source: <a href="https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/overview&amp;source=gmail&amp;ust=1785212100948000&amp;sa=E">https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/overview&amp;source=gmail&amp;ust=1785212100948000&amp;sa=E</a></p>
+<p>OTHER DROPS (past ~7 days)</p>
+<p>Anthropic<br>  - Claude Code 2.1.220 (July 25) — bug fixes &amp; reliability improvements<br>  - Claude Code recent: mid-conv. tool changes beta, nested subagents to depth 3, /fork to background session, stricter auto-mode safeguards</p>
+<p>xAI<br>  - Grok 4.6 (2T params) — pre-training complete, NOT yet released, expected early August<br>  - Grok add-ins: Google Workspace (Sheets, Slides, Docs) + Microsoft Outlook</p>
+<p>OpenAI<br>  - Presence (July 22) — enterprise voice/chat agents for customer-facing support<br>  - Custom instructions raised to 5,000 chars (Plus/Pro/Enterprise/Edu)</p>
+<p>Mistral<br>  - Robostral Navigate — embodied robot nav model (single RGB cam + natural language)<br>  - Vibe — long-running multi-step agent (inbox + calendar + research + code + delivery)<br>  - Microsoft strategic partnership expansion (July 21) — NVIDIA Vera Rubin GPU capacity</p>
+<p>Perplexity<br>  - Computer Brain — self-improving memory across sessions, overnight refresh<br>  - Claude Fable 5 orchestration; GPT-5.6 Terra/Sol now available; mid-task model switching</p>
+<p>Higgsfield<br>  - Photoshop + DaVinci Resolve integration | 25M users, 850M generations<br>  - &quot;Kök Börü&quot; 15-min AI short film debuted at SIGGRAPH (July 22)</p>
+<h2>💡 CLAUDE CODE TIP OF THE DAY — Verifiable Done-Criteria</h2>
+<p>End every prompt with a testable finish line. Instead of:</p>
+<p>  &quot;Build a product import script&quot;</p>
+<p>Write:</p>
+<p>  &quot;Done when: node import.js runs without error and Shopify Admin shows 5 test products with correct variants and prices.&quot;</p>
+<p>Claude self-checks before stopping — cuts revision rounds in half. Works in the CLI, on the web, and inside skills. Pair with plan mode (/plan) for tasks that touch multiple files.</p>
 <h2>SOURCES CHECKED</h2>
-<p>- Anthropic Claude Platform release notes (<a href="https://www.google.com/url?q=http://platform.claude.com/docs&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=http://platform.claude.com/docs&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a>)<br>- Claude Code CHANGELOG (<a href="https://www.google.com/url?q=http://github.com/anthropics/claude-code&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=http://github.com/anthropics/claude-code&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a>)<br>- Anthropic news (<a href="https://www.google.com/url?q=http://anthropic.com/news&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=http://anthropic.com/news&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a>) — 403<br>- OpenAI changelog (<a href="https://www.google.com/url?q=http://platform.openai.com&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=http://platform.openai.com&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a>) — 403, searched<br>- Google Gemini changelog (<a href="https://www.google.com/url?q=http://ai.google.dev&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=http://ai.google.dev&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a>) — 403, searched<br>- Cursor changelog (<a href="https://www.google.com/url?q=http://cursor.com/changelog&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=http://cursor.com/changelog&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a>) — 403, searched<br>- Higgsfield AI — searched<br>- Vercel/v0 changelog — 403, searched<br>- Perplexity changelog — searched<br>- ElevenLabs changelog — 403, searched<br>- Shopify changelog (<a href="https://www.google.com/url?q=http://changelog.shopify.com&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=http://changelog.shopify.com&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a> + <a href="https://www.google.com/url?q=http://shopify.dev&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E">https://www.google.com/url?q=http://shopify.dev&amp;source=gmail&amp;ust=1785125505188000&amp;sa=E</a>) — 403, searched<br>- HeyGen blog — 403, searched<br>- Klaviyo product news — 403, searched<br>- xAI / Grok — searched<br>- Mistral AI — searched<br>- Meta AI — searched<br>- Nous Research Hermes — searched</p>
-<p>Generated by AI Radar — mahmmuod60@gmail.com — 26 Jul 2026</p>
-<div class="foot">AI Radar · generated for RABBIO + Omniuss · 26 Jul 2026</div>
+<p>Anthropic Platform Docs | Claude Code What&#x27;s New | OpenAI Changelog | Google AI Blog | Cursor Changelog | Higgsfield | Vercel Changelog | Perplexity Changelog | xAI News | Mistral News | Meta AI Blog | ElevenLabs Changelog | HeyGen Blog | Shopify Changelog | Klaviyo Product News | Nous Research / Hermes | <a href="https://www.google.com/url?q=http://pricepertoken.com&amp;source=gmail&amp;ust=1785212100948000&amp;sa=E">https://www.google.com/url?q=http://pricepertoken.com&amp;source=gmail&amp;ust=1785212100948000&amp;sa=E</a></p>
+<p>AI Radar — automated brief for Mahmoud | Draft created by cloud agent → delivered via GitHub Action</p>
+<div class="foot">AI Radar · generated for RABBIO + Omniuss · 27 Jul 2026</div>
 </div></body></html>
