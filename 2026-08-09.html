@@ -1,46 +1,621 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Radar - 09 Aug 2026 - 18 drops, 2 trending</title>
+<title>AI Radar — 09 Aug 2026</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#0e0f13;color:#e8eaf0;
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
-.top{border-bottom:1px solid #2a2e3a;padding-bottom:16px;margin-bottom:24px}
-h1{font-size:26px;margin:0 0 6px;letter-spacing:-.3px}
-.sub{color:#9aa0ad;font-size:14px}
-h2{font-size:18px;margin:30px 0 8px;color:#fff;letter-spacing:-.2px}
-p{margin:10px 0;color:#cdd1db}
-a{color:#a98bff;word-break:break-word}
-.foot{margin-top:40px;border-top:1px solid #2a2e3a;padding-top:14px;color:#6b7180;font-size:12px}
-</style></head>
-<body><div class="wrap">
-<div class="top"><h1>📡 AI Radar</h1><div class="sub">09 Aug 2026 · AI Radar - 09 Aug 2026 - 18 drops, 2 trending</div></div>
-<p>AI RADAR — 09 Aug 2026<br>18 new drops, 2 trending topics. Full interactive brief: radar/briefs/2026-08-09.html</p>
-<h2>NOTES</h2>
-<p>- No live YouTube channel sweep today (no OAuth token in this cloud env). Trending below reuses the 2026-08-07 sweep, now 2 days stale.<br>- StoryBank (Notion) NOT written this run: Notion MCP has no OAuth authorization in this session. All 18 angles are in this email / the repo brief only.<br>- Last successful run: 2026-08-08 (yesterday). The radar itself is healthy.</p>
-<h2>TL;DR</h2>
-<p>- OpenAI retired Atlas (its agentic browser) today, and is retiring o3 (Aug 26) and GPT-5.4 in Codex (Aug 31) inside three weeks.<br>- Nous Research shipped Hermes Agent v0.20.0 — 80% faster cold start, agent-to-agent comms, signed webhooks. Direct build-video material.<br>- Cursor and GitHub Copilot both shipped multi-agent-session UX this week — confirms the standing trend: coding agents are the default interface now.<br>- Klaviyo acquired Agency and credited AI agents for +26% YoY revenue growth on its Q2 call. Real proof-point material for the Mizan pitch.<br>- Trending (4+ channels each): Opus 5, Fable 5 — both reused from 08-07, both already covered by 900k-sub channels, demand gate matters more than usual.</p>
-<h2>TRENDING</h2>
-<p>Opus 5 — 4 channels (David Ondrej, Nate Herk, Nick Saraev, The AI Daily Brief), 168,009 views.<br>  Angle: run it on a real client job, not a benchmark.<br>Fable 5 — 4 channels (Nate B Jones, Jack Roberts, Nate Herk, The AI Daily Brief), 104,470 views.<br>  Angle: the export-control-ban policy story, a lane most build-channels skip.<br>Both need a demand check (tools/ideas/demand.py — not available in this environment, not actually run).</p>
-<h2>MODELS</h2>
-<p>- OpenAI retires Atlas today. Angle: standalone agent products stick as a feature, not a surface.<br>- OpenAI trims the lineup: o3 off ChatGPT Aug 26, GPT-5.4 off Codex Aug 31.<br>- Hermes Agent v0.20.0 &quot;The Herald Release&quot; (Aug 3): A2A comms, signed webhooks, 80% faster cold start.<br>- Grok Imagine Image 2.0 lands #2 on Arena leaderboards (Aug 7).</p>
-<h2>AGENTS</h2>
-<p>- Cursor overhauls Slack integration, named multi-repo start from Slack.<br>- GitHub Copilot ships a Sessions sidebar for multiple concurrent agents (Aug 3).<br>- Claude Code &quot;Remote Control&quot; (UNCONFIRMED): official X post, not confirmed in today&#x27;s CHANGELOG (latest 2.1.226, bug fixes only), single account.</p>
-<h2>AUTOMATION</h2>
-<p>- Vercel adds Hermes Agent support on its AI Gateway + Sandbox microVMs.<br>- n8n ships a broad reliability pass across core/editor.<br>- Make.com warns its own users about AI-step credit costs (date unconfirmed).</p>
-<h2>CONTENT</h2>
-<p>- ElevenLabs Scribe adds keyterm bias + verbatim/no-filler transcription mode.<br>- Runway retires Gen-3 Alpha Turbo / Gen-4 Aleph from its API (Jul 30), adds Eleven v3 expressive speech.<br>- Higgsfield &quot;Assist&quot; flags likely generation failures before a credit is spent (date unconfirmed).</p>
-<h2>ECOM</h2>
-<p>- Shopify fixes tax recalculation on address-edited unfulfilled orders (effective Aug 31).<br>- Shopify Hydrogen storefronts can deploy to Oxygen from dev stores, free now.<br>- Klaviyo acquires Agency, hands its agent product line to Agency&#x27;s CEO as new CPO; K:Social hits GA.</p>
-<h2>INDUSTRY</h2>
-<p>- Anthropic confirms a custom chip team + a $10B compute deal (Aug 4-5).<br>- Klaviyo&#x27;s Q2 earnings credit AI agents for the growth: $370.6M revenue, +26% YoY, ARR nearing $1.5B.</p>
-<h2>CLAUDE CODE TIP OF THE DAY</h2>
-<p>Be specific about done — tell Claude how to verify (&quot;run the test&quot;, &quot;open the page&quot;, &quot;check the Notion row&quot;). Vague asks get vague results; verifiable asks get checked work.</p>
-<h2>SOURCES CHECKED</h2>
-<p>Claude Code CHANGELOG + Anthropic API/system-prompt release notes fetched directly. Everything else (OpenAI, Google, Cursor, Vercel, Copilot, MCP, n8n, Make, Nous Research, xAI, Mistral, DeepSeek/Moonshot, ElevenLabs, HeyGen, Higgsfield, Runway, Shopify, Klaviyo, + 5 X search queries) via WebSearch fallback. <a href="https://www.google.com/url?q=http://anthropic.com&amp;source=gmail&amp;ust=1786339026489000&amp;sa=E">https://www.google.com/url?q=http://anthropic.com&amp;source=gmail&amp;ust=1786339026489000&amp;sa=E</a> and <a href="https://www.google.com/url?q=http://x.ai&amp;source=gmail&amp;ust=1786339026489000&amp;sa=E">https://www.google.com/url?q=http://x.ai&amp;source=gmail&amp;ust=1786339026489000&amp;sa=E</a> were blocked at the network proxy level (EGRESS_BLOCKED), not a site 403.</p>
-<h2>NOT RUN THIS SESSION</h2>
-<p>radar/channels.py (no OAuth token) · StoryBank Notion write (no OAuth authorization) · content-OS/tools/ideas/demand.py (content-OS not checked out here). Every trend angle is flagged &quot;needs demand check&quot; rather than actually gated — run manually before committing to any video.</p>
-<div class="foot">AI Radar · generated for RABBIO + Mizan AI · 09 Aug 2026</div>
-</div></body></html>
+  :root{
+    --bg:#0e0f13; --panel:#16181f; --panel2:#1d2029; --line:#2a2e3a;
+    --text:#e8eaf0; --muted:#9aa0ad; --accent:#7C4DFF; --accent2:#a98bff;
+    --ecom:#ff5c7c; --ok:#3ddc97; --trend:#ffb703; --warn:#ffb703;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 18px 64px}
+  header h1{margin:0 0 4px;font-size:24px;letter-spacing:-.3px}
+  header .sub{color:var(--muted);font-size:13px}
+  .summary{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 22px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:10px 14px;min-width:120px}
+  .stat b{display:block;font-size:22px}
+  .stat span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);
+    padding-bottom:10px;margin-bottom:18px;position:sticky;top:0;background:var(--bg);
+    padding-top:10px;z-index:5}
+  .tab-btn{background:var(--panel);color:var(--muted);border:1px solid var(--line);
+    border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;white-space:nowrap}
+  .tab-btn:hover{color:var(--text)}
+  .tab-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .tab-btn .badge{display:inline-block;margin-left:6px;background:rgba(255,255,255,.18);
+    border-radius:999px;padding:0 7px;font-size:11px}
+  .panel{display:none}
+  .panel.active{display:block}
+  .cards{display:flex;flex-direction:column;gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  .card.ecom{border-color:var(--ecom)}
+  .card .top{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .card h3{margin:0;font-size:16px;letter-spacing:-.2px}
+  .card .meta{color:var(--muted);font-size:12px}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;
+    border:1px solid var(--line);color:var(--muted);margin-right:6px}
+  .pill.kind{color:var(--accent2);border-color:var(--accent)}
+  .pill.ecomtag{color:var(--ecom);border-color:var(--ecom)}
+  .card p{margin:8px 0 0;color:#cdd1db}
+  .card a.src{display:inline-block;margin-top:8px;color:var(--accent2);
+    font-size:13px;text-decoration:none}
+  .card a.src:hover{text-decoration:underline}
+  .angle{margin-top:10px;background:var(--panel2);border:1px solid var(--line);
+    border-left:3px solid var(--ecom);border-radius:10px;padding:10px 12px}
+  .angle .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--accent2)}
+  .angle .hook{font-weight:600;margin:2px 0 6px}
+  .angle .why{color:var(--muted);font-size:13px}
+  .card.trend{border-color:var(--trend);background:linear-gradient(180deg,#1a1620,var(--panel))}
+  .evidence{margin-top:8px;font-size:12px;color:var(--trend)}
+  .vids{margin:8px 0 0;padding-left:18px;font-size:13px;color:#cdd1db}
+  .vids li{margin:4px 0}
+  .vids a{color:var(--accent2);text-decoration:none}
+  .vids a:hover{text-decoration:underline}
+  .vids .meta{display:block;color:var(--muted);font-size:11px}
+  .pill.lenstag{color:var(--muted);border-color:var(--line)}
+  .pill.unranked{color:var(--warn);border-color:var(--warn);vertical-align:middle}
+  .gate{margin-top:8px;font-size:11px;color:var(--warn)}
+  .gate code{color:var(--warn)}
+  .stale{background:#3a1418;border:1px solid var(--ecom);color:#ffd7dd;
+         border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:14px}
+  .notebox{background:#1a2436;border:1px solid #2f4a6b;color:#bcd6f2;border-radius:12px;
+         padding:12px 16px;margin-bottom:16px;font-size:13px}
+  .tip{background:linear-gradient(135deg,#1d2029,#211a33);border:1px solid var(--accent);
+    border-radius:14px;padding:18px}
+  .tip .lbl{color:var(--accent2);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .empty{color:var(--muted);padding:20px;text-align:center}
+  footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+  .srclist{columns:2;gap:18px;font-size:13px;color:var(--muted)}
+  @media(max-width:560px){.srclist{columns:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📡 AI Radar — 09 Aug 2026</h1>
+    <div class="sub">Six lenses · what the channels are actually covering · YouTube angles on everything</div>
+  </header>
+
+  <div class="summary">
+    <div class="stat"><b>18</b><span>New drops</span></div>
+    <div class="stat"><b>2</b><span>Trending topics</span></div>
+    <div class="stat"><b>0</b><span>Channels swept live</span></div>
+    <div class="stat"><b>09 Aug, 05:15 UTC</b><span>Generated</span></div>
+  </div>
+
+  <div class="notebox">
+    ⚠ No live channel sweep today: <code>radar/channels.py</code> needs the YouTube OAuth token at
+    <code>secrets/youtube_token.json</code>, which does not exist in this cloud run (same as every scheduled
+    run so far). The Trending tab below reuses the last real sweep, <code>radar/feed/youtube-2026-08-07.json</code>
+    (14-day window ending 08-07), which is now 2 days stale. Treat it as directionally right, not fresh.
+    <br><br>
+    ⚠ StoryBank (Notion) was NOT written this run: the Notion MCP requires OAuth authorization not available
+    in this non-interactive session. All 18 angles below are in this brief only, not logged to Notion. Connect
+    Notion, then run <code>/ai-radar</code> manually to catch these up.
+    <br><br>
+    Last successful run was 2026-08-08 (yesterday) — the radar is healthy, this is not a staleness alert.
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="trending">🔥 Trending <span class="badge">2</span></button>
+    <button class="tab-btn" data-tab="models">Models <span class="badge">4</span></button>
+    <button class="tab-btn" data-tab="agents">Agents <span class="badge">3</span></button>
+    <button class="tab-btn" data-tab="automation">Automation <span class="badge">3</span></button>
+    <button class="tab-btn" data-tab="content">Content <span class="badge">3</span></button>
+    <button class="tab-btn" data-tab="ecom">Ecom <span class="badge">3</span></button>
+    <button class="tab-btn" data-tab="industry">Industry <span class="badge">2</span></button>
+    <button class="tab-btn" data-tab="channels">📺 Channels</button>
+    <button class="tab-btn" data-tab="tip">💡 Claude tip</button>
+    <button class="tab-btn" data-tab="all">All / sources</button>
+  </div>
+
+  <!-- ===== TRENDING ===== -->
+  <div class="panel active" id="trending">
+    <p class="empty" style="margin-bottom:16px">Computed by <code>radar/channels.py</code>: a topic
+      counts only when <b>3+ distinct channels</b> covered it inside 14 days. Reused from the
+      2026-08-07 sweep (no fresh sweep today — see note above).</p>
+    <div class="cards">
+
+      <div class="card trend">
+        <div class="top">
+          <h3>Opus 5</h3>
+          <div class="meta">4 channels · 168,009 views</div>
+        </div>
+        <div class="evidence">David Ondrej · Nate Herk | AI Automation · Nick Saraev · The AI Daily Brief</div>
+        <ul class="vids">
+          <li><a href="https://youtu.be/2J3uX8iRNng">I Tested Opus 5 vs. Fable 5. What You Need to Know.</a>
+              <span class="meta">Nate Herk | AI Automation · 2026-07-24 · 88,741 views</span></li>
+          <li><a href="https://youtu.be/k1DTxuBur-Y">I Spent $400 Benching Opus-5. Here's What It Can Do</a>
+              <span class="meta">Nick Saraev · 2026-07-24 · 62,632 views</span></li>
+          <li><a href="https://youtu.be/_t-Hbg-3_CU">Opus 5 - better than Fable?</a>
+              <span class="meta">David Ondrej · 2026-07-27 · 12,227 views</span></li>
+        </ul>
+        <div class="angle">
+          <div class="lbl">YouTube angle</div>
+          <div class="hook">I ran Opus 5 on a real client job, not a benchmark</div>
+          <div class="why">Every big channel already did the reaction video. The gap is nobody's shown the cost and failure mode on an actual deliverable — that's the Nick Saraev format and it's the only one you can still win at his subscriber count. — <em>build video, tie to a real Mizan-style automation job</em></div>
+          <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code> (not available in this environment — run manually before committing)</div>
+        </div>
+      </div>
+
+      <div class="card trend">
+        <div class="top">
+          <h3>Fable 5</h3>
+          <div class="meta">4 channels · 104,470 views</div>
+        </div>
+        <div class="evidence">AI News &amp; Strategy Daily | Nate B Jones · Jack Roberts · Nate Herk | AI Automation · The AI Daily Brief</div>
+        <ul class="vids">
+          <li><a href="https://youtu.be/2J3uX8iRNng">I Tested Opus 5 vs. Fable 5. What You Need to Know.</a>
+              <span class="meta">Nate Herk | AI Automation · 2026-07-24 · 88,741 views</span></li>
+          <li><a href="https://youtu.be/l_060SZwBeo">The Fable 5 ban taught companies one thing #AI #Claude #Fable5</a>
+              <span class="meta">AI News &amp; Strategy Daily | Nate B Jones · 2026-07-29 · 11,059 views</span></li>
+          <li><a href="https://youtu.be/69JMFDFuI3A">How to Get the Most Out of Fable 5 and GPT 5.6 Sol</a>
+              <span class="meta">The AI Daily Brief · 2026-07-25 · 4,245 views</span></li>
+        </ul>
+        <div class="angle">
+          <div class="lbl">YouTube angle</div>
+          <div class="hook">What the Fable 5 export-control ban actually taught companies</div>
+          <div class="why">The "ban taught companies one thing" framing is doing real numbers off a policy angle, not a capability one — a lane most build-channels skip. — <em>industry-adjacent explainer, feeds the Mizan "we track this so you don't have to" positioning</em></div>
+          <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code> (not available in this environment)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 style="margin:26px 0 8px">The standing trend</h3>
+    <p class="empty">From <code>radar/trend-now.md</code>, reviewed weekly not daily, last review 2026-08-07.
+      Unchanged since: <b>the work moved from prompting to orchestrating.</b> Coding agents are the default
+      interface, agent design (sub-agents, skills, MCP, stop conditions) is now a paid skill, frontier launches
+      arrive in pairs and are no longer events, AI slop is becoming the thing audiences actively resent, and the
+      AI-agency model is being publicly audited rather than just sold. Today's Cursor-from-Slack and Copilot
+      sessions-sidebar items below are both direct instances of the first point.</p>
+
+    <h3 style="margin:26px 0 8px">X chatter <span class="pill unranked">unranked</span></h3>
+    <p class="empty">No X API key — no engagement numbers, nothing here can be ranked. Corroboration only.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="top"><h3>MCP's stateless rewrite is the actual talking point, not just the spec post</h3>
+          <div class="meta">multiple accounts, unranked</div></div>
+        <p>Chatter around <code>site:x.com "MCP" agent</code> corroborates the 2026-07-28 spec rewrite
+          (already logged 2026-08-07): removal of the session-handshake, deprecation of Roots/Sampling/Logging,
+          and "MCP vs Agent Skills, when to use what" threads (Elastic) are the two recurring sub-arguments.
+          Two-plus independent threads on the same rewrite, so this clears the corroboration bar.</p>
+      </div>
+      <div class="card">
+        <div class="top"><h3>Official @claudeai post: Claude Code "Remote Control"</h3>
+          <div class="meta">single account, official — see Agents tab for the full item</div></div>
+        <p>Start a task in the terminal, pick it up from your phone. Not confirmed in today's CHANGELOG fetch
+          (latest entry is 2.1.226, "bug fixes and reliability improvements" only) — one official account, no
+          second corroborating source found today, so treat the feature as real but the ship date as unconfirmed.</p>
+      </div>
+      <div class="card">
+        <div class="top"><h3>n8n / Make chatter is template-count marketing, not news</h3>
+          <div class="meta">n8n_io official account, low signal</div></div>
+        <p>Recurring "we hit N templates" posts and beginner-guide shares. No new information versus the
+          changelog sources already fetched — noted here only so it's clear it was checked, not missed.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODELS ===== -->
+  <div class="panel" id="models"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>OpenAI retires Atlas, its agentic browser — today</h3>
+        <div class="meta">OpenAI · 2026-08-09</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">models</span></div>
+      <p>Atlas stops working today as OpenAI folds agentic browsing into ChatGPT and Codex directly. Bookmarks,
+        open tabs and browser history do not transfer automatically; users can export cookies/passwords to the
+        ChatGPT desktop app and bookmarks to Chrome.</p>
+      <a class="src" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">OpenAI just killed its own browser six months after shipping it</div>
+        <div class="why">A standalone "agent browser" product didn't survive as its own surface — it survived as a feature inside the chat window. That's a real data point on what shape agent products actually need to take to stick.</div>
+        <div class="meta"><em>Tie: build/reaction video — "don't build a standalone agent tool, build a feature inside where people already are," direct line into the Mizan pitch.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>OpenAI trims the model lineup — o3 and GPT-5.4 both retiring within weeks</h3>
+        <div class="meta">OpenAI · discovered 2026-08-09, effective Aug 26 / Aug 31</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">models</span></div>
+      <p>o3 retires from ChatGPT Aug 26 (90-day sunset). GPT-5.4 and GPT-5.4-mini leave Codex for
+        ChatGPT-signed-in users Aug 31 — migrate to GPT-5.6 Terra and GPT-5.6 Luna respectively. Both remain on
+        the raw API and API-key Codex sessions.</p>
+      <a class="src" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">OpenAI is retiring two models in the next three weeks — is your stack pinned to either?</div>
+        <div class="why">Model deprecation calendars are becoming a real operating cost for anyone building on these APIs, not a one-off migration.</div>
+        <div class="meta"><em>Tie: Mizan offer — "we track your dependencies' deprecation calendar" is a genuine retainer line item, not filler.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>Nous Research ships Hermes Agent v0.20.0, "The Herald Release"</h3>
+        <div class="meta">Nous Research · 2026-08-03</div></div>
+      <div><span class="pill kind">new-model</span><span class="pill lenstag">models</span></div>
+      <p>Real-time conversational voice with streaming TTS and barge-in, on-device wake words, hands-free
+        control, agent-to-agent comms (A2A v1.0), signed outbound webhooks, and grounded research with
+        verifiable citations. Cold-start time cut ~80%, from ~4.3s to ~0.9s, across CLI, gateway, TUI, desktop
+        and cron. Reasoning models now stream their thinking live by default instead of a spinner.</p>
+      <a class="src" href="https://github.com/NousResearch/hermes-agent/releases">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Hermes just cut its own boot time by 80 percent and added agent-to-agent comms</div>
+        <div class="why">A2A plus signed webhooks is a real automation primitive, not a feature-list bullet — it's the exact kind of building block an operator wires into a client system.</div>
+        <div class="meta"><em>Tie: direct build video — wire Hermes A2A into an n8n flow as a Mizan proof-of-concept.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>Grok Imagine Image 2.0 lands #2 on the Arena leaderboards</h3>
+        <div class="meta">xAI · 2026-08-07</div></div>
+      <div><span class="pill kind">new-model</span><span class="pill lenstag">models</span></div>
+      <p>Shipped Aug 7; as of Aug 7 it sits second on the Arena leaderboards in both text-to-image generation
+        and image editing.</p>
+      <a class="src" href="https://x.ai/news">Source ↗ (x.ai blocked to fetch directly — via search, unconfirmed primary read)</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Grok's image model just jumped past almost everything except one competitor</div>
+        <div class="why">Worth a fast side-by-side before recommending an image stack to any client — the leaderboard moved.</div>
+        <div class="meta"><em>Tie: content-lens crossover, thumbnail/creative pipeline spot-check.</em></div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== AGENTS ===== -->
+  <div class="panel" id="agents"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>Cursor overhauls Slack integration, adds named multi-repo start</h3>
+        <div class="meta">Cursor · early Aug 2026</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>In-message buttons replaced with compact footer links; tables, PRs and artifacts render more cleanly
+        in Slack. Cursor can now be started from Slack in a named multi-repo environment instead of always the
+        single default repository.</p>
+      <a class="src" href="https://cursor.com/changelog">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Cursor agents now start from a Slack thread, across multiple repos</div>
+        <div class="why">Chat-first agent triggering is becoming the default interface, not IDE-first — directly confirms this week's standing trend.</div>
+        <div class="meta"><em>Tie: build/demo video — trigger a coding agent from a client's ops Slack channel.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>GitHub Copilot ships a Sessions sidebar for running multiple agents at once</h3>
+        <div class="meta">GitHub · 2026-08-03 (weekly release)</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>Sessions sidebar with shortcuts to open (n), close (x) and switch between concurrent sessions; Auto
+        now shows which model handled each completed request plus credit/cache details; jump into shared
+        sessions or use /side for a parallel question without disrupting the main task.</p>
+      <a class="src" href="https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Copilot just admitted you're supposed to be running more than one agent</div>
+        <div class="why">Multi-session agent management is going mainstream in the dev tool most people already have open — a leading indicator, not a Copilot-only feature.</div>
+        <div class="meta"><em>Tie: compare-and-contrast video against Claude Code's own multi-session/worktree workflow.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>Claude Code "Remote Control" — start on your machine, drive from your phone</h3>
+        <div class="meta">Anthropic (X post) · unconfirmed ship date</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p><b>Unconfirmed against today's primary source.</b> Official @claudeai account posted: kick off a task
+        in the terminal, pick it up from your phone while walking or in a meeting — Claude keeps running on
+        your machine, controllable from the Claude app. Today's CHANGELOG fetch tops out at 2.1.226 ("bug
+        fixes and reliability improvements" only), so the exact version this shipped in wasn't confirmed today.</p>
+      <a class="src" href="https://x.com/claudeai/status/2026418433911603668">Source ↗ (X post, single account)</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">You can now start a coding agent and finish the session from your phone</div>
+        <div class="why">Matches the standing trend directly — agents untethered from the terminal, not just from the IDE.</div>
+        <div class="meta"><em>Tie: Jack-Roberts-style "3 agent setup" build video, phone-handoff segment.</em></div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== AUTOMATION ===== -->
+  <div class="panel" id="automation"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>Vercel adds Hermes Agent support on its AI Gateway + Sandbox microVMs</h3>
+        <div class="meta">Vercel · early Aug 2026</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">automation</span></div>
+      <p>Hermes Agent can now route inference through Vercel's AI Gateway across 200+ models with no token
+        markup, and run agent commands in isolated Vercel Sandbox microVMs.</p>
+      <a class="src" href="https://vercel.com/changelog">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Vercel just became a neutral routing layer for an open agent stack</div>
+        <div class="why">Infra platforms are racing to be the pipe every agent framework runs through — the "which model" decision is getting commoditized in favor of "which orchestration layer."</div>
+        <div class="meta"><em>Tie: this is exactly the kind of infra decision Mizan should be making for clients instead of them hand-rolling it.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>n8n ships a broad reliability pass across core and the editor</h3>
+        <div class="meta">n8n · Aug 2026 (rolling)</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">automation</span></div>
+      <p>Fixes across AI workflows, Slack and MCP handling, execution reliability, OAuth flows and node
+        behavior — including releasing Snowflake connections on failed statements, non-dividing-minute Schedule
+        Node intervals, and an added <code>groups:write</code> OAuth scope for private Slack channel actions.</p>
+      <a class="src" href="https://github.com/n8n-io/n8n/releases">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">n8n quietly fixed the bugs that break client workflows at 2am</div>
+        <div class="why">Unglamorous but directly load-bearing for anyone running client automations on n8n — the kind of thing a retainer client actually notices when it stops happening.</div>
+        <div class="meta"><em>Tie: maintenance-as-a-service framing for a Mizan retainer pitch.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>Make.com is telling its own users to watch AI-step credit costs</h3>
+        <div class="meta">Make · Aug 2026, exact date unconfirmed</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">automation</span></div>
+      <p><b>Unconfirmed date</b> — surfaced via search, not a dated changelog entry. Make's own messaging now
+        warns that loops, retries, AI steps and high-volume scenarios can turn one workflow into a real
+        monthly cost, recommending business rules, filters and exception queues to keep it in check.</p>
+      <a class="src" href="https://www.make.com/en/blog">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Make is warning its own customers about their own AI bill</div>
+        <div class="why">A platform warning its users about cost is a signal, not noise — it's the exact conversation an agency has with a prospect who built it themselves.</div>
+        <div class="meta"><em>Tie: proof point for a "we control the meter" pitch versus a DIY Make setup.</em></div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="panel" id="content"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>ElevenLabs Scribe realtime adds keyterm bias + a verbatim/no-filler mode</h3>
+        <div class="meta">ElevenLabs · Aug 2026</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">content</span></div>
+      <p>Scribe realtime WebSocket now accepts <code>keyterms</code> (up to 50 terms, 20 chars each) to bias
+        transcription toward specific words, and a <code>no_verbatim</code> flag to strip filler words, false
+        starts and disfluencies from the transcript.</p>
+      <a class="src" href="https://elevenlabs.io/docs/changelog">Source ↗ (JS-only page, via WebSearch)</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">ElevenLabs transcription just stopped writing your "ums"</div>
+        <div class="why">Directly usable to cut a manual cleanup step out of the transcript-to-caption pipeline.</div>
+        <div class="meta"><em>Tie: youtube-OS pipeline — feed straight into the caption/transcript cleanup step.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>Runway retires two API models, adds ElevenLabs v3 expressive speech</h3>
+        <div class="meta">Runway · 2026-07-30</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">content</span></div>
+      <p>Gen-3 Alpha Turbo and Gen-4 Aleph are no longer available via the API — migrate to Gen-4.5 (best
+        quality) or Gen-4 Turbo (fastest), and Aleph 2.0. Separately, Eleven v3 is now available via the Runway
+        API, generating expressive speech with audio tags like <code>[laughs]</code> and <code>[whispers]</code>.</p>
+      <a class="src" href="https://docs.dev.runwayml.com/api-details/api_changelog/">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Runway just put emotion tags inside its own API calls</div>
+        <div class="why">One vendor's API now fronts another vendor's model — that packaging pattern (one surface, multiple backends) is the trend to watch across the whole creative-tool category.</div>
+        <div class="meta"><em>Tie: content pipeline test — expressive VO for a Short.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>Higgsfield ships "Assist," a prompt copilot that flags failures before you burn credits</h3>
+        <div class="meta">Higgsfield · undated, low confidence</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">content</span></div>
+      <p><b>Unconfirmed date</b> — "added in 2026" per the source, no specific day found. Suggests refined
+        prompts, recommends camera settings, and flags likely generation failures before a credit is spent.</p>
+      <a class="src" href="https://higgsfield.ai">Source ↗ (via WebSearch)</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Higgsfield now tells you a generation will fail before you pay for it</div>
+        <div class="why">Credit-cost friction is becoming its own feature category across every gen-video/image tool — same throughline as the Make.com item in Automation.</div>
+        <div class="meta"><em>Tie: minor, cost-awareness crossover with the automation lens.</em></div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== ECOM ===== -->
+  <div class="panel" id="ecom"><div class="cards">
+
+    <div class="card ecom">
+      <div class="top"><h3>Shopify fixes tax on address-edited unfulfilled orders</h3>
+        <div class="meta">Shopify · effective 2026-08-31</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag ecomtag">ecom</span></div>
+      <p>Changing the shipping address on an unfulfilled order via the <code>orderUpdate</code> GraphQL
+        mutation now recalculates tax against the new destination. Previously the address updated but the
+        original tax lines didn't, so totals silently stopped matching the shipping destination.</p>
+      <a class="src" href="https://shopify.dev/changelog">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Shopify was letting orders ship with the wrong tax charged</div>
+        <div class="why">A real correctness bug fix, not a feature — anyone with a custom fulfillment or address-edit flow needs to know before Aug 31.</div>
+        <div class="meta"><em>Tie: RABBIO relaunch technical-debt checklist item.</em></div>
+      </div>
+    </div>
+
+    <div class="card ecom">
+      <div class="top"><h3>Shopify Hydrogen storefronts can now deploy to Oxygen from dev stores, free</h3>
+        <div class="meta">Shopify · Aug 2026</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag ecomtag">ecom</span></div>
+      <p>Oxygen hosting previously required a paid plan. Dev stores can now deploy Hydrogen storefronts to
+        Oxygen directly, expanding free access to custom-storefront hosting.</p>
+      <a class="src" href="https://shopify.dev/changelog">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">You can now ship a custom Shopify storefront for free</div>
+        <div class="why">Lowers the barrier to a client demo storefront build — no paid-plan gate anymore.</div>
+        <div class="meta"><em>Tie: Mizan portfolio/demo build candidate.</em></div>
+      </div>
+    </div>
+
+    <div class="card ecom">
+      <div class="top"><h3>Klaviyo acquires Agency, hands its agent product line to Agency's CEO</h3>
+        <div class="meta">Klaviyo · Aug 2026 (Q2 earnings week)</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag ecomtag">ecom</span></div>
+      <p>Klaviyo agreed to acquire the team and technology of Agency, an AI-native customer success company.
+        Once the deal closes, Agency co-founder/CEO Elias Torres becomes Klaviyo's Chief Product Officer,
+        leading its agent product line (Composer, Customer Agent). K:Social also hit general availability.</p>
+      <a class="src" href="https://www.klaviyo.com/newsroom/agency-elias-torres">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Klaviyo just bought its way into AI customer success</div>
+        <div class="why">The ecom SaaS stack he already knows is becoming an agent platform underneath its users — an acquisition, not a feature announcement.</div>
+        <div class="meta"><em>Tie: strong Mizan case-study angle — "the tools you already use are becoming agencies, here's what that means for yours."</em></div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== INDUSTRY ===== -->
+  <div class="panel" id="industry"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>Anthropic confirms custom chip team + a $10B compute deal</h3>
+        <div class="meta">Anthropic · Aug 4–5, 2026</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">industry</span></div>
+      <p>Anthropic publicly confirmed (Aug 5) it's building an in-house team to design custom chips for Claude,
+        hiring senior chip engineers at salaries up to $485k. A day earlier (Aug 4) it inked a $10B computing
+        deal with a cloud startup. anthropic.com itself is blocked to direct fetch in this environment —
+        corroborated via search only, not read from the primary page today.</p>
+      <a class="src" href="https://www.anthropic.com/news">Source ↗ (blocked to WebFetch, via WebSearch)</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Anthropic just admitted it's designing its own silicon</div>
+        <div class="why">Vertical integration into chips plus a $10B compute contract in the same week signals a multi-year bet — model price drops and capability jumps aren't slowing down.</div>
+        <div class="meta"><em>Tie: industry explainer — "why model prices keep falling," low direct Mizan tie but useful context for any pricing-based content.</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>Klaviyo's Q2 earnings credit AI agents for the growth</h3>
+        <div class="meta">Klaviyo · reported Aug 5, 2026</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">industry</span></div>
+      <p>$370.6M quarterly revenue, +26% YoY, ARR approaching $1.5B. Company messaging explicitly credits AI
+        agents for the growth. CFO Amanda Whalen is stepping down in August to an advisory role through
+        November; a $500M buyback (including a $100M accelerated tranche) was also announced.</p>
+      <a class="src" href="https://www.investing.com/news/company-news/klaviyo-q2-2026-slides-ai-agents-drive-growth-amid-margin-pressure-93CH-4839670">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">A public ecom SaaS company just told Wall Street "AI agents did this"</div>
+        <div class="why">This is a rare case of a public earnings call attributing real revenue growth to agents specifically — a citable proof point, not vibes.</div>
+        <div class="meta"><em>Tie: Mizan pitch material — "AI agents are already moving revenue for the platforms you use, here's what that looks like inside your business."</em></div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== CHANNELS ===== -->
+  <div class="panel" id="channels">
+    <p class="empty" style="margin-bottom:16px">No live sweep today (see the note banner above). This is the
+      trending-topic evidence already shown in the Trending tab, sourced from
+      <code>radar/feed/youtube-2026-08-07.json</code> — the top videos behind each topic, not a fresh per-channel
+      upload list. Run <code>python3 radar/channels.py</code> locally (where the OAuth token exists) and commit
+      a fresh <code>youtube-2026-08-09.json</code> to get a real sweep back.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="top"><h3>Nate Herk | AI Automation</h3><div class="meta">builders</div></div>
+        <ul class="vids"><li><a href="https://youtu.be/2J3uX8iRNng">I Tested Opus 5 vs. Fable 5. What You Need to Know.</a><span class="meta">2026-07-24 · 88,741 views</span></li></ul>
+      </div>
+      <div class="card">
+        <div class="top"><h3>Nick Saraev</h3><div class="meta">builders</div></div>
+        <ul class="vids"><li><a href="https://youtu.be/k1DTxuBur-Y">I Spent $400 Benching Opus-5. Here's What It Can Do</a><span class="meta">2026-07-24 · 62,632 views</span></li></ul>
+      </div>
+      <div class="card">
+        <div class="top"><h3>David Ondrej</h3><div class="meta">builders</div></div>
+        <ul class="vids"><li><a href="https://youtu.be/_t-Hbg-3_CU">Opus 5 - better than Fable?</a><span class="meta">2026-07-27 · 12,227 views</span></li></ul>
+      </div>
+      <div class="card">
+        <div class="top"><h3>AI News &amp; Strategy Daily | Nate B Jones</h3><div class="meta">daily_news</div></div>
+        <ul class="vids"><li><a href="https://youtu.be/l_060SZwBeo">The Fable 5 ban taught companies one thing</a><span class="meta">2026-07-29 · 11,059 views</span></li></ul>
+      </div>
+      <div class="card">
+        <div class="top"><h3>The AI Daily Brief</h3><div class="meta">daily_news</div></div>
+        <ul class="vids"><li><a href="https://youtu.be/69JMFDFuI3A">How to Get the Most Out of Fable 5 and GPT 5.6 Sol</a><span class="meta">2026-07-25 · 4,245 views</span></li></ul>
+      </div>
+      <div class="card">
+        <div class="top"><h3>Jack Roberts, Liam Ottley, Leon van Zyl</h3><div class="meta">builders · no upload data this run</div></div>
+        <ul class="vids"><li>No fresh upload data — not in the reused 08-07 trending evidence set. Not evidence of silence, just evidence of no live sweep today.</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TIP ===== -->
+  <div class="panel" id="tip">
+    <div class="tip">
+      <div class="lbl">Claude Code tip of the day</div>
+      <h3 style="margin:6px 0 8px">Be specific about done</h3>
+      <p style="margin:0;color:#cdd1db">Tell Claude how to verify — "run the test", "open the page", "check
+        the Notion row". Vague asks get vague results; verifiable asks get checked work.</p>
+      <a href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener"
+         style="display:inline-block;margin-top:12px;color:var(--accent2);font-size:13px;text-decoration:none;">
+        → Read the docs ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== ALL / SOURCES ===== -->
+  <div class="panel" id="all">
+    <div class="cards" id="all-cards">
+      <p class="empty">18 new drops across 6 lenses, see each lens tab. This tab is sources only.</p>
+    </div>
+    <footer>
+      <strong>Sources checked (fetched or searched this run):</strong>
+      <div class="srclist">
+        Claude Code CHANGELOG (direct fetch, worked) · Anthropic API release notes (direct fetch, worked) ·
+        Anthropic system prompts release notes (direct fetch, worked) · Anthropic news (blocked, via search) ·
+        OpenAI ChatGPT release notes (via search) · OpenAI API changelog (via search) ·
+        Gemini API changelog (via search) · Google AI blog (via search) · Cursor changelog (via search) ·
+        Vercel changelog (via search) · GitHub Copilot changelog (via search) · MCP spec blog (via search) ·
+        n8n releases (via search) · Make.com blog (via search) · Trigger.dev changelog (via search, nothing new) ·
+        Nous Research / Hermes Agent releases (via search) · xAI news (via search) · Mistral news (via search) ·
+        DeepSeek / Moonshot news (via search) · ElevenLabs changelog (via search, JS-only page) ·
+        HeyGen blog (via search, nothing newer than June found) · Higgsfield (via search) ·
+        Runway changelog (via search) · Shopify changelog (via search) · Klaviyo what's new / newsroom (via search) ·
+        X: site:x.com claude code · X: site:x.com MCP agent · X: site:x.com AI automation agency ·
+        X: site:x.com n8n/make.com workflow · X: AI twitter discourse this week
+      </div>
+      <p style="margin-top:12px"><strong>Unavailable this run:</strong> www.anthropic.com (EGRESS_BLOCKED at
+        the proxy level — not a site 403, every *.anthropic.com/news style page hit this); x.ai/news (blocked,
+        used search fallback for the Grok item, primary page unread); Perplexity changelog was checked in a
+        prior run and had nothing new to add today so was not re-fetched; DeepMind blog not separately
+        re-checked today (folded into the general Google/Anthropic industry sweep instead).</p>
+      <p style="margin-top:8px"><strong>Not run this session:</strong> <code>radar/channels.py</code> (no
+        OAuth token) · StoryBank Notion write (no OAuth authorization for the Notion MCP) ·
+        <code>content-OS/tools/ideas/demand.py</code> (content-OS is not checked out in this environment) —
+        every trend angle above is flagged "needs demand check" rather than actually gated.</p>
+    </footer>
+  </div>
+
+  <footer>Generated by the <code>ai-radar</code> skill · mahmoudOS · 09 Aug 2026, 05:15 UTC</footer>
+</div>
+
+<script>
+  document.querySelectorAll('.tab-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-tab');
+      document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+      document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+      btn.classList.add('active');
+      var panel = document.getElementById(id);
+      if(panel){panel.classList.add('active')}
+    });
+  });
+</script>
+</body>
+</html>
