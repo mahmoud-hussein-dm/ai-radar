@@ -1,51 +1,363 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Radar - 10 Aug 2026 - 3 drops, 2 trending</title>
+<title>AI Radar — 10 Aug 2026</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#0e0f13;color:#e8eaf0;
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
-.top{border-bottom:1px solid #2a2e3a;padding-bottom:16px;margin-bottom:24px}
-h1{font-size:26px;margin:0 0 6px;letter-spacing:-.3px}
-.sub{color:#9aa0ad;font-size:14px}
-h2{font-size:18px;margin:30px 0 8px;color:#fff;letter-spacing:-.2px}
-p{margin:10px 0;color:#cdd1db}
-a{color:#a98bff;word-break:break-word}
-.foot{margin-top:40px;border-top:1px solid #2a2e3a;padding-top:14px;color:#6b7180;font-size:12px}
-</style></head>
-<body><div class="wrap">
-<div class="top"><h1>📡 AI Radar</h1><div class="sub">10 Aug 2026 · AI Radar - 10 Aug 2026 - 3 drops, 2 trending</div></div>
-<p>AI RADAR - 10 Aug 2026<br>Generated 05:17 UTC. New drops: 3. Trending topics: 2 (stale). Channels swept live: 0.</p>
-<h2>NOTES UP TOP</h2>
-<p>- Notion StoryBank not written: Notion MCP needs OAuth not available in this session (same gap as 08-09).<br>- No fresh YouTube channel sweep: radar/channels.py needs an OAuth token not present in this cloud environment. Trending tab reuses the 2026-08-07 counted sweep, now 3 days stale.<br>- Nearly every vendor domain was EGRESS_BLOCKED for direct fetch, WebSearch fallback used for all but 3 sources.<br>- Today was genuinely quiet: most of what three sweep agents found was already logged by the 08-07/08-08/08-09 runs, deduped out rather than repeated.</p>
-<p>TRENDING (stale, 2026-08-07 counted data)</p>
-<p>Opus 5, 4 channels (David Ondrej, Nate Herk, Nick Saraev, The AI Daily Brief), 168,009 views.<br>Angle: everyone benchmarked Opus 5 in week one, nobody has shown what breaks on week three. Tie: Mizan build video with receipts. Needs demand check.</p>
-<p>Fable 5, 4 channels (Nate B Jones, Jack Roberts, Nate Herk, The AI Daily Brief), 104,470 views.<br>Angle: Anthropic quietly fixed the thing that got Fable 5 banned in places, see the biology-safeguards item below. Needs demand check.</p>
-<p>Standing trend (unchanged since 08-07): the work moved from prompting to orchestrating. Coding agents are the default interface, agent design is the sellable skill, launches arrive in pairs. Today&#x27;s Claude Code auto-mode story is a direct instance of this.</p>
-<p>X chatter, unranked: Claude Code auto-mode-default corroborated 4 ways (official Anthropic accounts, TechCrunch 08-09, Simon Willison 08-08). Everything else queried (MCP agent, AI automation agency, n8n/<a href="https://www.google.com/url?q=http://make.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E">https://www.google.com/url?q=http://make.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E</a>) had nothing dated in window. One search pass returned fabricated-looking engagement numbers, discarded rather than reported.</p>
-<h2>MODELS</h2>
-<p>ChatGPT Voice: file uploads plus Projects support, Live set as default, OpenAI, approx 2026-08-08.<br>Upload a file mid voice conversation and ask about it, voice now works inside Projects. Source: <a href="https://www.google.com/url?q=https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E">https://www.google.com/url?q=https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E</a><br>Angle: ChatGPT Voice just stopped being a toy and started reading your files. Tie: hands-free client demo or a Mizan pitch.</p>
-<p>Qwen3.8-Max, open weights expected this week (watch item), Alibaba, announced 2026-08-03.<br>2.4T-parameter MoE multimodal, 1M-token context, open weights reportedly landing week of Aug 10, unconfirmed exact date. Source: <a href="https://www.google.com/url?q=https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E">https://www.google.com/url?q=https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E</a><br>Angle, hold until weights land: a 2.4 trillion parameter open-weight model, this week, for free.</p>
-<h2>AGENTS</h2>
-<p>Claude Code: auto mode becomes the default permission mode (Pro/Max/Team), Anthropic, effective 2026-08-14. BIGGEST ITEM THIS RUN.<br>Default permission mode switches from manual per-command approval to auto, a classifier decides which commands run without asking. Anthropic cites an 89 percent dangerous-command catch rate. Corroborated by official Anthropic accounts, TechCrunch (08-09), and Simon Willison&#x27;s blog (08-08).<br>Source: <a href="https://www.google.com/url?q=https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E">https://www.google.com/url?q=https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E</a><br>Angle: in 4 days, Claude Code stops asking your permission by default. Zero competition yet, it hasn&#x27;t shipped. Tie: build video on a real Mizan client repo showing what auto mode catches and misses, doubles as a trust and safety talking point. Needs demand check.</p>
-<h2>AUTOMATION</h2>
-<p>Nothing new today. n8n shipped two patches plus two pre-releases on 08-07, bug fixes only, already logged by the 08-08 run. Make.com and Trigger.dev egress-blocked, nothing confirmed via search.</p>
-<h2>CONTENT</h2>
-<p>Higgsfield&#x27;s fully-AI feature film gets the &quot;this business model works&quot; treatment, Forbes coverage, 2026-08-08.<br>Forbes analysis argues likeness-licensing is now a working, scalable model, referencing Higgsfield&#x27;s AI feature film shown in NYC 08-05. Article body not independently fetched, treat specifics beyond headline/date/topic as unconfirmed.<br>Source: <a href="https://www.google.com/url?q=https://www.forbes.com/sites/luisromero/2026/08/08/higgsfields-latest-ai-film-proves-likeness-licensing-works-and-scales/&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E">https://www.google.com/url?q=https://www.forbes.com/sites/luisromero/2026/08/08/higgsfields-latest-ai-film-proves-likeness-licensing-works-and-scales/&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E</a><br>Angle: people are getting paid to let AI wear their face in a movie. Tie: creator-economy commentary or a practical avatar-licensing build video. Needs demand check.</p>
-<h2>ECOM</h2>
-<p>Nothing confirmed in window. Shopify, Klaviyo, Meta for Business all egress-blocked, WebSearch found only pre-08-07 or undated items.</p>
-<h2>INDUSTRY</h2>
-<p>Gemini in Classroom expands to K-12/higher-ed students, Google Workspace, 2026-08-10. Filler, no angle.</p>
-<p>Reminder: Fable 5&#x27;s biology safeguards were retuned this week, Anthropic, 2026-08-07, already logged. Roughly 85 percent fewer biology-related fallbacks in testing after a classifier retune. Angle lives on the Trending section above.</p>
-<h2>CLAUDE CODE TIP OF THE DAY</h2>
-<p>Parallel subagents for wide research: when a task means searching many files or sources, dispatch parallel agents so each explores one area. Faster and cheaper than one long serial pass, this brief itself was built with three of them running the source sweep at once.</p>
-<h2>SOURCES CHECKED</h2>
-<p>Anthropic Claude Code CHANGELOG (direct), Anthropic API release notes (direct), Anthropic system prompts release notes (direct), Anthropic news, Anthropic engineering, OpenAI ChatGPT release notes, OpenAI API changelog, OpenAI news, Google Gemini changelog, Google AI blog, DeepMind blog, Cursor changelog, Vercel changelog, v0 changelog, Devin/Windsurf changelog, GitHub Copilot changelog, MCP spec, n8n releases (direct via GitHub), Make.com blog, Trigger.dev changelog, Perplexity changelog, xAI news, Mistral news, Meta AI blog, DeepSeek news, Moonshot/Kimi news, ElevenLabs changelog, HeyGen blog, Higgsfield updates, Runway changelog, Shopify changelog, Klaviyo what&#x27;s new, Meta for Business news, X search (5 queries), Hermes/agency/tool-launch ad-hoc searches.</p>
-<p>SOURCES UNAVAILABLE (egress-blocked, WebSearch fallback used)</p>
-<p><a href="https://www.google.com/url?q=http://anthropic.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,">https://www.google.com/url?q=http://anthropic.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://openai.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,">https://www.google.com/url?q=http://openai.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://ai.google.dev&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,">https://www.google.com/url?q=http://ai.google.dev&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://blog.google&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,">https://www.google.com/url?q=http://blog.google&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://deepmind.google&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,">https://www.google.com/url?q=http://deepmind.google&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://cursor.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,">https://www.google.com/url?q=http://cursor.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://vercel.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,">https://www.google.com/url?q=http://vercel.com&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://v0.app&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,">https://www.google.com/url?q=http://v0.app&amp;source=gmail&amp;ust=1786425700589000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://docs.devin.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://docs.devin.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> github.blog, <a href="https://www.google.com/url?q=http://modelcontextprotocol.io&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://modelcontextprotocol.io&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://make.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://make.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://trigger.dev&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://trigger.dev&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://perplexity.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://perplexity.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://x.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://x.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://mistral.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://mistral.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://ai.meta.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://ai.meta.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://api-docs.deepseek.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://api-docs.deepseek.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://elevenlabs.io&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://elevenlabs.io&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://heygen.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://heygen.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://higgsfield.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://higgsfield.ai&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://runwayml.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://runwayml.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://changelog.shopify.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://changelog.shopify.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://klaviyo.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://klaviyo.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://facebook.com/business&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E.">https://www.google.com/url?q=http://facebook.com/business&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E.</a> Only <a href="https://www.google.com/url?q=http://raw.githubusercontent.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://raw.githubusercontent.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://platform.claude.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,">https://www.google.com/url?q=http://platform.claude.com&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E,</a> and <a href="https://www.google.com/url?q=http://github.com/n8n-io&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E">https://www.google.com/url?q=http://github.com/n8n-io&amp;source=gmail&amp;ust=1786425700590000&amp;sa=E</a> responded to direct WebFetch.</p>
-<h2>STORYBANK (NOTION)</h2>
-<p>Not written this run, the Notion MCP requires OAuth not available in this non-interactive session. 3 angles above (Claude Code auto mode, ChatGPT Voice, Higgsfield likeness licensing) are queued to log once a manual /ai-radar run has Notion connected.</p>
-<div class="foot">AI Radar · generated for RABBIO + Mizan AI · 10 Aug 2026</div>
-</div></body></html>
+  :root{
+    --bg:#0e0f13; --panel:#16181f; --panel2:#1d2029; --line:#2a2e3a;
+    --text:#e8eaf0; --muted:#9aa0ad; --accent:#7C4DFF; --accent2:#a98bff;
+    --ecom:#ff5c7c; --ok:#3ddc97; --trend:#ffb703; --warn:#ffb703;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 18px 64px}
+  header h1{margin:0 0 4px;font-size:24px;letter-spacing:-.3px}
+  header .sub{color:var(--muted);font-size:13px}
+  .summary{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 22px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:10px 14px;min-width:120px}
+  .stat b{display:block;font-size:22px}
+  .stat span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);
+    padding-bottom:10px;margin-bottom:18px;position:sticky;top:0;background:var(--bg);
+    padding-top:10px;z-index:5}
+  .tab-btn{background:var(--panel);color:var(--muted);border:1px solid var(--line);
+    border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;white-space:nowrap}
+  .tab-btn:hover{color:var(--text)}
+  .tab-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .tab-btn .badge{display:inline-block;margin-left:6px;background:rgba(255,255,255,.18);
+    border-radius:999px;padding:0 7px;font-size:11px}
+  .panel{display:none}
+  .panel.active{display:block}
+  .cards{display:flex;flex-direction:column;gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  .card .top{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .card h3{margin:0;font-size:16px;letter-spacing:-.2px}
+  .card .meta{color:var(--muted);font-size:12px}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;
+    border:1px solid var(--line);color:var(--muted);margin-right:6px}
+  .pill.kind{color:var(--accent2);border-color:var(--accent)}
+  .card p{margin:8px 0 0;color:#cdd1db}
+  .card a.src{display:inline-block;margin-top:8px;color:var(--accent2);
+    font-size:13px;text-decoration:none}
+  .card a.src:hover{text-decoration:underline}
+  .angle{margin-top:10px;background:var(--panel2);border:1px solid var(--line);
+    border-left:3px solid var(--accent);border-radius:10px;padding:10px 12px}
+  .angle .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--accent2)}
+  .angle .hook{font-weight:600;margin:2px 0 6px}
+  .angle .why{color:var(--muted);font-size:13px}
+  .card.trend{border-color:var(--trend);background:linear-gradient(180deg,#1a1620,var(--panel))}
+  .evidence{margin-top:8px;font-size:12px;color:var(--trend)}
+  .vids{margin:8px 0 0;padding-left:18px;font-size:13px;color:#cdd1db}
+  .vids li{margin:4px 0}
+  .vids a{color:var(--accent2);text-decoration:none}
+  .vids a:hover{text-decoration:underline}
+  .vids .meta{display:block;color:var(--muted);font-size:11px}
+  .pill.lenstag{color:var(--muted);border-color:var(--line)}
+  .pill.unranked{color:var(--warn);border-color:var(--warn);vertical-align:middle}
+  .gate{margin-top:8px;font-size:11px;color:var(--warn)}
+  .gate code{color:var(--warn)}
+  .stale{background:#3a1418;border:1px solid var(--ecom);color:#ffd7dd;
+         border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:14px}
+  .noteBox{background:#231d10;border:1px solid var(--trend);color:#ffe6ad;
+         border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:13px}
+  .tip{background:linear-gradient(135deg,#1d2029,#211a33);border:1px solid var(--accent);
+    border-radius:14px;padding:18px}
+  .tip .lbl{color:var(--accent2);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .empty{color:var(--muted);padding:20px;text-align:center}
+  footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+  .srclist{columns:2;gap:18px;font-size:13px;color:var(--muted)}
+  @media(max-width:560px){.srclist{columns:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📡 AI Radar — 10 Aug 2026</h1>
+    <div class="sub">Six lenses · what the channels are actually covering · YouTube angles on everything</div>
+  </header>
+
+  <div class="summary">
+    <div class="stat"><b>3</b><span>New drops</span></div>
+    <div class="stat"><b>2</b><span>Trending topics (stale)</span></div>
+    <div class="stat"><b>0</b><span>Channels swept live</span></div>
+    <div class="stat"><b>05:17 UTC</b><span>Generated</span></div>
+  </div>
+
+  <div class="noteBox">
+    ⚠ Notion is not authorized in this session (StoryBank write skipped — same as 08-09). ⚠ No fresh
+    YouTube channel sweep: <code>radar/channels.py</code> needs an OAuth token not present in this
+    cloud environment. Trending tab below reuses the 2026-08-07 counted sweep, now <b>3 days stale</b>.
+    ⚠ Almost every vendor domain was <code>EGRESS_BLOCKED</code> for direct fetch this run; WebSearch
+    fallback was used for all but 3 sources. Today was genuinely quiet: most of what three sweep
+    agents found had already been logged by the 08-07/08-08/08-09 runs (Claude Code 2.1.225/226,
+    Managed Agents session budgets, Fable 5 biology safeguards, Kimi K3 sandbox escape, Hermes
+    Agent v0.20.0, Vercel×Hermes gateway) — deduped out rather than repeated.
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="trending">🔥 Trending <span class="badge">2</span></button>
+    <button class="tab-btn" data-tab="models">Models</button>
+    <button class="tab-btn" data-tab="agents">Agents</button>
+    <button class="tab-btn" data-tab="automation">Automation</button>
+    <button class="tab-btn" data-tab="content">Content</button>
+    <button class="tab-btn" data-tab="ecom">Ecom</button>
+    <button class="tab-btn" data-tab="industry">Industry</button>
+    <button class="tab-btn" data-tab="tip">💡 Claude tip</button>
+    <button class="tab-btn" data-tab="all">All / sources</button>
+  </div>
+
+  <!-- ===== TRENDING ===== -->
+  <div class="panel active" id="trending">
+    <p class="empty" style="margin-bottom:16px">Computed by <code>radar/channels.py</code>: a topic
+      counts only when <b>3+ distinct channels</b> covered it inside 14 days. <b>This run could not
+      re-sweep</b> (no OAuth token in this cloud environment) — the two cards below are the
+      2026-08-07 counted result, now 3 days old. Treat as directionally true, not current.</p>
+    <div class="cards">
+      <div class="card trend">
+        <div class="top"><h3>Opus 5</h3><div class="meta">4 channels · 168,009 views</div></div>
+        <div class="evidence">David Ondrej · Nate Herk | AI Automation · Nick Saraev · The AI Daily Brief (as of 2026-08-07, 14-day window)</div>
+        <ul class="vids">
+          <li><a href="https://youtu.be/2J3uX8iRNng">I Tested Opus 5 vs. Fable 5. What You Need to Know.</a>
+            <span class="meta">Nate Herk | AI Automation · 2026-07-24 · 88,741 views</span></li>
+          <li><a href="https://youtu.be/k1DTxuBur-Y">I Spent $400 Benching Opus-5. Here's What It Can Do</a>
+            <span class="meta">Nick Saraev · 2026-07-24 · 62,632 views</span></li>
+        </ul>
+        <div class="angle">
+          <div class="lbl">YouTube angle (standing, not new today)</div>
+          <div class="hook">Everyone benchmarked Opus 5 in week one. Nobody's shown what breaks on week three.</div>
+          <div class="why">Reaction videos to this launch are two weeks stale now — the surviving angle is a real job run on it, cost and failure included, per the standing trend (Nick Saraev's format). — <em>tie: Mizan build video with receipts, or a "what I'd actually pay for" audit</em></div>
+          <div class="gate">⚠ needs demand check: <code>content-OS/tools/ideas/demand.py</code></div>
+        </div>
+      </div>
+      <div class="card trend">
+        <div class="top"><h3>Fable 5</h3><div class="meta">4 channels · 104,470 views</div></div>
+        <div class="evidence">AI News & Strategy Daily | Nate B Jones · Jack Roberts · Nate Herk | AI Automation · The AI Daily Brief (as of 2026-08-07, 14-day window)</div>
+        <ul class="vids">
+          <li><a href="https://youtu.be/l_060SZwBeo">The Fable 5 ban taught companies one thing #AI #Claude #Fable5</a>
+            <span class="meta">AI News & Strategy Daily | Nate B Jones · 2026-07-29 · 11,059 views</span></li>
+        </ul>
+        <div class="angle">
+          <div class="lbl">YouTube angle</div>
+          <div class="hook">Anthropic just quietly fixed the thing that got Fable 5 banned in places.</div>
+          <div class="why">The 2026-08-07 biology-safeguard retune (see Industry tab) cuts the exact failure mode the "ban" videos were about — a follow-up angle nobody else has made yet because it's a docs change, not a launch. — <em>tie: "the drama is already resolved" video, positions him as reading the actual changelog instead of reacting to headlines</em></div>
+          <div class="gate">⚠ needs demand check: <code>content-OS/tools/ideas/demand.py</code></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin:26px 0 8px">The standing trend</h3>
+    <p class="empty" style="text-align:left;padding:0 0 8px">From <code>radar/trend-now.md</code> (reviewed 2026-08-07, unchanged): the work moved from
+      prompting to orchestrating. Coding agents are the default interface, agent-design (skills,
+      sub-agents, MCP, stop conditions) is the sellable skill, frontier launches now arrive in
+      pairs and reacting to them within 24h is a losing format at his size. Today's Claude Code
+      auto-mode story (below) is a direct instance of #1 and #2.</p>
+
+    <h3 style="margin:26px 0 8px">X chatter <span class="pill unranked">unranked</span></h3>
+    <p class="empty" style="text-align:left;padding:0 0 8px">No X API key — nothing below is ranked, corroboration only.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="top"><h3>Claude Code auto mode default — corroborated 4 ways</h3><div class="meta">2026-08-08/09</div></div>
+        <p>Official @ClaudeDevs and @claudeai accounts, TechCrunch (08-09), and Simon Willison's blog
+          (08-08) are all covering the same story: auto mode becomes the default permission mode
+          on 2026-08-14. Strong corroboration — folded into the Agents tab as a full item, not left
+          here as a rumor.</p>
+      </div>
+      <div class="card">
+        <div class="top"><h3>Everything else queried</h3><div class="meta">last 48h</div></div>
+        <p>site:x.com searches for "MCP agent", "AI automation agency", and "n8n OR make.com workflow"
+          returned nothing dated inside the window — old posts only, no fresh corroborated topic.
+          One search pass returned fabricated-looking engagement numbers (a "3.2M impressions" tweet,
+          a "4M views" tweet) that did not match any real result underneath — discarded as
+          model-invented filler, not reported as fact.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODELS ===== -->
+  <div class="panel" id="models"><div class="cards">
+    <div class="card">
+      <div class="top"><h3>ChatGPT Voice: file uploads + Projects support, Live set as default</h3>
+        <div class="meta">OpenAI · ~2026-08-08</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">models</span></div>
+      <p>You can now upload a file mid-voice-conversation and ask about it, and use voice inside
+        Projects referencing recent project chats/sources/instructions. "Live" (the newer voice
+        experience) is now the default for Enterprise/Edu/Healthcare workspaces. Corroborated via
+        WebSearch against OpenAI's Enterprise release-notes page; exact publish date not
+        independently pinned beyond "around Aug 8" — treat the date as approximate.</p>
+      <a class="src" href="https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">ChatGPT Voice just stopped being a toy and started reading your files.</div>
+        <div class="why">Voice-first AI work has been a gimmick until now — a mode that can actually
+          reference an uploaded doc or a live project mid-conversation is usable for a real client
+          workflow, not a demo. — <em>tie: hands-free client-facing demo, or a Mizan pitch angle
+          ("your team can just talk to the system now")</em></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Qwen3.8-Max — open weights expected this week</h3>
+        <div class="meta">Alibaba · announced 2026-08-03, watch window</div></div>
+      <div><span class="pill kind">new-model</span><span class="pill lenstag">models</span></div>
+      <p>2.4T-parameter (95B active) MoE multimodal model, 1M-token context, API already live.
+        Open weights were reported as "slated for the week of Aug 10" at announcement time — outside
+        this run's confirmed window, flagged as a watch item rather than a confirmed drop. Will
+        re-check for the actual open-weights date on the next run.</p>
+      <a class="src" href="https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle — hold until weights actually land</div>
+        <div class="hook">A 2.4-trillion-parameter open-weight model, this week, for free.</div>
+        <div class="why">If the open-weights release actually lands, it's one of the largest open
+          models available to self-host — relevant to anyone pitching "your own model, your own
+          infra" as an automation differentiator. — <em>tie: build video once weights are
+          confirmed, not before</em></div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- ===== AGENTS ===== -->
+  <div class="panel" id="agents"><div class="cards">
+    <div class="card">
+      <div class="top"><h3>Claude Code: auto mode becomes the default permission mode (Pro/Max/Team)</h3>
+        <div class="meta">Anthropic · effective 2026-08-14</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>Starting 2026-08-14, Claude Code's default permission mode switches from manual per-command
+        approval to "auto" — a classifier decides which commands are safe to run without asking.
+        Anthropic's own testing cites an 89% catch rate on dangerous commands. Corroborated by
+        official @ClaudeDevs/@claudeai accounts, TechCrunch (2026-08-09), and Simon Willison's blog
+        (2026-08-08) — four independent, high-quality sources agreeing on the same date and mechanism.
+        This is the single biggest item this run.</p>
+      <a class="src" href="https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">In 4 days, Claude Code stops asking your permission by default.</div>
+        <div class="why">Every daily Claude Code user hits this Aug 14 whether they read the changelog
+          or not — what auto mode actually allows/blocks, and how to opt back into manual, is a
+          concrete, timely, practical video with zero competition yet (it hasn't shipped). —
+          <em>tie: build video on a real Mizan client repo showing what auto mode does and doesn't
+          catch, doubles as a trust/safety talking point for the automation pitch</em></div>
+        <div class="gate">⚠ needs demand check: <code>content-OS/tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- ===== AUTOMATION ===== -->
+  <div class="panel" id="automation"><div class="cards">
+    <p class="empty">Nothing new today. n8n shipped two patch releases (2.33.6/2.33.7) and two
+      pre-releases on 2026-08-07 — bug fixes only, and already logged by the 2026-08-08 run.
+      Make.com and Trigger.dev pages were egress-blocked with nothing confirmed in-window via
+      search. This lens stays thin until something ships worth a card.</p>
+  </div></div>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="panel" id="content"><div class="cards">
+    <div class="card">
+      <div class="top"><h3>Higgsfield's fully-AI feature film gets the "this business model works" treatment</h3>
+        <div class="meta">Forbes coverage · 2026-08-08</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">content</span></div>
+      <p>Forbes published analysis (2026-08-08) of Higgsfield's AI-generated feature film ("The
+        Cully Hill Boys", shown in NYC 2026-08-05) arguing likeness-licensing — paying real people
+        for the rights to their face/voice in AI content — is now a working, scalable business
+        model, not a novelty. Could not fetch the Forbes article body directly (blocked); treating
+        specifics beyond headline/date/topic as unconfirmed.</p>
+      <a class="src" href="https://www.forbes.com/sites/luisromero/2026/08/08/higgsfields-latest-ai-film-proves-likeness-licensing-works-and-scales/">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">People are getting paid to let AI wear their face in a movie.</div>
+        <div class="why">Likeness licensing turning into a real line item is directly adjacent to
+          the HeyGen/avatar work already in the pipeline — a business-model explainer has an
+          audience beyond just AI-tool viewers. — <em>tie: creator-economy commentary, or a
+          practical "how avatar licensing actually works" build video</em></div>
+        <div class="gate">⚠ needs demand check: <code>content-OS/tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- ===== ECOM ===== -->
+  <div class="panel" id="ecom"><div class="cards">
+    <p class="empty">Nothing confirmed in window. Shopify, Klaviyo, and Meta for Business were all
+      egress-blocked for direct fetch; WebSearch found only items dated before 2026-08-07 or with
+      no confirmable date. One lens of six, and it was genuinely quiet today.</p>
+  </div></div>
+
+  <!-- ===== INDUSTRY ===== -->
+  <div class="panel" id="industry"><div class="cards">
+    <div class="card">
+      <div class="top"><h3>Gemini in Classroom expands to K-12 / higher-ed students</h3>
+        <div class="meta">Google Workspace · 2026-08-10</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">industry</span></div>
+      <p>Rollout of Gemini access to students of any age already granted access by a school admin,
+        visible within 1-3 days. Education-vertical adoption story, not directly build-relevant —
+        filed for completeness, no angle attached, this is filler.</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Reminder: Fable 5's biology safeguards were retuned this week</h3>
+        <div class="meta">Anthropic · 2026-08-07, already logged 08-07</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">industry</span></div>
+      <p>Cross-referenced here because it's the substance behind the Fable 5 trend card above:
+        Anthropic cut biology-related fallback routing by ~85% in testing by retuning the
+        classifier behind Fable 5. Not a new drop today — filed under Industry for context, the
+        actual angle lives on the Trending tab.</p>
+    </div>
+  </div></div>
+
+  <!-- ===== CLAUDE TIP ===== -->
+  <div class="panel" id="tip">
+    <div class="tip">
+      <div class="lbl">Claude Code tip of the day</div>
+      <h3 style="margin:6px 0 8px">Parallel subagents for wide research</h3>
+      <p style="margin:0;color:#cdd1db">When a task means searching many files or sources, dispatch
+        parallel agents so each explores one area. Faster and cheaper than one long serial pass —
+        this brief itself was built with three of them running the source sweep at once.</p>
+    </div>
+  </div>
+
+  <!-- ===== ALL / SOURCES ===== -->
+  <div class="panel" id="all">
+    <footer>
+      <strong>Sources checked (fetched or WebSearch fallback):</strong>
+      <div class="srclist">
+        Anthropic Claude Code CHANGELOG (direct) · Anthropic API release notes (direct) ·
+        Anthropic system prompts release notes (direct) · Anthropic news · Anthropic engineering ·
+        OpenAI ChatGPT release notes · OpenAI API changelog · OpenAI news · Google Gemini changelog ·
+        Google AI blog · DeepMind blog · Cursor changelog · Vercel changelog · v0 changelog ·
+        Devin/Windsurf changelog · GitHub Copilot changelog · MCP spec · n8n releases (direct via
+        GitHub) · Make.com blog · Trigger.dev changelog · Perplexity changelog · xAI news ·
+        Mistral news · Meta AI blog · DeepSeek news · Moonshot/Kimi news · ElevenLabs changelog ·
+        HeyGen blog · Higgsfield updates · Runway changelog · Shopify changelog · Klaviyo what's new ·
+        Meta for Business news · X search (5 queries) · Hermes/agency/tool-launch ad-hoc searches
+      </div>
+      <p style="margin-top:12px"><strong>Unavailable this run (egress-blocked, WebSearch fallback used):</strong>
+        anthropic.com, openai.com, ai.google.dev, blog.google, deepmind.google, cursor.com,
+        vercel.com, v0.app, docs.devin.ai, github.blog, modelcontextprotocol.io, make.com,
+        trigger.dev, perplexity.ai, x.ai, mistral.ai, ai.meta.com, api-docs.deepseek.com,
+        elevenlabs.io, heygen.com, higgsfield.ai, runwayml.com, changelog.shopify.com,
+        klaviyo.com, facebook.com/business. Only raw.githubusercontent.com, platform.claude.com,
+        and github.com/n8n-io responded to direct WebFetch.</p>
+      <p style="margin-top:8px"><strong>StoryBank (Notion):</strong> not written this run — the Notion
+        MCP requires OAuth not available in this non-interactive cloud session. 3 angles above
+        (Claude Code auto mode, ChatGPT Voice, Higgsfield likeness licensing) are queued to log
+        once a manual <code>/ai-radar</code> run has Notion connected.</p>
+    </footer>
+  </div>
+
+  <footer>Generated by the <code>ai-radar</code> skill · mahmoudOS · 2026-08-10 05:17 UTC</footer>
+</div>
+
+<script>
+  document.querySelectorAll('.tab-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-tab');
+      document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+      document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+      btn.classList.add('active');
+      var panel = document.getElementById(id);
+      if(panel){panel.classList.add('active')}
+    });
+  });
+</script>
+</body>
+</html>
