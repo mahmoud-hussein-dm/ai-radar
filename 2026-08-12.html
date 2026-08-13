@@ -1,54 +1,417 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Radar - 12 Aug 2026 - 13 drops, 0 trending</title>
+<title>AI Radar, 12 Aug 2026</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#0e0f13;color:#e8eaf0;
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
-.top{border-bottom:1px solid #2a2e3a;padding-bottom:16px;margin-bottom:24px}
-h1{font-size:26px;margin:0 0 6px;letter-spacing:-.3px}
-.sub{color:#9aa0ad;font-size:14px}
-h2{font-size:18px;margin:30px 0 8px;color:#fff;letter-spacing:-.2px}
-p{margin:10px 0;color:#cdd1db}
-a{color:#a98bff;word-break:break-word}
-.foot{margin-top:40px;border-top:1px solid #2a2e3a;padding-top:14px;color:#6b7180;font-size:12px}
-</style></head>
-<body><div class="wrap">
-<div class="top"><h1>📡 AI Radar</h1><div class="sub">12 Aug 2026 · AI Radar - 12 Aug 2026 - 13 drops, 0 trending</div></div>
-<p>AI RADAR - 12 Aug 2026<br>13 new drops, 0 counted trending topics, 0 corroborated X items</p>
-<h2>GAPS THIS RUN</h2>
-<p>Last successful run: 2026-08-11, 1 day ago, radar is healthy. But: no counted YouTube trend (channels.py needs a local OAuth token this environment does not have, cached sweep is 5 days stale so nothing was reused). StoryBank in Notion is unreachable, no Notion tool available this session, so all 13 angles below are in this email only. content-OS is not checked out here, so the demand gate is flagged on every angle but was not actually run.</p>
-<h2>TL;DR</h2>
-<p>Two real stories today, both Anthropic. Sonnet 5&#x27;s introductory pricing is now permanent, the scheduled September price hike is canceled, directly relevant since this session runs on Sonnet 5. Separately, Anthropic locked down $9B+ in new compute this week (a Riot Platforms deal plus a new Theseus data center joint venture with Macquarie and GIC) and rolled out invisible watermarking on every Claude output worldwide, not just the EU. Everything else is incremental: agent-tooling bugfixes from Vercel, Devin and GitHub Copilot, an n8n pre-release fixing the exact bug class breaking AI agent workflows, and xAI&#x27;s Grok Bot going to public beta. No counted YouTube trend this run; the loose channel impression points at Claude Code agent/memory/MCP content clustering, unconfirmed.</p>
-<h2>TRENDING</h2>
-<p>No counted trend this run, see gap note above.</p>
-<p>Standing trend (radar/trend-now.md, reviewed 2026-08-07): the work moved from prompting to orchestrating: coding agents as default interface, agent design as a sellable skill, frontier launches arriving in pairs, AI-slop fatigue, agency model getting publicly audited. Today&#x27;s Anthropic compute deals and Sonnet 5 pricing both read as data points for this.</p>
-<p>Channel impression, not a counted trend: Jack Roberts updated his &quot;Claude Code and Hermes, 0 to Hero&quot; course around 08-09. Leon van Zyl posted on building n8n workflows with Claude Code via MCP, and on running Claude Code as an MCP server inside n8n/Flowise. Nate B Jones is adjacent with a &quot;Token Saver Skill&quot; post. 2 to 3 channels on a cluster, self-reported from search, not the counted 3-channel/14-day threshold.</p>
-<p>X chatter, unranked: nothing corroborated this window, all 5 queries, last 48h. No engagement data exists so nothing can be ranked. Two single-source, unconfirmed-timing flags noted (a &quot;Claude Code going viral&quot; claim, a paid n8n/MCP masterclass post), not reported as news.</p>
-<h2>MODELS</h2>
-<p>Anthropic makes Sonnet 5 pricing permanent, cancels the scheduled hike<br>Anthropic, 2026-08-10<br>The introductory Sonnet 5 rate ($2/$10 per MTok) is now the standing price. The increase to $3/$15 scheduled for September 1 will not happen.<br>Source: <a href="https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/api&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E">https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/api&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E</a><br>YouTube angle: &quot;Anthropic just canceled a price hike that was already on the calendar.&quot; Token economics are the lever people underrate when picking a model. Tie: build/teach video on real cost-per-session using his own model-cost.py numbers. Needs demand check.</p>
-<p>Anthropic rolls out invisible watermarking worldwide, not just the EU<br>Anthropic, 2026-08-11<br>Claude now embeds invisible watermarks in generated text and C2PA metadata in generated images/SVGs globally, to satisfy EU AI Act Article 50, applied everywhere rather than geofenced.<br>Source: <a href="https://www.google.com/url?q=https://www.anthropic.com/news&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E">https://www.google.com/url?q=https://www.anthropic.com/news&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E</a><br>YouTube angle: &quot;Every Claude output now carries an invisible watermark, everywhere, not just in Europe.&quot; Content authenticity becoming default infrastructure, relevant to his own content-OS pipeline. Tie: what watermarking does and doesn&#x27;t survive. Needs demand check.</p>
-<p>xAI takes Grok Bot to public beta<br>xAI, 2026-08-11<br>Standalone Grok agent moves out of gated access to public beta, wider rollout teased, tied to Grok 4.6.<br>Source: <a href="https://www.google.com/url?q=https://x.ai/news&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E">https://www.google.com/url?q=https://x.ai/news&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E</a><br>YouTube angle: &quot;Grok just shipped its own standalone agent, ungated.&quot; A fourth serious standalone-agent entrant changes the tool-stack conversation with clients. Tie: compare/build video, Grok Bot vs Claude Code. Needs demand check.</p>
-<h2>AGENTS</h2>
-<p>Anthropic&#x27;s Compliance API now covers Cowork and Claude Code sessions<br>Anthropic, 2026-08-11<br>New beta endpoints let Enterprise orgs pull transcripts and metadata from local Cowork and Claude Code sessions for audit purposes.<br>Source: <a href="https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/api&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E">https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/api&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E</a><br>YouTube angle: &quot;Enterprises can now audit every Claude Code session your team runs.&quot; Removes a real objection selling AI implementation into regulated clients, the Mizan sales conversation. Tie: Mizan offer, enterprise-credibility angle. Needs demand check.</p>
-<p>Vercel Sandbox ships versioned open-source base images as the default runtime<br>Vercel, 2026-08-10<br>Sandbox now defaults to versioned, open-source base images preloaded with Node.js, Python and coding agents.<br>Source: <a href="https://www.google.com/url?q=https://vercel.com/changelog&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E">https://www.google.com/url?q=https://vercel.com/changelog&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E</a><br>YouTube angle: &quot;Vercel just made agent sandboxes ship with the runtime pre-baked.&quot; Tie: build video, an agent going from idea to deployed sandbox in one sitting. Needs demand check.</p>
-<p>Smaller agent-tooling updates, genuine filler, no dedicated angle:<br>- Claude Code 2.1.228 (08-11): bugfixes only, redraw stalls, Windows Git detection, /tui model-revert bug, Remote Control /resume data leak fix.<br>- Vercel Connect (08-11): vercel connect create now finishes entirely in the terminal for 100+ preset connectors.<br>- Devin Desktop 3.7.16 (08-11, unconfirmed via aggregator): write/apply_patch/notebook_edit refuse to write through a symlink, account IP allowlists enforced.<br>- GitHub Copilot on web (08-10): easier access to recent conversations, minimize/return to chat, token-spend indicators.</p>
-<h2>AUTOMATION</h2>
-<p>n8n 2.35.0 pre-release fixes the bug class breaking AI agent workflows<br>n8n, 2026-08-11<br>Bug-fix heavy pre-release: stops pre-tool-call text leaking into agent responses, fixes agent workflow tools, DB connections, OAuth2 param handling, AI model stream stability, webhook parsing.<br>Source: <a href="https://www.google.com/url?q=https://github.com/n8n-io/n8n/releases&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E">https://www.google.com/url?q=https://github.com/n8n-io/n8n/releases&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E</a><br>YouTube angle: &quot;n8n just quietly fixed the bug that was breaking every AI agent workflow.&quot; Exact failure mode a client-facing automation build hits, directly Mizan&#x27;s tooling. Tie: fix/build video verifying an n8n agent workflow before it ships to a client. Needs demand check.</p>
-<h2>CONTENT</h2>
-<p>ElevenLabs ships Dubbing v2 API<br>ElevenLabs, 2026-08-10, time unconfirmed<br>Project-based dubbing API, 90+ languages, editable JSON transcripts, regenerates only changed segments.<br>Source: <a href="https://www.google.com/url?q=https://elevenlabs.io/docs/changelog&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E">https://www.google.com/url?q=https://elevenlabs.io/docs/changelog&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E</a><br>YouTube angle: &quot;One API call now dubs a video into 90 languages and lets you fix the transcript after.&quot; Tie: test on one of his own uploads, publish before/after and the real cost. Needs demand check.</p>
-<h2>ECOM</h2>
-<p>Nothing new in the window. Shopify, Klaviyo and Meta for Business all checked, no dated item landed inside the last 30 to 36 hours.</p>
-<h2>INDUSTRY</h2>
-<p>Anthropic locks in $9B+ of new compute this week<br>Anthropic, 2026-08-10 to 2026-08-11<br>Two deals: a new Theseus Infrastructure joint venture with Macquarie Asset Management and GIC to build/lease dedicated US data centers, Anthropic as anchor tenant, covering 100% of grid-upgrade costs. Plus a roughly $9.1B compute deal with Riot Platforms for about 191MW of capacity out of Riot&#x27;s Rockdale, Texas facility, phased through 2027 to 2028.<br>Source: <a href="https://www.google.com/url?q=https://www.bloomberg.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E">https://www.google.com/url?q=https://www.bloomberg.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E</a><br>YouTube angle: &quot;Anthropic just signed away more than nine billion dollars in compute most people missed.&quot; Compute lock-in signals which labs are betting on existing in five years. Tie: &quot;the model math&quot; content, infrastructure commitments as the tell for lab durability. Needs demand check.</p>
-<h2>CLAUDE CODE TIP OF THE DAY</h2>
-<p>Slash skills are your shortcuts: typing /ai-radar, /blogpost, /ecom-operator fires the matching skill directly instead of describing the workflow each time.<br>Docs: <a href="https://www.google.com/url?q=https://docs.claude.com/en/docs/claude-code/overview&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E">https://www.google.com/url?q=https://docs.claude.com/en/docs/claude-code/overview&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E</a></p>
-<h2>SOURCES CHECKED</h2>
-<p>Anthropic (Claude Code changelog, API release notes, system prompts release notes, news, engineering blog), OpenAI (ChatGPT release notes, API changelog, news), Google (Gemini API changelog, AI blog, DeepMind blog), Cursor, Vercel, v0, Devin/Windsurf, GitHub Copilot, MCP spec, n8n, Make.com, Trigger.dev, Perplexity, xAI, Mistral, Meta AI/Llama, DeepSeek, Moonshot/Kimi, ElevenLabs, HeyGen, Higgsfield, Runway, Shopify, Klaviyo, Meta for Business, Nous Research/Hermes, plus 2 targeted searches and 5 X queries.</p>
-<p>Unavailable this run (WebSearch fallback used): <a href="https://www.google.com/url?q=http://anthropic.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://anthropic.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://openai.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://openai.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://ai.google.dev&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://ai.google.dev&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://blog.google&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://blog.google&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://deepmind.google&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://deepmind.google&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://cursor.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://cursor.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://vercel.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://vercel.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://v0.app&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://v0.app&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://docs.devin.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://docs.devin.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> github.blog, <a href="https://www.google.com/url?q=http://modelcontextprotocol.io&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://modelcontextprotocol.io&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://make.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://make.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://trigger.dev&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://trigger.dev&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://perplexity.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://perplexity.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://x.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://x.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://mistral.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://mistral.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://ai.meta.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://ai.meta.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://api-docs.deepseek.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://api-docs.deepseek.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://moonshotai.github.io&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://moonshotai.github.io&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://elevenlabs.io&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://elevenlabs.io&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://heygen.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://heygen.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://higgsfield.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://higgsfield.ai&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://runwayml.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://runwayml.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://changelog.shopify.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://changelog.shopify.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://klaviyo.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,">https://www.google.com/url?q=http://klaviyo.com&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://facebook.com/business&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E.">https://www.google.com/url?q=http://facebook.com/business&amp;source=gmail&amp;ust=1786598452670000&amp;sa=E.</a></p>
-<p>Excluded as duplicates already logged: Claude Code 2.1.227, GPT-5.6-Cyber/Daybreak launch, xAI Imagine Image 2.0.</p>
-<p>Generated by the ai-radar skill, mahmoudOS, 2026-08-12. Notion StoryBank write skipped this run, no Notion tool available in this session.</p>
-<div class="foot">AI Radar · generated for RABBIO + Mizan AI · 12 Aug 2026</div>
-</div></body></html>
+  :root{
+    --bg:#0e0f13; --panel:#16181f; --panel2:#1d2029; --line:#2a2e3a;
+    --text:#e8eaf0; --muted:#9aa0ad; --accent:#7C4DFF; --accent2:#a98bff;
+    --ecom:#ff5c7c; --ok:#3ddc97; --trend:#ffb703; --warn:#ffb703;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 18px 64px}
+  header h1{margin:0 0 4px;font-size:24px;letter-spacing:-.3px}
+  header .sub{color:var(--muted);font-size:13px}
+  .summary{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 22px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:10px 14px;min-width:120px}
+  .stat b{display:block;font-size:22px}
+  .stat span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);
+    padding-bottom:10px;margin-bottom:18px;position:sticky;top:0;background:var(--bg);
+    padding-top:10px;z-index:5}
+  .tab-btn{background:var(--panel);color:var(--muted);border:1px solid var(--line);
+    border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;white-space:nowrap}
+  .tab-btn:hover{color:var(--text)}
+  .tab-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .tab-btn .badge{display:inline-block;margin-left:6px;background:rgba(255,255,255,.18);
+    border-radius:999px;padding:0 7px;font-size:11px}
+  .panel{display:none}
+  .panel.active{display:block}
+  .cards{display:flex;flex-direction:column;gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  .card .top{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .card h3{margin:0;font-size:16px;letter-spacing:-.2px}
+  .card .meta{color:var(--muted);font-size:12px}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;
+    border:1px solid var(--line);color:var(--muted);margin-right:6px}
+  .pill.kind{color:var(--accent2);border-color:var(--accent)}
+  .card p{margin:8px 0 0;color:#cdd1db}
+  .card a.src{display:inline-block;margin-top:8px;color:var(--accent2);
+    font-size:13px;text-decoration:none}
+  .card a.src:hover{text-decoration:underline}
+  .angle{margin-top:10px;background:var(--panel2);border:1px solid var(--line);
+    border-left:3px solid var(--accent);border-radius:10px;padding:10px 12px}
+  .angle .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--accent2)}
+  .angle .hook{font-weight:600;margin:2px 0 6px}
+  .angle .why{color:var(--muted);font-size:13px}
+  .card.trend{border-color:var(--trend);background:linear-gradient(180deg,#1a1620,var(--panel))}
+  .evidence{margin-top:8px;font-size:12px;color:var(--trend)}
+  .vids{margin:8px 0 0;padding-left:18px;font-size:13px;color:#cdd1db}
+  .vids li{margin:4px 0}
+  .vids a{color:var(--accent2);text-decoration:none}
+  .vids a:hover{text-decoration:underline}
+  .vids .meta{display:block;color:var(--muted);font-size:11px}
+  .pill.lenstag{color:var(--muted);border-color:var(--line)}
+  .pill.unranked{color:var(--warn);border-color:var(--warn);vertical-align:middle}
+  .gate{margin-top:8px;font-size:11px;color:var(--warn)}
+  .gate code{color:var(--warn)}
+  .stale{background:#3a1418;border:1px solid var(--ecom);color:#ffd7dd;
+         border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:14px}
+  .gap{background:#241a06;border:1px solid var(--trend);color:#ffe4a8;
+       border-radius:12px;padding:12px 16px;margin-bottom:12px;font-size:13px}
+  .tip{background:linear-gradient(135deg,#1d2029,#211a33);border:1px solid var(--accent);
+    border-radius:14px;padding:18px}
+  .tip .lbl{color:var(--accent2);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .empty{color:var(--muted);padding:20px;text-align:center}
+  footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+  .srclist{columns:2;gap:18px;font-size:13px;color:var(--muted)}
+  .filler{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  .filler ul{margin:8px 0 0;padding-left:18px;color:#cdd1db;font-size:13px}
+  .filler li{margin:4px 0}
+  @media(max-width:560px){.srclist{columns:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AI Radar, 12 Aug 2026</h1>
+    <div class="sub">Six lenses, what the channels are actually covering, YouTube angles on everything</div>
+  </header>
+
+  <div class="summary">
+    <div class="stat"><b>13</b><span>New drops</span></div>
+    <div class="stat"><b>0</b><span>Trending topics (counted)</span></div>
+    <div class="stat"><b>0</b><span>Channels swept</span></div>
+    <div class="stat"><b>05:10 UTC</b><span>Generated</span></div>
+  </div>
+
+  <div class="gap">Last successful run: 2026-08-11, 1 day ago. Radar is healthy, no staleness
+    banner needed. But three gaps this run: <code>radar/channels.py</code> could not execute (no
+    OAuth token in this environment, only cached sweep is 5 days stale, so no counted trend is
+    reported rather than reusing stale data again). StoryBank (Notion) is unreachable, no Notion
+    tool was available in this session, so all 13 angles below are logged in this brief only.
+    <code>content-OS/tools/ideas/demand.py</code> is not checked out here, so the demand gate is
+    flagged on every angle but not actually run.</div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="trending">Trending <span class="badge">0</span></button>
+    <button class="tab-btn" data-tab="models">Models <span class="badge">3</span></button>
+    <button class="tab-btn" data-tab="agents">Agents <span class="badge">6</span></button>
+    <button class="tab-btn" data-tab="automation">Automation <span class="badge">1</span></button>
+    <button class="tab-btn" data-tab="content">Content <span class="badge">1</span></button>
+    <button class="tab-btn" data-tab="ecom">Ecom <span class="badge">0</span></button>
+    <button class="tab-btn" data-tab="industry">Industry <span class="badge">1</span></button>
+    <button class="tab-btn" data-tab="tip">Claude tip</button>
+    <button class="tab-btn" data-tab="all">Sources</button>
+  </div>
+
+  <!-- ===== TRENDING ===== -->
+  <div class="panel active" id="trending">
+    <p class="empty" style="margin-bottom:16px">Computed by <code>radar/channels.py</code>: a topic
+      counts only when <b>3+ distinct channels</b> covered it inside 14 days. No fresh sweep
+      exists this run (no local OAuth token, cached feed 5 days stale), so no counted trend is
+      claimed. This is a real gap, not a quiet week.</p>
+
+    <h3 style="margin:10px 0 8px">The standing trend</h3>
+    <div class="cards">
+      <div class="card trend">
+        <div class="top"><h3>The work moved from prompting to orchestrating</h3>
+          <div class="meta">radar/trend-now.md, reviewed 2026-08-07</div></div>
+        <p>Coding agents as the default interface, agent design as a sellable skill, frontier
+          launches arriving in pairs, AI-slop fatigue, and the agency model being publicly
+          audited. Today's Anthropic compute deals and the Sonnet 5 pricing move both read as
+          data points for this: the labs betting on being here in five years are the ones
+          locking in infrastructure and pricing now.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:26px 0 8px">Channel impression, NOT a counted trend</h3>
+    <p class="empty">WebSearch only, no API access, no counted threshold met. Could be
+      coincidence or a search gap. Not a trend claim.</p>
+    <div class="cards">
+      <div class="card">
+        <p>Jack Roberts updated his "Claude Code and Hermes, 0 to Hero" course around 2026-08-09
+          (agent memory, cron/background tasks, multi-model delegation). Leon van Zyl posted on
+          building n8n workflows with Claude Code via MCP, and separately on running Claude Code
+          itself as an MCP server inside n8n and Flowise. Nate B Jones is adjacent with a "Token
+          Saver Skill" post and a piece framing agent maintenance as the core 2026 skill. That is
+          2 to 3 channels on a Claude Code agent/memory/MCP cluster, self-reported from search,
+          not the counted 3-channel/14-day threshold.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:26px 0 8px">X chatter <span class="pill unranked">unranked</span></h3>
+    <p class="empty">No X API key, so there are no engagement numbers and none of this can be
+      ranked. Corroboration only.</p>
+    <div class="cards">
+      <div class="card">
+        <p>Nothing corroborated this window. Ran all 5 queries (Claude Code, MCP/agent, AI
+          automation agency, n8n/Make workflow, general discourse), last 48h. WebSearch could not
+          reliably confirm post timestamps, so nothing was upgraded to a trend claim. Two single
+          source, unconfirmed-timing flags surfaced and are not reported as news: a claim that
+          Claude Code content is "going mega viral" on X (one account, no verifiable engagement
+          data), and a post about auto-generating n8n workflows via Claude's MCP server, taught
+          as a paid masterclass (one account). Neither meets the two-independent-account bar.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODELS ===== -->
+  <div class="panel" id="models"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>Anthropic makes Sonnet 5 pricing permanent, cancels the scheduled hike</h3>
+        <div class="meta">Anthropic · 2026-08-10</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">models</span></div>
+      <p>The introductory Sonnet 5 rate ($2/$10 per MTok) is now the standing price. The increase
+        to $3/$15 scheduled for September 1 will not happen.</p>
+      <a class="src" href="https://platform.claude.com/docs/en/release-notes/api">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Anthropic just canceled a price hike that was already on the calendar.</div>
+        <div class="why">Token economics are the lever people underrate when picking a model,
+          and the "cache is 80% of the bill" model-routing math gets more favorable, not less,
+          with this locked in. <em>Tie: build/teach video on real cost-per-session using his own
+          model-cost.py numbers.</em></div>
+        <div class="gate">needs demand check: tools/ideas/demand.py</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>Anthropic rolls out invisible watermarking worldwide, not just the EU</h3>
+        <div class="meta">Anthropic · 2026-08-11</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">models</span></div>
+      <p>Claude now embeds invisible watermarks in generated text and C2PA metadata in generated
+        images/SVGs globally, to satisfy EU AI Act Article 50, applied everywhere rather than
+        geofenced. Reported to persist through copy-paste and survive light editing. Source page
+        unconfirmed exact URL, corroborated by TechCrunch, Euronews and The Register.</p>
+      <a class="src" href="https://www.anthropic.com/news">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Every Claude output now carries an invisible watermark, everywhere, not
+          just in Europe.</div>
+        <div class="why">Content authenticity is becoming default infrastructure rather than a
+          policy footnote, directly relevant for anyone shipping AI-made content at volume,
+          including his own content-OS pipeline. <em>Tie: community/build angle on what
+          watermarking does and doesn't survive (re-export, re-record, translation).</em></div>
+        <div class="gate">needs demand check: tools/ideas/demand.py</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>xAI takes Grok Bot to public beta</h3>
+        <div class="meta">xAI · 2026-08-11</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">models</span></div>
+      <p>Standalone Grok agent moves out of gated access to public beta; wider rollout teased for
+        the same window, tied to Grok 4.6.</p>
+      <a class="src" href="https://x.ai/news">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Grok just shipped its own standalone agent, ungated.</div>
+        <div class="why">A fourth serious standalone-agent entrant, alongside Claude Code, Codex
+          and Cursor, changes the competitive landscape for anyone recommending a tool stack to
+          clients. <em>Tie: quick compare/build video, same task through Grok Bot vs Claude Code,
+          cost and output side by side.</em></div>
+        <div class="gate">needs demand check: tools/ideas/demand.py</div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== AGENTS ===== -->
+  <div class="panel" id="agents"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>Anthropic's Compliance API now covers Cowork and Claude Code sessions</h3>
+        <div class="meta">Anthropic · 2026-08-11</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>New beta endpoints let Enterprise orgs pull transcripts and metadata from local Cowork
+        and Claude Code sessions for audit purposes.</p>
+      <a class="src" href="https://platform.claude.com/docs/en/release-notes/api">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Enterprises can now audit every Claude Code session your team runs.</div>
+        <div class="why">An audit trail removes a real objection agencies hit selling AI
+          implementation into regulated or larger clients, exactly the Mizan sales conversation.
+          <em>Tie: Mizan offer, enterprise-credibility angle, "here's how we prove what the agent
+          actually did."</em></div>
+        <div class="gate">needs demand check: tools/ideas/demand.py</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="top"><h3>Vercel Sandbox ships versioned open-source base images as the default runtime</h3>
+        <div class="meta">Vercel · 2026-08-10</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>Sandbox now defaults to versioned, open-source base images preloaded with Node.js,
+        Python and coding agents, replacing the prior runtime setup step.</p>
+      <a class="src" href="https://vercel.com/changelog">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Vercel just made agent sandboxes ship with the runtime pre-baked.</div>
+        <div class="why">Faster, more reproducible agent deployment infra, relevant to anyone
+          building or shipping an agent product rather than just prompting one. <em>Tie: build
+          video showing an agent going from idea to deployed sandbox in one sitting.</em></div>
+        <div class="gate">needs demand check: tools/ideas/demand.py</div>
+      </div>
+    </div>
+
+    <div class="card filler">
+      <h3 style="margin:0 0 6px;font-size:15px">Smaller agent-tooling updates, no dedicated angle, genuine filler</h3>
+      <ul>
+        <li><strong>Claude Code 2.1.228</strong> (2026-08-11): bugfixes only. Redraw stalls,
+          Windows Git detection, /tui model-revert bug, Remote Control /resume data leak fix.</li>
+        <li><strong>Vercel Connect</strong> (2026-08-11): <code>vercel connect create</code> now
+          finishes entirely in the terminal for 100+ preset connectors.</li>
+        <li><strong>Devin Desktop 3.7.16</strong> (2026-08-11, unconfirmed via aggregator):
+          write/apply_patch/notebook_edit tools now refuse to write through a symlink; account IP
+          allowlists enforced on automation webhooks.</li>
+        <li><strong>GitHub Copilot on web</strong> (2026-08-10): easier access to recent
+          conversations, minimize/return to chat, token-spend indicators.</li>
+      </ul>
+    </div>
+
+  </div></div>
+
+  <!-- ===== AUTOMATION ===== -->
+  <div class="panel" id="automation"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>n8n 2.35.0 pre-release fixes the bug class breaking AI agent workflows</h3>
+        <div class="meta">n8n · 2026-08-11</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">automation</span></div>
+      <p>Bug-fix heavy pre-release: stops pre-tool-call text leaking into agent responses, fixes
+        agent workflow tools, DB connections, OAuth2 param handling, AI model stream stability,
+        webhook parsing.</p>
+      <a class="src" href="https://github.com/n8n-io/n8n/releases">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">n8n just quietly fixed the bug that was breaking every AI agent workflow.</div>
+        <div class="why">This is the exact failure mode a client-facing automation build hits, an
+          agent node leaking internal prompt text into a customer-facing response, directly
+          Mizan's tooling. <em>Tie: fix/build video on what was breaking and how to verify an n8n
+          agent workflow isn't leaking internal text before it ships to a client.</em></div>
+        <div class="gate">needs demand check: tools/ideas/demand.py</div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="panel" id="content"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>ElevenLabs ships Dubbing v2 API</h3>
+        <div class="meta">ElevenLabs · 2026-08-10, time unconfirmed</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">content</span></div>
+      <p>Project-based dubbing API, 90+ languages, editable JSON transcripts, regenerates only the
+        segments that changed rather than the whole dub.</p>
+      <a class="src" href="https://elevenlabs.io/docs/changelog">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">One API call now dubs a video into 90 languages and lets you fix the
+          transcript after.</div>
+        <div class="why">Push-button localization changes the math on whether a channel is worth
+          translating, directly relevant to his own YouTube distribution reach. <em>Tie: test it
+          on one of his own uploads, publish the before/after and the real cost.</em></div>
+        <div class="gate">needs demand check: tools/ideas/demand.py</div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== ECOM ===== -->
+  <div class="panel" id="ecom"><div class="cards">
+    <p class="empty">Nothing new in the window. Shopify, Klaviyo and Meta for Business sources
+      all checked, no dated item landed inside the last ~30-36 hours.</p>
+  </div></div>
+
+  <!-- ===== INDUSTRY ===== -->
+  <div class="panel" id="industry"><div class="cards">
+
+    <div class="card">
+      <div class="top"><h3>Anthropic locks in $9B+ of new compute this week</h3>
+        <div class="meta">Anthropic · 2026-08-10 to 2026-08-11</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">industry</span></div>
+      <p>Two separate deals: a new "Theseus Infrastructure" joint venture with Macquarie Asset
+        Management and GIC to build/lease dedicated US data centers with Anthropic as anchor
+        tenant (Anthropic covers 100% of grid-upgrade costs), plus a roughly $9.1B compute deal
+        with Riot Platforms for ~191MW of capacity out of Riot's Rockdale, Texas facility, phased
+        through 2027 to 2028. Reported by Bloomberg, corroborated by a Macquarie disclosure.</p>
+      <a class="src" href="https://www.bloomberg.com">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Anthropic just signed away more than nine billion dollars in compute
+          most people missed.</div>
+        <div class="why">Compute lock-in at this scale is a direct signal of which labs are
+          betting on existing in five years, useful context when a client asks "will this model
+          still be around." <em>Tie: "the model math" content, infrastructure commitments as the
+          tell for lab durability, tied to why he recommends the models he recommends.</em></div>
+        <div class="gate">needs demand check: tools/ideas/demand.py</div>
+      </div>
+    </div>
+
+  </div></div>
+
+  <!-- ===== CLAUDE TIP ===== -->
+  <div class="panel" id="tip">
+    <div class="tip">
+      <div class="lbl">Claude Code tip of the day</div>
+      <h3 style="margin:6px 0 8px">/ slash skills are your shortcuts</h3>
+      <p style="margin:0;color:#cdd1db">Typing /ai-radar, /blogpost, /ecom-operator fires the
+        matching skill directly instead of describing the workflow each time.</p>
+      <a href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener"
+         style="display:inline-block;margin-top:12px;color:var(--accent2);font-size:13px;text-decoration:none;">
+        Read the docs
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== SOURCES ===== -->
+  <div class="panel" id="all">
+    <footer>
+      <strong>Sources checked:</strong>
+      <div class="srclist">Anthropic (Claude Code changelog, API release notes, system prompts
+        release notes, news, engineering blog), OpenAI (ChatGPT release notes, API changelog,
+        news), Google (Gemini API changelog, AI blog, DeepMind blog), Cursor, Vercel, v0,
+        Devin/Windsurf, GitHub Copilot, MCP spec, n8n, Make.com, Trigger.dev, Perplexity, xAI,
+        Mistral, Meta AI/Llama, DeepSeek, Moonshot/Kimi, ElevenLabs, HeyGen, Higgsfield, Runway,
+        Shopify, Klaviyo, Meta for Business, Nous Research/Hermes, plus 2 targeted searches (AI
+        agency/automation making money, new AI tool launch this week) and 5 X queries.</div>
+      <p style="margin-top:12px"><strong>Unavailable this run (WebSearch fallback used
+        instead):</strong> anthropic.com, openai.com, ai.google.dev, blog.google, deepmind.google,
+        cursor.com, vercel.com, v0.app, docs.devin.ai, github.blog, modelcontextprotocol.io,
+        make.com, trigger.dev, perplexity.ai, x.ai, mistral.ai, ai.meta.com, api-docs.deepseek.com,
+        moonshotai.github.io, elevenlabs.io, heygen.com, higgsfield.ai, runwayml.com,
+        changelog.shopify.com, klaviyo.com, facebook.com/business, all egress-blocked on direct
+        WebFetch. raw.githubusercontent.com, platform.claude.com and github.com/n8n-io responded
+        directly.</p>
+      <p style="margin-top:12px"><strong>Excluded as duplicates already in seen.json:</strong>
+        Claude Code 2.1.227 (logged 2026-08-11), GPT-5.6-Cyber/Daybreak launch (logged
+        2026-08-11), xAI Imagine Image 2.0 (logged 2026-08-07 under a different slug, same
+        story).</p>
+    </footer>
+  </div>
+
+  <footer>Generated by the ai-radar skill, mahmoudOS, 2026-08-12</footer>
+</div>
+
+<script>
+  document.querySelectorAll('.tab-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-tab');
+      document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+      document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+      btn.classList.add('active');
+      var panel = document.getElementById(id);
+      if(panel){panel.classList.add('active')}
+    });
+  });
+</script>
+</body>
+</html>
