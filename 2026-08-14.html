@@ -1,57 +1,404 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Radar - 14 Aug 2026 - 10 drops, 0 trending</title>
+<title>AI Radar - 14 Aug 2026</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#0e0f13;color:#e8eaf0;
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
-.top{border-bottom:1px solid #2a2e3a;padding-bottom:16px;margin-bottom:24px}
-h1{font-size:26px;margin:0 0 6px;letter-spacing:-.3px}
-.sub{color:#9aa0ad;font-size:14px}
-h2{font-size:18px;margin:30px 0 8px;color:#fff;letter-spacing:-.2px}
-p{margin:10px 0;color:#cdd1db}
-a{color:#a98bff;word-break:break-word}
-.foot{margin-top:40px;border-top:1px solid #2a2e3a;padding-top:14px;color:#6b7180;font-size:12px}
-</style></head>
-<body><div class="wrap">
-<div class="top"><h1>📡 AI Radar</h1><div class="sub">14 Aug 2026 · AI Radar - 14 Aug 2026 - 10 drops, 0 trending</div></div>
-<h2>AI RADAR - 14 AUG 2026</h2>
-<p>Six lenses, everything gets a YouTube angle</p>
-<p>RUN GAPS, UP FRONT: radar/channels.py could not run this session (no OAuth token), and the cached YouTube sweep is now 7 days stale, outside its own 14-day window - no counted trend this run. StoryBank (Notion) is unreachable this run, the Notion MCP requires OAuth not available in this non-interactive session - all 10 angles below are logged in the brief files only, none reached Notion. content-OS is not checked out here, so the demand gate could not run - every angle is flagged needs-demand-check.</p>
-<h2>== TL;DR ==</h2>
-<p>Genuinely busy infrastructure day, still no single frontier model launch to lead with. Biggest story for him personally: Claude Code jumped to 2.1.231 to 2.1.232 - subagent forking on by default with full conversation and prompt-cache inheritance, @-mention another Claude session by name, an MCP OAuth sign-in bug fixed. On models: OpenAI shipped an Ultrafast mode for GPT-5.6 Sol (14x faster via Cerebras), DeepSeek-V4-Pro went GA, and Mistral opened regional inference plus third-party model hosting (starting with GLM-5.2). On making money with AI: Mercury launched Agent Cards, AI agents that spend money autonomously within human-set, auditable limits. Automation kept grinding (Trigger.dev&#x27;s new debug-agent, another n8n patch). Ecom was quiet. Anthropic&#x27;s Frontier Red Team published research on AI agents &quot;starting a turf war&quot; when set loose on the same task, worth knowing before recommending multi-agent setups to a client.</p>
-<p>10 new drops, 0 counted trending topics (no fresh sweep), 0 corroborated X items.</p>
-<h2>== TRENDING ==</h2>
-<p>No counted YouTube trend this run - channels.py needs a local OAuth token this environment doesn&#x27;t have, and the cached sweep is 7 days stale, outside its own 14-day window. Do not read anything below as a trend.</p>
-<p>Standing trend (radar/trend-now.md, reviewed 2026-08-07, unchanged): the space has moved from prompting to orchestrating. Today&#x27;s Claude Code subagent-forking default and Trigger.dev&#x27;s new debug agent are fresh data points for &quot;agent design is the sellable skill.&quot;</p>
-<p>X chatter, unranked - ran all 5 queries, last 48h. Nothing cleared the two-independent-source bar this run. Results skewed toward Anthropic&#x27;s own official accounts and single-account posts. One query returned unsourced impression numbers that could not be traced to a real post, treated as a search artifact, not reported.</p>
-<h2>== MODELS ==</h2>
-<p>1) OpenAI ships Ultrafast mode for GPT-5.6 Sol<br>OpenAI - 2026-08-13 - <a href="https://www.google.com/url?q=https://openai.com/index/previewing-ultrafast/&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E">https://www.google.com/url?q=https://openai.com/index/previewing-ultrafast/&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E</a><br>New service tier runs GPT-5.6 Sol up to 14x faster (750 output tok/s) via Cerebras hardware, no stated capability tradeoff. API-first rollout to select customers.<br>YouTube angle: &quot;OpenAI just made its model 14x faster for the same intelligence.&quot; Speed becomes a lever independent of capability, changes what&#x27;s viable for real-time agent loops that used to feel too slow. Tie: build video, same agent task timed at normal speed vs Ultrafast on camera. Needs demand check.</p>
-<p>2) DeepSeek-V4-Pro exits preview, goes GA<br>DeepSeek - 2026-08-13 - <a href="https://www.google.com/url?q=https://api-docs.deepseek.com/news/&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E">https://www.google.com/url?q=https://api-docs.deepseek.com/news/&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E</a><br>DeepSeek-V4-Pro, in preview since April, is now GA across app/web/API. Agent-focused (tool use, code execution, multi-step workflows), up to 1M token context, 384K max output, thinking/non-thinking modes.<br>YouTube angle: &quot;The DeepSeek model everyone&#x27;s been testing in preview just went GA.&quot; A genuinely agent-focused model at 1M context and DeepSeek pricing is a real cost alternative for client automations. Tie: cost-comparison build video, same client-style task run through DeepSeek-V4-Pro vs Claude/GPT, real dollar cost shown. Needs demand check.</p>
-<p>3) Mistral opens regional inference and third-party model hosting<br>Mistral - 2026-08-11 - <a href="https://www.google.com/url?q=https://mistral.ai/news/regional-inference-open-models-new-compute/&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E">https://www.google.com/url?q=https://mistral.ai/news/regional-inference-open-models-new-compute/&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E</a><br>Choice of EU or US inference region, an uptime-guaranteed Priority Tier, and a compute coalition targeting 200MW by 2027 / 1GW by 2030. Mistral will also host third-party open models, starting with Z.ai&#x27;s GLM-5.2.<br>YouTube angle: &quot;Mistral just became a landlord for other labs&#x27; models.&quot; Data-residency choice (EU vs US) is a real objection some clients raise before signing off on an AI build. Tie: short explainer/build note on where client data actually goes, relevant on EU prospect audit calls. Needs demand check.</p>
-<h2>== AGENTS ==</h2>
-<p>1) Claude Code 2.1.231 to 2.1.232: subagent forking on by default, @-mention other sessions<br>Anthropic - 2026-08-13 - <a href="https://www.google.com/url?q=https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E">https://www.google.com/url?q=https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E</a><br>Subagent forking now on by default with full conversation history and prompt-cache inheritance. You can @-mention another running Claude session by name. Also fixes an MCP OAuth sign-in bug (broke Slack-style pre-registered clients) and adds GitLab token redaction plus repo URL support.<br>YouTube angle: &quot;Claude Code subagents now share your context by default, and you can @-mention another running session.&quot; The harness keeps getting easier to compose: cheaper multi-agent setups via shared cache. Tie: build video, stand up two Claude Code sessions on a real client-style task, @-mention between them on camera, show the prompt-cache saving. Needs demand check.</p>
-<p>2) Cursor adds Grok 4.6<br>Cursor - 2026-08-12 - <a href="https://www.google.com/url?q=https://cursor.com/blog/grok-4-6&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E">https://www.google.com/url?q=https://cursor.com/blog/grok-4-6&amp;source=gmail&amp;ust=1786771280844000&amp;sa=E</a><br>Grok 4.6 (xAI&#x27;s long-horizon-agentic model, already logged 2026-08-08) is now available in Cursor and Cursor&#x27;s Grok Build, with 2x included usage for the first week.<br>YouTube angle: &quot;Cursor just added the model built for long agent runs.&quot; Minor on its own, but the third editor/gateway to add Grok 4.6 in under a week. Tie: fold into a broader coding-agent comparison video. Needs demand check.</p>
-<p>MCP spec + registry: nothing new this window, most recent spec release still 2026-07-28.</p>
-<h2>== AUTOMATION ==</h2>
-<p>1) Trigger.dev ships v4.5.11 with a new investigate-my-run dashboard agent<br>Trigger.dev - 2026-08-13 - <a href="https://www.google.com/url?q=https://trigger.dev/changelog&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E">https://www.google.com/url?q=https://trigger.dev/changelog&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E</a><br>Adds environment-scoped API key auth for deployments, real-time progress tracking during dev-environment onboarding, and a new dashboard agent that investigates runs/queues on request with watch notifications.<br>YouTube angle: &quot;Trigger.dev shipped an agent whose job is investigating why your other agent&#x27;s job failed.&quot; Directly reduces the who-fixes-it-at-2am objection on client automations. Tie: build/demo video for the Mizan offer. Needs demand check.</p>
-<p>2) n8n continues its patch wave: 2.35.2 and 1.123.71<br>n8n - 2026-08-13 - <a href="https://www.google.com/url?q=https://github.com/n8n-io/n8n/releases&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E">https://www.google.com/url?q=https://github.com/n8n-io/n8n/releases&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E</a><br>Follow-on patches to this week&#x27;s 2.35.0 release: 2.35.2 fixes trigger-activation reporting; 1.123.71 is a routine release.<br>Minor, worth flagging only if a client&#x27;s workflow depends on trigger activation. No standalone video.</p>
-<p>3) Mercury launches Spend with Agent Cards, AI agents that spend money within human-set limits<br>Mercury - 2026-08-11 - <a href="https://www.google.com/url?q=https://www.businesswire.com/news/home/20260811063202/en/Mercury-Launches-Spend-with-Agent-Cards-and-Intelligent-Budgets-for-the-AI-Era&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E">https://www.google.com/url?q=https://www.businesswire.com/news/home/20260811063202/en/Mercury-Launches-Spend-with-Agent-Cards-and-Intelligent-Budgets-for-the-AI-Era&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E</a><br>New Spend product: budgets, self-enforcing policies, and Agent Cards, virtual cards a human creates and limits that an AI agent can then spend against autonomously. Fully auditable and cancellable, managed via a natural-language Command layer. Corroborated by Morningstar, Fast Company, PYMNTS, fintech.global.<br>YouTube angle: &quot;A bank just gave AI agents their own credit cards.&quot; The making-money-with-AI story turning into real financial infrastructure, not a demo. Tie: direct Mizan-offer content, what happens when your AI agent can actually spend money. Needs demand check.</p>
-<h2>== CONTENT ==</h2>
-<p>1) HeyGen expands Video Agent to generate custom motion graphics<br>HeyGen - 2026-08-12 (unconfirmed exact URL) - <a href="https://www.google.com/url?q=https://www.heygen.com/blog&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E">https://www.google.com/url?q=https://www.heygen.com/blog&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E</a><br>HeyGen&#x27;s Video Agent now generates animated motion graphics the same way it generates full videos: prompt in, script/voiceover/avatar/pacing/captions/music out.<br>YouTube angle: &quot;HeyGen will now storyboard and animate your motion graphics from a prompt.&quot; Only worth a video if tested against the locked ep4 house style with a real verdict. Needs demand check.</p>
-<p>ElevenLabs, Runway and Higgsfield checked, nothing new after dedupe.</p>
-<h2>== ECOM ==</h2>
-<p>Quiet day. Klaviyo and Shopify&#x27;s Storefront-MCP-to-UCP move were already logged yesterday. Two low-confidence items surfaced (Shopify cart-attribute event, Meta Business Agent) but neither has a date pinned down well enough to report as fact, flagged, not logged, no angle drafted.</p>
-<h2>== INDUSTRY ==</h2>
-<p>1) Anthropic Frontier Red Team publishes research on multi-agent &quot;turf wars&quot;<br>Anthropic via TechCrunch - 2026-08-13 - <a href="https://www.google.com/url?q=https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E">https://www.google.com/url?q=https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E</a><br>Anthropic&#x27;s Frontier Red Team studied how groups of AI agents behave when set loose on the same task in a shared environment, agents effectively competing/interfering with each other. Risk framing for autonomous multi-agent deployment.<br>YouTube angle: &quot;Anthropic put AI agents on the same job and they started fighting each other.&quot; Directly relevant before recommending any multi-agent setup to a client. Tie: only a video if paired with his own build showing the failure mode live. Needs demand check.</p>
-<p>Anthropic&#x27;s reported talks to acquire Decart AI (~$6B) are unchanged since yesterday, still unconfirmed, not re-logged.</p>
-<h2>== CLAUDE CODE TIP OF THE DAY ==</h2>
-<p>Reference files by path, not memory: point Claude at pillars/mizan.md or a Notion page ID rather than re-explaining. It reads the source of truth and stays current.<br><a href="https://www.google.com/url?q=https://docs.claude.com/en/docs/claude-code/overview&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E">https://www.google.com/url?q=https://docs.claude.com/en/docs/claude-code/overview&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E</a></p>
-<h2>== SOURCES CHECKED ==</h2>
-<p>Anthropic, OpenAI, Google/DeepMind, Cursor, Vercel, v0, Devin Desktop, GitHub Copilot, MCP spec, n8n, Make.com, Trigger.dev, Perplexity, xAI, Mistral, Meta AI, DeepSeek, Moonshot/Kimi, ElevenLabs, HeyGen, Higgsfield, Runway, Shopify, Klaviyo, Meta for Business, Nous Research/Hermes, plus 4 named-interest searches and 5 X queries, plus an uncounted 8-channel YouTube impression pass.</p>
-<p>Unavailable this run: every source domain hit EGRESS_BLOCKED on direct WebFetch except <a href="https://www.google.com/url?q=http://raw.githubusercontent.com&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E,">https://www.google.com/url?q=http://raw.githubusercontent.com&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://platform.claude.com&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E,">https://www.google.com/url?q=http://platform.claude.com&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://github.com/n8n-io&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E">https://www.google.com/url?q=http://github.com/n8n-io&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E</a> and <a href="https://www.google.com/url?q=http://github.com/triggerdotdev&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E">https://www.google.com/url?q=http://github.com/triggerdotdev&amp;source=gmail&amp;ust=1786771280845000&amp;sa=E</a> - all other findings came from WebSearch fallback.</p>
-<p>Full brief with all detail: radar/briefs/2026-08-14.html in the mahmoudOS repo.</p>
-<div class="foot">AI Radar · generated for RABBIO + Mizan AI · 14 Aug 2026</div>
-</div></body></html>
+  :root{
+    --bg:#0e0f13; --panel:#16181f; --panel2:#1d2029; --line:#2a2e3a;
+    --text:#e8eaf0; --muted:#9aa0ad; --accent:#7C4DFF; --accent2:#a98bff;
+    --ecom:#ff5c7c; --ok:#3ddc97; --trend:#ffb703; --warn:#ffb703;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 18px 64px}
+  header h1{margin:0 0 4px;font-size:24px;letter-spacing:-.3px}
+  header .sub{color:var(--muted);font-size:13px}
+  .summary{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 22px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:10px 14px;min-width:120px}
+  .stat b{display:block;font-size:22px}
+  .stat span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);
+    padding-bottom:10px;margin-bottom:18px;position:sticky;top:0;background:var(--bg);
+    padding-top:10px;z-index:5}
+  .tab-btn{background:var(--panel);color:var(--muted);border:1px solid var(--line);
+    border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;white-space:nowrap}
+  .tab-btn:hover{color:var(--text)}
+  .tab-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .tab-btn .badge{display:inline-block;margin-left:6px;background:rgba(255,255,255,.18);
+    border-radius:999px;padding:0 7px;font-size:11px}
+  .panel{display:none}
+  .panel.active{display:block}
+  .cards{display:flex;flex-direction:column;gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  .card.ecom{border-color:var(--ecom)}
+  .card .top{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .card h3{margin:0;font-size:16px;letter-spacing:-.2px}
+  .card .meta{color:var(--muted);font-size:12px}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;
+    border:1px solid var(--line);color:var(--muted);margin-right:6px}
+  .pill.kind{color:var(--accent2);border-color:var(--accent)}
+  .pill.ecomtag{color:var(--ecom);border-color:var(--ecom)}
+  .card p{margin:8px 0 0;color:#cdd1db}
+  .card a.src{display:inline-block;margin-top:8px;color:var(--accent2);
+    font-size:13px;text-decoration:none}
+  .card a.src:hover{text-decoration:underline}
+  .angle{margin-top:10px;background:var(--panel2);border:1px solid var(--line);
+    border-left:3px solid var(--ecom);border-radius:10px;padding:10px 12px}
+  .angle .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--accent2)}
+  .angle .hook{font-weight:600;margin:2px 0 6px}
+  .angle .why{color:var(--muted);font-size:13px}
+
+  /* --- added 2026-08-07 with the six-lens rebuild --- */
+  /* A trend card is visually the loudest thing on the page because the computed trend is the
+     only claim here backed by counted evidence. .evidence is mandatory on it. */
+  .card.trend{border-color:var(--trend);background:linear-gradient(180deg,#1a1620,var(--panel))}
+  .evidence{margin-top:8px;font-size:12px;color:var(--trend)}
+  .vids{margin:8px 0 0;padding-left:18px;font-size:13px;color:#cdd1db}
+  .vids li{margin:4px 0}
+  .vids a{color:var(--accent2);text-decoration:none}
+  .vids a:hover{text-decoration:underline}
+  .vids .meta{display:block;color:var(--muted);font-size:11px}
+  .pill.lenstag{color:var(--muted);border-color:var(--line)}
+  .pill.unranked{color:var(--warn);border-color:var(--warn);vertical-align:middle}
+  /* The demand gate. A trend is a candidate, not a commission. */
+  .gate{margin-top:8px;font-size:11px;color:var(--warn)}
+  .gate code{color:var(--warn)}
+  /* Only rendered when the last run is >48h old. The previous radar was dead for two months
+     and nothing on the artifact said so. */
+  .stale{background:#3a1418;border:1px solid var(--ecom);color:#ffd7dd;
+         border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:14px}
+  .tip{background:linear-gradient(135deg,#1d2029,#211a33);border:1px solid var(--accent);
+    border-radius:14px;padding:18px}
+  .tip .lbl{color:var(--accent2);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .empty{color:var(--muted);padding:20px;text-align:center}
+  footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+  .srclist{columns:2;gap:18px;font-size:13px;color:var(--muted)}
+  @media(max-width:560px){.srclist{columns:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📡 AI Radar - 14 Aug 2026</h1>
+    <div class="sub">Six lenses · what the channels are actually covering · YouTube angles on everything</div>
+  </header>
+
+  <div class="summary">
+    <div class="stat"><b>10</b><span>New drops</span></div>
+    <div class="stat"><b>0</b><span>Trending topics</span></div>
+    <div class="stat"><b>0</b><span>Channels swept</span></div>
+    <div class="stat"><b>2026-08-14 05:10 UTC</b><span>Generated</span></div>
+  </div>
+
+  <!-- STALENESS BANNER: include ONLY when the last successful run is >48h ago.
+       Delete this block entirely on a healthy run. The old radar died silently for two
+       months, so a dead radar has to be visible on the artifact itself. -->
+  <!-- <div class="stale">⚠ Last successful run was {{DAYS_SINCE_RUN}} days ago ({{LAST_RUN}}).
+       The radar was not running. Treat the gaps below as unknown, not as quiet.</div> -->
+
+  <!-- TABS: keep buttons and panels in the same order. data-tab matches panel id.
+       Trending is the default. Ecom is ONE lens of six, never the default again. -->
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="trending">🔥 Trending <span class="badge">0</span></button>
+    <button class="tab-btn" data-tab="models">Models</button>
+    <button class="tab-btn" data-tab="agents">Agents</button>
+    <button class="tab-btn" data-tab="automation">Automation</button>
+    <button class="tab-btn" data-tab="content">Content</button>
+    <button class="tab-btn" data-tab="ecom">Ecom</button>
+    <button class="tab-btn" data-tab="industry">Industry</button>
+    <button class="tab-btn" data-tab="channels">📺 Channels</button>
+    <button class="tab-btn" data-tab="tip">💡 Claude tip</button>
+    <button class="tab-btn" data-tab="all">All / sources</button>
+  </div>
+
+  <!-- ===== 🔥 TRENDING ===== -->
+  <div class="panel active" id="trending">
+    <p class="empty" style="margin-bottom:16px">Computed by <code>radar/channels.py</code>: a topic
+      counts only when <b>3+ distinct channels</b> covered it inside
+      14 days. If this section is empty the week was genuinely quiet.</p>
+    <div class="cards">
+      <p class="empty">No counted trending topics this run - see the note above.</p>
+    </div>
+
+    <h3 style="margin:26px 0 8px">The standing trend</h3>
+    <p class="empty">From <code>radar/trend-now.md</code>. Structural, changes monthly, not daily.</p>
+    <div class="cards">    <div class="card">
+      <p>The space has moved from prompting to orchestrating: coding agents as default interface,
+      agent design as a sellable skill, frontier launches arriving in pairs/weeks apart, AI-slop
+      fatigue, the agency model getting publicly audited (reviewed 2026-08-07, unchanged).
+      Today's Claude Code subagent-forking-by-default change and Trigger.dev's new
+      &quot;investigate my stuck run&quot; dashboard agent are both fresh data points for
+      &quot;agent design is the sellable skill.&quot;</p>
+    </div></div>
+
+    <h3 style="margin:26px 0 8px">X chatter <span class="pill unranked">unranked</span></h3>
+    <p class="empty">No X API key, so there are no engagement numbers and <b>none of this can be
+      ranked</b>. Corroboration only. One loud account is one person's opinion.</p>
+    <div class="cards">    <p class="empty">Nothing cleared the two-independent-source bar this run. Results skewed
+      toward Anthropic's own official accounts (vendor announcements, not independent chatter)
+      and isolated single-account posts. One general discourse query returned unsourced
+      impression numbers that could not be traced to an actual post - treated as a search-tool
+      artifact, not reported.</p></div>
+  </div>
+
+  <!-- ===== LENS PANELS =====
+       CARD TEMPLATE - clone per item into its lens panel. EVERY lens gets the .angle block;
+       that is the whole point of the 2026-08-07 rebuild. Drop .angle only for genuine
+       filler (a docs typo fix), never because the item is not about ecommerce. -->
+  <div class="panel" id="models"><div class="cards">
+    <div class="card">
+      <div class="top">
+        <h3>OpenAI ships Ultrafast mode for GPT-5.6 Sol</h3>
+        <div class="meta">OpenAI - 2026-08-13</div>
+      </div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">models</span></div>
+      <p>New service tier runs GPT-5.6 Sol up to 14x faster (750 output tok/s) via Cerebras hardware, no stated capability tradeoff. API-first rollout to select customers.</p>
+      <a class="src" href="https://openai.com/index/previewing-ultrafast/">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">OpenAI just made its model 14x faster for the same intelligence.</div>
+        <div class="why">Speed becomes a lever independent of capability, changes what's viable for real-time agent loops that used to feel too slow. - <em>Build video: same agent task timed at normal speed vs Ultrafast on camera.</em></div>
+        <div class="gate">needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top">
+        <h3>DeepSeek-V4-Pro exits preview, goes GA</h3>
+        <div class="meta">DeepSeek - 2026-08-13</div>
+      </div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">models</span></div>
+      <p>DeepSeek-V4-Pro, in preview since April, is now GA across app/web/API. Agent-focused (tool use, code execution, multi-step workflows), up to 1M token context, 384K max output, thinking/non-thinking modes.</p>
+      <a class="src" href="https://api-docs.deepseek.com/news/">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">The DeepSeek model everyone's been testing in preview just went GA.</div>
+        <div class="why">A genuinely agent-focused model at 1M context and DeepSeek pricing is a real cost alternative for client automations, not just a benchmark curiosity. - <em>Cost-comparison build video: same client-style task run through DeepSeek-V4-Pro vs Claude/GPT, real dollar cost shown.</em></div>
+        <div class="gate">needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top">
+        <h3>Mistral opens regional inference and third-party model hosting</h3>
+        <div class="meta">Mistral - 2026-08-11</div>
+      </div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">models</span></div>
+      <p>Choice of EU or US inference region, an uptime-guaranteed Priority Tier, and a compute coalition targeting 200MW by 2027 / 1GW by 2030. Mistral will also host third-party open models, starting with Z.ai's GLM-5.2.</p>
+      <a class="src" href="https://mistral.ai/news/regional-inference-open-models-new-compute/">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Mistral just became a landlord for other labs' models.</div>
+        <div class="why">Data-residency choice (EU vs US) is a real objection some clients raise before signing off on an AI build. - <em>Short explainer/build note: where does your client's data actually go, relevant on EU prospect audit calls.</em></div>
+        <div class="gate">needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="panel" id="agents"><div class="cards">
+    <div class="card">
+      <div class="top">
+        <h3>Claude Code 2.1.231 to 2.1.232: subagent forking on by default, @-mention other sessions</h3>
+        <div class="meta">Anthropic - 2026-08-13</div>
+      </div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>Subagent forking is now on by default with full conversation history and prompt-cache inheritance. You can @-mention another running Claude session by name. Also fixes an MCP OAuth sign-in bug (broke Slack-style pre-registered clients) and adds GitLab token redaction + repo URL support.</p>
+      <a class="src" href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Claude Code subagents now share your context by default, and you can @-mention another running session.</div>
+        <div class="why">The harness keeps getting easier to compose: cheaper multi-agent setups via shared cache, a lighter way to hand off work between sessions. - <em>Build video: stand up two Claude Code sessions on a real client-style task, @-mention between them on camera, show the prompt-cache saving.</em></div>
+        <div class="gate">needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top">
+        <h3>Cursor adds Grok 4.6</h3>
+        <div class="meta">Cursor - 2026-08-12</div>
+      </div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>Grok 4.6 (xAI's long-horizon-agentic model, already logged here 2026-08-08) is now available in Cursor and Cursor's Grok Build, with 2x included usage for the first week.</p>
+      <a class="src" href="https://cursor.com/blog/grok-4-6">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Cursor just added the model built for long agent runs.</div>
+        <div class="why">Minor on its own, but the third editor/gateway to add Grok 4.6 in under a week (after Vercel) - real distribution signal. - <em>Fold into a broader coding-agent comparison video rather than its own piece.</em></div>
+        <div class="gate">needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <p class="empty">MCP spec + registry: nothing new this window - most recent spec release still 2026-07-28, now two weeks stale.</p>
+  </div></div>
+  <div class="panel" id="automation"><div class="cards">
+    <div class="card">
+      <div class="top">
+        <h3>Trigger.dev ships v4.5.11 with a new "investigate my run" dashboard agent</h3>
+        <div class="meta">Trigger.dev - 2026-08-13</div>
+      </div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">automation</span></div>
+      <p>Adds environment-scoped API key auth for deployments, real-time progress tracking during dev-environment onboarding, and a new dashboard agent that investigates runs/queues on request with watch notifications.</p>
+      <a class="src" href="https://trigger.dev/changelog">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Trigger.dev shipped an agent whose job is investigating why your other agent's job failed.</div>
+        <div class="why">An agent-for-debugging-your-agent-workflow directly reduces the 'who fixes it at 2am' objection on client automations. - <em>Build/demo video for the Mizan offer: how I get paged when a client's automation actually breaks.</em></div>
+        <div class="gate">needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top">
+        <h3>n8n continues its patch wave: 2.35.2 and 1.123.71</h3>
+        <div class="meta">n8n - 2026-08-13</div>
+      </div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">automation</span></div>
+      <p>Follow-on patches to this week's 2.35.0 release: 2.35.2 fixes trigger-activation reporting for triggers activated via the publication outbox; 1.123.71 is a routine release.</p>
+      <a class="src" href="https://github.com/n8n-io/n8n/releases">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">n8n is still patching the release from three days ago, daily.</div>
+        <div class="why">Minor - worth flagging only if a client's workflow depends on trigger activation. - <em>No standalone video; fold into a broader n8n-reliability note if one ever gets made.</em></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top">
+        <h3>Mercury launches "Spend" with Agent Cards - AI agents that spend money within human-set limits</h3>
+        <div class="meta">Mercury - 2026-08-11</div>
+      </div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">automation</span></div>
+      <p>New "Spend" product: budgets, self-enforcing policies, and Agent Cards - virtual cards a human creates and limits, that an AI agent can then spend against autonomously. Fully auditable and cancellable, managed via a natural-language "Command" layer. Corroborated by Morningstar, Fast Company, PYMNTS, fintech.global.</p>
+      <a class="src" href="https://www.businesswire.com/news/home/20260811063202/en/Mercury-Launches-Spend-with-Agent-Cards-and-Intelligent-Budgets-for-the-AI-Era">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">A bank just gave AI agents their own credit cards.</div>
+        <div class="why">The 'making money with AI' story turning into real financial infrastructure, not a demo - an agent that can actually transact with guardrails. - <em>Direct Mizan-offer content: what happens when your AI agent can actually spend money.</em></div>
+        <div class="gate">needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+  </div></div>
+  <div class="panel" id="content"><div class="cards">
+    <div class="card">
+      <div class="top">
+        <h3>HeyGen expands Video Agent to generate custom motion graphics</h3>
+        <div class="meta">HeyGen - 2026-08-12 (unconfirmed exact URL)</div>
+      </div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">content</span></div>
+      <p>HeyGen's Video Agent now generates animated motion graphics the same way it generates full videos: prompt in, script/voiceover/avatar/pacing/captions/music out.</p>
+      <a class="src" href="https://www.heygen.com/blog">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">HeyGen will now storyboard and animate your motion graphics from a prompt.</div>
+        <div class="why">Another chunk of the video-editing pipeline (motion graphics specifically) moving to prompt-driven generation. - <em>Only worth a video if tested against the locked ep4 house style with a real verdict - otherwise skip.</em></div>
+        <div class="gate">needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <p class="empty">ElevenLabs, Runway and Higgsfield checked - nothing new after dedupe (Dubbing v2 and Runway's last update already logged 2026-08-09/08-12).</p>
+  </div></div>
+  <div class="panel" id="ecom"><div class="cards">
+    <p class="empty">Quiet day. Klaviyo and Shopify's Storefront-MCP-to-UCP move were already logged
+      yesterday (2026-08-13). Two low-confidence items surfaced via search but neither has a date
+      pinned down well enough to report as fact, so no angle was drafted and neither was logged to
+      seen.json:</p>
+    <div class="card">
+      <div class="top"><h3>Shopify: new cart-attribute-update event (unconfirmed date)</h3></div>
+      <p>A new standard Cart action / shopify:cart:attributes-update event, giving apps immediate
+      cart-change awareness with rollback support. Exact announcement date unconfirmed.</p>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Meta Business Agent (unconfirmed date)</h3></div>
+      <p>Reportedly announced at Conversations 2026 - handles multi-turn customer conversations
+      across WhatsApp/Messenger/Instagram (support Q&amp;A, inventory checks, lead qualification,
+      checkout walkthrough). Exact date unconfirmed.</p>
+    </div>
+  </div></div>
+  <div class="panel" id="industry"><div class="cards">
+    <div class="card">
+      <div class="top">
+        <h3>Anthropic's Frontier Red Team publishes research on multi-agent “turf wars”</h3>
+        <div class="meta">Anthropic (via TechCrunch) - 2026-08-13</div>
+      </div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">industry</span></div>
+      <p>Anthropic's Frontier Red Team studied how groups of AI agents behave when set loose on the same task in a shared environment (codebase, market, system) - agents effectively competing/interfering with each other. Risk framing for autonomous multi-agent deployment.</p>
+      <a class="src" href="https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/">Source</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Anthropic put AI agents on the same job and they started fighting each other.</div>
+        <div class="why">Directly relevant before recommending any multi-agent setup to a client - more agents on one task isn't free. - <em>Only a video if paired with his own build showing the failure mode live - reaction-only loses to bigger channels on speed.</em></div>
+        <div class="gate">needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <p class="empty">Anthropic's reported talks to acquire Decart AI (~$6B) are unchanged since yesterday - still unconfirmed, not re-logged.</p>
+  </div></div>
+
+  <!-- ===== 📺 CHANNELS ===== -->
+  <div class="panel" id="channels">
+  <div class="cards">
+    <p class="empty" style="margin-bottom:16px">radar/channels.py could not run this session (no OAuth
+      token) and the cached sweep is 7 days stale. Below is a best-effort WebSearch pass on the 8
+      watchlist channels over the last ~7 days. Do not read this as a trend - dates are
+      approximate and several channels returned nothing confirmable.</p>
+    <div class="card"><div class="top"><h3>Nate B Jones</h3><div class="meta">daily_news</div></div>
+      <p>Agent-categorization mapping video, Chinese model coverage, secure workflows for sensitive documents (dates approximate).</p></div>
+    <div class="card"><div class="top"><h3>AI Daily Brief</h3><div class="meta">daily_news</div></div>
+      <p>Aug 6: Anthropic custom-silicon team story. Aug 8: OpenAI paused &quot;Astra&quot; frontier model over eval concerns. Aug 9: OpenAI acquired presentation startup NextSlide.</p></div>
+    <div class="card"><div class="top"><h3>Nate Herk | AI Automation</h3><div class="meta">builders</div></div>
+      <p>A 6-hour &quot;Claude Code for Non-Coders&quot; course; a GPT-5.6 Sol vs Fable 5 comparison (~7-9 days ago).</p></div>
+    <div class="card"><div class="top"><h3>Nick Saraev</h3><div class="meta">builders</div></div>
+      <p>Nothing found - not confirmed as quiet, search just didn't surface anything.</p></div>
+    <div class="card"><div class="top"><h3>Jack Roberts</h3><div class="meta">builders</div></div>
+      <p>Claude Code + Hermes course content; a video on a custom Claude-based agent system positioned as a Hermes alternative.</p></div>
+    <div class="card"><div class="top"><h3>Liam Ottley</h3><div class="meta">builders</div></div>
+      <p>Nothing found in the last 7 days.</p></div>
+    <div class="card"><div class="top"><h3>David Ondrej</h3><div class="meta">builders</div></div>
+      <p>Signals around a new agent-working pattern and a public agent-skills release, exact dates unconfirmed.</p></div>
+    <div class="card"><div class="top"><h3>Leon van Zyl</h3><div class="meta">builders</div></div>
+      <p>Claude Code + MCP servers (n8n-mcp, Playwright MCP) content for building n8n workflows.</p></div>
+    <p class="empty" style="margin-top:12px">Loose cross-channel overlap, not a confirmed trend: 5 of 8
+      channels touched Claude/Anthropic in some form this week, on genuinely different sub-topics
+      (news, course, benchmark, product build) - reads as &quot;Claude is the default reference
+      point&quot; rather than one specific story trending.</p>
+  </div>
+  </div>
+
+  <!-- ===== DEV TIP (Claude Code / Codex) ===== -->
+  <div class="panel" id="tip">
+    <div class="tip">
+      <div class="lbl">Claude Code tip of the day</div>
+      <h3 style="margin:6px 0 8px">Reference files by path, not memory</h3>
+      <p style="margin:0;color:#cdd1db">Point Claude at pillars/mizan.md or a Notion page ID rather than re-explaining. It reads the source of truth and stays current.</p>
+      <a href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener"
+         style="display:inline-block;margin-top:12px;color:var(--accent2);font-size:13px;text-decoration:none;">
+        → Read the docs ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== ALL / SOURCES ===== -->
+  <div class="panel" id="all">
+    <div class="cards" id="all-cards">
+      <!-- Optional: clone every card here too for a single scroll view. -->
+    </div>
+    <footer>
+      <strong>Sources checked:</strong>
+      <div class="srclist">Anthropic (Claude Code changelog, API release notes, system prompts release notes, news, engineering), OpenAI (news, ChatGPT release notes, API changelog), Google (Gemini API changelog, AI blog, DeepMind blog), Cursor, Vercel, v0, Devin Desktop (was Windsurf), GitHub Copilot, MCP spec, n8n, Make.com, Trigger.dev, Perplexity, xAI, Mistral, Meta AI/Llama, DeepSeek, Moonshot/Kimi, ElevenLabs, HeyGen, Higgsfield, Runway, Shopify, Klaviyo, Meta for Business, Nous Research/Hermes, plus 4 named-interest searches and 5 X queries, plus an uncounted 8-channel YouTube impression pass.</div>
+      <p style="margin-top:12px"><strong>Unavailable this run:</strong> Every source domain hit EGRESS_BLOCKED on direct WebFetch this run except raw.githubusercontent.com, platform.claude.com, github.com/n8n-io and github.com/triggerdotdev - all other findings came from WebSearch fallback, so dates/URLs on several items are lower-confidence than a direct primary-source pull (flagged inline per item).</p>
+    </footer>
+  </div>
+
+  <footer>Generated by the <code>ai-radar</code> skill · mahmoudOS · 2026-08-14 05:10 UTC</footer>
+</div>
+
+<script>
+  document.querySelectorAll('.tab-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-tab');
+      document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+      document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+      btn.classList.add('active');
+      var panel = document.getElementById(id);
+      if(panel){panel.classList.add('active')}
+    });
+  });
+</script>
+</body>
+</html>
