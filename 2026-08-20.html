@@ -1,61 +1,434 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Radar - 20 Aug 2026 - 13 drops, 0 trending</title>
+<title>AI Radar, 20 Aug 2026</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#0e0f13;color:#e8eaf0;
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
-.top{border-bottom:1px solid #2a2e3a;padding-bottom:16px;margin-bottom:24px}
-h1{font-size:26px;margin:0 0 6px;letter-spacing:-.3px}
-.sub{color:#9aa0ad;font-size:14px}
-h2{font-size:18px;margin:30px 0 8px;color:#fff;letter-spacing:-.2px}
-p{margin:10px 0;color:#cdd1db}
-a{color:#a98bff;word-break:break-word}
-.foot{margin-top:40px;border-top:1px solid #2a2e3a;padding-top:14px;color:#6b7180;font-size:12px}
-</style></head>
-<body><div class="wrap">
-<div class="top"><h1>📡 AI Radar</h1><div class="sub">20 Aug 2026 · AI Radar - 20 Aug 2026 - 13 drops, 0 trending</div></div>
-<p># AI Radar, 20 Aug 2026</p>
-<p>13 new drops, 0 counted trending topics (no fresh channel data this run), quiet X sweep.</p>
-<h2>## TL;DR</h2>
-<p>- Biggest story is the shift from prompting to orchestrating showing up as shipped product, not commentary. Anthropic put six things into GA on the same day (19 Aug), and Agent Skills plus the Skills API leaving beta is the standout: the vendor itself now treats packaged, reusable capability as production-ready, not just a convention this repo happens to use. Same day, Cursor shipped cloud agents that subscribe to events, hold a goal until it is met, and auto-drive PRs to completion, the &quot;job, tools, stopping condition&quot; pattern made literal in a mainstream coding tool.<br>- Google&#x27;s A2A protocol (agent-to-agent communication) moved out from under Google directly into the Linux Foundation&#x27;s Agentic AI Foundation, 150-plus organizations already routing real production traffic through it, backers including Anthropic, OpenAI, Shopify and Block. Agent interoperability is consolidating into real infrastructure the way MCP did for tools.<br>- Claude Code shipped two more point releases, 2.1.236 and 2.1.237: a built-in &quot;Concise&quot; output style that skips preamble, plus idle-notify cross-session messaging. Both aimed at agents running longer, more unattended stretches.<br>- Anthropic published independently validated research: Claude designed working protein binders in 14 of 15 targets, roughly twice the typical industry hit rate, confirmed by outside labs (Adaptyv Bio, Twist Bioscience). Useful shorthand for how capable the model actually is, in a context that has nothing to do with code.<br>- Ecom flag: nothing confidently dated inside the window. A Shopify Hydrogen developer preview update sits right at the boundary and is reported unconfirmed rather than asserted.<br>- No counted YouTube trend again today, same limitation as yesterday: channels.py needs the OAuth token that does not exist in this cloud environment, and the cached feed is now 13 days stale. Notion StoryBank could not be written this run either, the Notion MCP connector is not authorized in this session, same as most prior runs.</p>
-<p>## Trending</p>
-<p>No counted trend this run. radar/channels.py needs secrets/youtube_token.json, which does not exist in this cloud session, and the cached sweep (radar/feed/youtube-2026-08-07.json) is now 13 days old. Reporting a trend from that would be a guess, not a fact.</p>
-<p>Loose impression only (not counted, not a trend claim): of the 8 watchlist channels, only The AI Daily Brief returned a plausible in-window hit, a possible 18 Aug episode on the AI skills map for knowledge workers, moderate confidence, the exact title is search-engine-summarized rather than confirmed on the channel page. The other 7 channels returned nothing confirmable dated inside the last 7 days. That is not evidence they were quiet, just that WebSearch cannot reliably surface this-week uploads.</p>
-<p>Standing trend (from radar/trend-now.md, reviewed 2026-08-07, not re-derived today): the work moved from prompting to orchestrating: coding agents are now the default interface, agent design (skills, sub-agents, MCP, stop conditions) is a paid skill, frontier model launches now arrive in pairs and are weather not events, AI slop has become the differentiator people react against, and the AI agency model is being publicly audited by its own practitioners. Today&#x27;s Anthropic Skills API GA and Cursor&#x27;s goal-holding cloud agents both sit directly inside this shift, not adjacent to it.</p>
-<p>X chatter, unranked: ran all five queries from sources.md, last 48h. Nothing cleared the two-independent-source bar today. Claude Code Remote Control chatter, an MCP adoption claim, and n8n workflow generation posts were all single-source, not independently corroborated, so none are reported as findings.</p>
-<p>## Models</p>
-<p>Grok 4.6 now available on Amazon Bedrock (18 to 19 Aug, confirmed via WebSearch, <a href="https://www.google.com/url?q=https://x.ai/news/grok-4-6-amazon-bedrock&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://x.ai/news/grok-4-6-amazon-bedrock&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>500k context window, configurable reasoning tiers (low/medium/high/xhigh), about a week after its 12 Aug launch.<br>- YouTube angle: Hook, &quot;You can now run Grok inside AWS like it&#x27;s just another model.&quot; Why it matters: frontier models landing inside the big clouds&#x27; native model catalogs lowers the switching cost for any business already committed to that cloud, which changes how Mizan should scope model choice in a client build. Tie: a short &quot;which model, which cloud&quot; segment, or an update to the model-selection framework used in Mizan audits. Needs demand check.</p>
-<p>Hermes Agent v0.20.4 (18 Aug, borderline in-window, confirmed, <a href="https://www.google.com/url?q=https://github.com/NousResearch/hermes-agent/releases&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://github.com/NousResearch/hermes-agent/releases&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>Patch rollup of roughly 74 merged PRs since v0.20.0 (&quot;The Herald Release,&quot; 3 Aug, which added real-time voice, A2A v1.0, and signed webhooks). No major new capability in this point release, incremental fixes and performance work.<br>- YouTube angle: Hook, &quot;Hermes just shipped its 74th fix since the big release.&quot; Why it matters: confirms Nous Research is actively hardening the framework post-launch rather than moving on after the splashy release, worth tracking since he follows Hermes specifically. Tie: a passing mention inside a broader open-source-agents roundup, low priority on its own. Needs demand check.</p>
-<p>## Agents</p>
-<p>Claude Code v2.1.236 and v2.1.237 (shipped after 2.1.235 on 18 Aug, exact date not stamped in the changelog, confirmed direct from CHANGELOG.md: <a href="https://www.google.com/url?q=https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>2.1.237 fixes prompt caching for sessions on an LLM gateway or custom base URL and adds a built-in &quot;Concise&quot; output style that leads with results and skips preamble. 2.1.236 adds an ANTHROPIC_DEFAULT_MODEL env var, notify_when_idle for cross-session SendMessage, macOS sandbox hardening, and a batch of TUI and rendering fixes.<br>- YouTube angle: Hook, &quot;Claude Code just added a mode that skips the preamble entirely.&quot; Why it matters: a results-first output style plus idle-notify cross-session messaging both point at agents running longer, more unattended stretches, exactly the orchestration shift the standing trend names. Tie: a short &quot;what changed in Claude Code this week&quot; segment, or a Mizan trust point about running current tooling for clients. Needs demand check.</p>
-<p>Anthropic API platform: six things went GA on the same day (19 Aug, confirmed, <a href="https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/api&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://platform.claude.com/docs/en/release-notes/api&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>Enterprise Admin API user management is GA (no more beta header). Files API is GA (1TB per org, 500 requests per minute). Agent Skills and the Skills API are GA. Managed Agents&#x27; web_search and web_fetch gained allowed_domains/blocked_domains restrictions. Self-hosted sandbox sessions can now attach memory stores. The Console session viewer got a redesign (timeline minimap, Inspector panel).<br>- YouTube angle: Hook, &quot;Anthropic shipped six things to GA on the same day, and Skills is one of them.&quot; Why it matters: Agent Skills and the Skills API leaving beta means the vendor now treats packaged, reusable capability as production-ready, not a growing convention, directly validating how a repo like this one is already organized. Tie: a build video wiring a real skill through the now-GA API, or a talking point for clients on why packaged skills beat ad hoc prompting. Needs demand check.</p>
-<p>Cursor: Cloud Agents and Harness Improvements (19 Aug, confirmed, <a href="https://www.google.com/url?q=https://cursor.com/changelog/08-19-26&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://cursor.com/changelog/08-19-26&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>Cloud agents can now subscribe to events (PRs, Slack threads, scheduled tasks) and wake automatically, hold a goal until it is met, and auto-drive PRs to completion by fixing CI and addressing bot comments on their own. Added non-blocking follow-up messages that do not interrupt an in-flight agent action.<br>- YouTube angle: Hook, &quot;Cursor&#x27;s agents can now hold a goal and just keep going.&quot; Why it matters: event-subscribed agents that wake on a trigger and auto-drive to completion is the clearest &quot;job, tools, stopping condition&quot; pattern yet shipped by a mainstream coding tool, the standing trend made literal in a product feature. Tie: a comparison build, &quot;Claude Code plus skills versus Cursor&#x27;s autonomous loop,&quot; or a sales point that this is exactly the kind of harness Mizan builds for clients, now sold as a checkbox. Needs demand check.</p>
-<p>Google&#x27;s A2A protocol moves to the Linux Foundation&#x27;s Agentic AI Foundation (17 Aug, confirmed across Techstrong.ai, DevOpsDigest and Axios, found via general search rather than a tracked source, <a href="https://www.google.com/url?q=https://techstrong.ai/articles/google-moves-a2a-under-agentic-ai-foundation/&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://techstrong.ai/articles/google-moves-a2a-under-agentic-ai-foundation/&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>Agent2Agent, Google&#x27;s protocol for agents communicating with other agents (distinct from MCP, which governs agent-to-tool), is now governed independently. Over 150 organizations are already routing production traffic through it, at protocol version 1.2 with signed agent cards for domain verification. Backers include Google, Microsoft, Amazon, Anthropic, OpenAI, Shopify and Block.<br>- YouTube angle: Hook, &quot;The protocol for agents talking to other agents just left Google&#x27;s hands.&quot; Why it matters: agent-to-agent communication is consolidating into real, vendor-neutral infrastructure the same way MCP did for tools, and it is already in production, not a research toy. Tie: a short explainer distinguishing MCP from A2A for the channel, or citing 150+ production orgs as evidence multi-agent systems are buyable infrastructure now, useful in Mizan pitches. Needs demand check.</p>
-<p>## Automation</p>
-<p>n8n patch wave: 2.35.4, 1.123.73, 2.36.2 pre-release (19 Aug, confirmed, <a href="https://www.google.com/url?q=https://github.com/n8n-io/n8n/releases&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://github.com/n8n-io/n8n/releases&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>Bug fixes only: API decorator routes, Google Ads node metric selection, expression isolate and VM engine improvements, API discovery route fixes. Too routine for a standalone angle.</p>
-<p>## Content</p>
-<p>ElevenLabs: async Flows APIs plus reusable media asset APIs (17 Aug, just outside the 30h window but the newest item since the last logged entry, confirmed via WebSearch, <a href="https://www.google.com/url?q=https://elevenlabs.io/docs/changelog&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://elevenlabs.io/docs/changelog&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>New async job endpoints for video, image and speech generation (pending, generating, completed, failed states, plus webhooks) and workspace media asset management (upload, list, retrieve, delete). Moves ElevenLabs from a simple TTS call toward a production media pipeline.<br>- YouTube angle: Hook, &quot;ElevenLabs just made long video jobs async instead of a blocking call.&quot; Why it matters: webhook-driven job states and a real asset library are directly usable in his own content pipeline (youtube-OS, hyperframes-media), not just a spec update to read about. Tie: a build segment wiring webhook-driven media generation into an existing automation, concrete and demoable. Needs demand check.</p>
-<p>Higgsfield Cinema Studio 4.0 (12 Aug, stale but never previously logged, confirmed via WebSearch, <a href="https://www.google.com/url?q=https://higgsfield.ai/blog/cinema-studio-4-0&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://higgsfield.ai/blog/cinema-studio-4-0&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>Independent light, color, camera and edit controls, 30+ camera movement presets, a two-source lighting console, 50+ color grades, a six-emotion acting console, and forward/backward video extend.<br>- YouTube angle: Hook, &quot;Higgsfield&#x27;s new studio mode gives you a full camera department inside a prompt.&quot; Why it matters: tools that let a creator direct rather than just prompt are the ones surviving the AI-slop backlash the standing trend already flagged. Tie: worth testing against his own video pipeline for a &quot;does this beat what I already do&quot; segment. Needs demand check.</p>
-<p>## Ecom</p>
-<p>Shopify Hydrogen developer preview update (18 Aug, right at the window boundary, unconfirmed, <a href="https://www.google.com/url?q=https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>Adds cart session attribution so signed-in shoppers keep saved details through checkout instead of falling back to a guest flow, plus standard page-view events for Hydrogen storefronts. Low fit for his current situation with RABBIO stopped, reported for awareness only, no formal angle drafted.</p>
-<p>## Industry</p>
-<p>Anthropic: Claude accelerates protein design and analytical chemistry (18 Aug, confirmed, <a href="https://www.google.com/url?q=https://www.anthropic.com/research/Claude-accelerates-protein-design&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://www.anthropic.com/research/Claude-accelerates-protein-design&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>Independent wet-lab validation by Adaptyv Bio and Twist Bioscience: Claude (Opus 4.8 plus Mythos Preview) designed functional protein binders for 14 of 15 targets, a 22 to 35 percent success rate versus a typical 10 to 15 percent industry rate. Opus 5 also processed raw NMR and LC-MS data in about 20 minutes, matching lab-grade purity readings. The capability stays gated in Anthropic&#x27;s most capable model pending a scientist access program.<br>- YouTube angle: Hook, &quot;Claude designed a working protein 14 times out of 15, roughly twice the industry hit rate.&quot; Why it matters: independently validated, non-coding proof that the model&#x27;s usefulness extends into hard science workflows, useful shorthand in &quot;how capable is this thing really&quot; conversations with a skeptical prospect. Tie: a short explainer on unexpected non-coding AI use cases, or a capability talking point for Mizan outreach. Needs demand check.</p>
-<p>OpenAI previews Private Safety Processing (19 Aug, confirmed, <a href="https://www.google.com/url?q=https://openai.com/index/offering-zero-data-retention-for-frontier-models/&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=https://openai.com/index/offering-zero-data-retention-for-frontier-models/&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a>)<br>Testing with early customers a system that flags misuse patterns across related conversations while preserving Zero Data Retention, no human access to content. Broader rollout targeted for September. Distinct from the already-logged ChatGPT for Teens and post-Hugging-Face-breach safety monitoring items, this one is enterprise and API-side.<br>- YouTube angle: Hook, &quot;OpenAI is testing a way to catch misuse without reading your data.&quot; Why it matters: balancing a zero-data-retention promise against real-time misuse detection is exactly the trust question a client asks before letting an agent touch real customer data. Tie: a trust and safety talking point for enterprise-flavored outreach, or a short segment on how the frontier labs solve at scale the same problem he solves at client scale. Needs demand check.</p>
-<p>OpenAI CFO reportedly targets a 2027 IPO (19 Aug, unconfirmed, single-source aggregation, no primary URL captured)<br>Sarah Friar reportedly told employees OpenAI will go public in 2027, or sooner if growth continues. Reported for awareness only, not corroborated against a primary source, no angle drafted.</p>
-<p>## Claude tip of the day</p>
-<p>Use &quot;remember that...&quot;: Claude Code persists memory across sessions. &quot;Remember I always want 3 CTAs in emails&quot; sticks without re-explaining every time.</p>
-<p>## Channels swept (impression only, not counted)</p>
-<p>- The AI Daily Brief: possible 18 Aug episode on an AI engineering skills map for knowledge workers, moderate confidence, title is search-summarized not directly confirmed.<br>- AI News &amp; Strategy Daily | Nate B Jones, Nate Herk, Nick Saraev, Jack Roberts, Liam Ottley, David Ondrej, Leon van Zyl: nothing confirmable with a specific date in the last 7 days via WebSearch. Treat as empty and uncertain, not as evidence they were quiet.</p>
-<p>Only 1 of 8 channels yielded a dated, even moderately confirmable result this window. Recommend re-running channels.py locally the next time secrets/youtube_token.json is available, to replace this impression with a counted feed; the cached one is now 13 days stale.</p>
-<p>## Sources checked</p>
-<p>Anthropic Claude Code changelog, Anthropic API release notes, Anthropic system prompts release notes, Anthropic news, Anthropic engineering blog, OpenAI ChatGPT release notes, OpenAI API changelog, OpenAI news, Google Gemini API changelog, Google AI blog, DeepMind blog, Cursor changelog, Vercel changelog, v0 changelog, Devin desktop changelog, GitHub Copilot changelog, MCP spec, n8n releases, Make.com blog, Trigger.dev changelog, Perplexity changelog, xAI news, Mistral news, Meta AI blog, DeepSeek news, Moonshot AI, ElevenLabs changelog, HeyGen blog, Higgsfield, Runway changelog, Shopify changelog, Klaviyo what&#x27;s new, Meta for Business news, plus the 5 X search queries, the 8 channel watchlist searches, a direct Hermes Agent GitHub check, and two general searches (Anthropic profit, Google A2A) to verify items surfaced in passing.</p>
-<p>## Sources unavailable this run</p>
-<p>Every vendor domain except <a href="https://www.google.com/url?q=http://raw.githubusercontent.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://raw.githubusercontent.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://platform.claude.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=http://platform.claude.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a> and <a href="https://www.google.com/url?q=http://github.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=http://github.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a> returned EGRESS_BLOCKED on direct WebFetch this run: <a href="https://www.google.com/url?q=http://anthropic.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://anthropic.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://openai.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E">https://www.google.com/url?q=http://openai.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E</a> family, <a href="https://www.google.com/url?q=http://ai.google.dev&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://ai.google.dev&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://blog.google&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://blog.google&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://deepmind.google&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://deepmind.google&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://cursor.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://cursor.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://vercel.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://vercel.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://v0.app&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://v0.app&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://docs.devin.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://docs.devin.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> github.blog, <a href="https://www.google.com/url?q=http://modelcontextprotocol.io&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://modelcontextprotocol.io&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://make.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://make.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://trigger.dev&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://trigger.dev&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://perplexity.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://perplexity.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://x.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://x.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://mistral.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://mistral.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://ai.meta.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://ai.meta.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://api-docs.deepseek.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://api-docs.deepseek.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://moonshotai.github.io&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://moonshotai.github.io&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://heygen.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://heygen.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://higgsfield.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://higgsfield.ai&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://runwayml.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://runwayml.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://elevenlabs.io&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://elevenlabs.io&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://changelog.shopify.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://changelog.shopify.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://klaviyo.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,">https://www.google.com/url?q=http://klaviyo.com&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E,</a> <a href="https://www.google.com/url?q=http://facebook.com/business&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E.">https://www.google.com/url?q=http://facebook.com/business&amp;source=gmail&amp;ust=1787289763885000&amp;sa=E.</a> All ran on WebSearch fallback instead, same wider block as yesterday, worth flagging to whoever debugs the proxy since it is host-level, not just JS-shell pages.</p>
-<p>Two items reported above (Anthropic&#x27;s two engineering blog posts referenced by search, &quot;Claude on call&quot; and &quot;The Claude Science product guide&quot;) could not be confirmed with a real URL or content and are deliberately not included as findings, worth a direct check next run.</p>
-<p>## Notion StoryBank</p>
-<p>Not written this run. The Notion MCP connector requires authorization not available in this session. The angles above (Claude Code point releases, Anthropic&#x27;s GA batch and protein-binder research, Cursor Cloud Agents, the A2A foundation move, Grok on Bedrock, Hermes v0.20.4, ElevenLabs async APIs, Higgsfield Cinema Studio 4.0, OpenAI&#x27;s Private Safety Processing) are logged in this brief only. A manual /ai-radar run once Notion is connected should catch these up as Source = trend rows.</p>
-<div class="foot">AI Radar · generated for RABBIO + Mizan AI · 20 Aug 2026</div>
-</div></body></html>
+  :root{
+    --bg:#0e0f13; --panel:#16181f; --panel2:#1d2029; --line:#2a2e3a;
+    --text:#e8eaf0; --muted:#9aa0ad; --accent:#7C4DFF; --accent2:#a98bff;
+    --ecom:#ff5c7c; --ok:#3ddc97; --trend:#ffb703; --warn:#ffb703;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 18px 64px}
+  header h1{margin:0 0 4px;font-size:24px;letter-spacing:-.3px}
+  header .sub{color:var(--muted);font-size:13px}
+  .summary{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 22px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:10px 14px;min-width:120px}
+  .stat b{display:block;font-size:22px}
+  .stat span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);
+    padding-bottom:10px;margin-bottom:18px;position:sticky;top:0;background:var(--bg);
+    padding-top:10px;z-index:5}
+  .tab-btn{background:var(--panel);color:var(--muted);border:1px solid var(--line);
+    border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;white-space:nowrap}
+  .tab-btn:hover{color:var(--text)}
+  .tab-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .tab-btn .badge{display:inline-block;margin-left:6px;background:rgba(255,255,255,.18);
+    border-radius:999px;padding:0 7px;font-size:11px}
+  .panel{display:none}
+  .panel.active{display:block}
+  .cards{display:flex;flex-direction:column;gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  .card.ecom{border-color:var(--ecom)}
+  .card .top{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+  .card h3{margin:0;font-size:16px;letter-spacing:-.2px}
+  .card .meta{color:var(--muted);font-size:12px}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;
+    border:1px solid var(--line);color:var(--muted);margin-right:6px}
+  .pill.kind{color:var(--accent2);border-color:var(--accent)}
+  .pill.ecomtag{color:var(--ecom);border-color:var(--ecom)}
+  .card p{margin:8px 0 0;color:#cdd1db}
+  .card a.src{display:inline-block;margin-top:8px;color:var(--accent2);
+    font-size:13px;text-decoration:none}
+  .card a.src:hover{text-decoration:underline}
+  .angle{margin-top:10px;background:var(--panel2);border:1px solid var(--line);
+    border-left:3px solid var(--ecom);border-radius:10px;padding:10px 12px}
+  .angle .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--accent2)}
+  .angle .hook{font-weight:600;margin:2px 0 6px}
+  .angle .why{color:var(--muted);font-size:13px}
+  .card.trend{border-color:var(--trend);background:linear-gradient(180deg,#1a1620,var(--panel))}
+  .evidence{margin-top:8px;font-size:12px;color:var(--trend)}
+  .vids{margin:8px 0 0;padding-left:18px;font-size:13px;color:#cdd1db}
+  .vids li{margin:4px 0}
+  .vids a{color:var(--accent2);text-decoration:none}
+  .vids a:hover{text-decoration:underline}
+  .vids .meta{display:block;color:var(--muted);font-size:11px}
+  .pill.lenstag{color:var(--muted);border-color:var(--line)}
+  .pill.unranked{color:var(--warn);border-color:var(--warn);vertical-align:middle}
+  .gate{margin-top:8px;font-size:11px;color:var(--warn)}
+  .gate code{color:var(--warn)}
+  .stale{background:#3a1418;border:1px solid var(--ecom);color:#ffd7dd;
+         border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:14px}
+  .tip{background:linear-gradient(135deg,#1d2029,#211a33);border:1px solid var(--accent);
+    border-radius:14px;padding:18px}
+  .tip .lbl{color:var(--accent2);font-size:12px;text-transform:uppercase;letter-spacing:.6px}
+  .empty{color:var(--muted);padding:20px;text-align:center}
+  footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+  .srclist{columns:2;gap:18px;font-size:13px;color:var(--muted)}
+  @media(max-width:560px){.srclist{columns:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📡 AI Radar, 20 Aug 2026</h1>
+    <div class="sub">Six lenses · what the channels are actually covering · YouTube angles on everything</div>
+  </header>
+
+  <div class="summary">
+    <div class="stat"><b>13</b><span>New drops</span></div>
+    <div class="stat"><b>0</b><span>Trending topics</span></div>
+    <div class="stat"><b>0</b><span>Channels swept</span></div>
+    <div class="stat"><b>05:18 UTC</b><span>Generated</span></div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="trending">🔥 Trending <span class="badge">0</span></button>
+    <button class="tab-btn" data-tab="models">Models <span class="badge">2</span></button>
+    <button class="tab-btn" data-tab="agents">Agents <span class="badge">4</span></button>
+    <button class="tab-btn" data-tab="automation">Automation <span class="badge">1</span></button>
+    <button class="tab-btn" data-tab="content">Content <span class="badge">2</span></button>
+    <button class="tab-btn" data-tab="ecom">Ecom <span class="badge">1</span></button>
+    <button class="tab-btn" data-tab="industry">Industry <span class="badge">3</span></button>
+    <button class="tab-btn" data-tab="channels">📺 Channels</button>
+    <button class="tab-btn" data-tab="tip">💡 Claude tip</button>
+    <button class="tab-btn" data-tab="all">All / sources</button>
+  </div>
+
+  <!-- ===== TRENDING ===== -->
+  <div class="panel active" id="trending">
+    <p class="empty" style="margin-bottom:16px">Computed by <code>radar/channels.py</code>: a topic
+      counts only when <b>3+ distinct channels</b> covered it inside 14 days. This section is empty
+      by design, not filled with a guess: the OAuth token needed to run the sweep does not exist in
+      this cloud environment, and the cached feed is now 13 days stale.</p>
+
+    <h3 style="margin:8px 0 8px">The standing trend</h3>
+    <p class="empty" style="text-align:left;padding:0 0 8px">From <code>radar/trend-now.md</code>, reviewed 2026-08-07, structural not daily. The work moved
+      from prompting to orchestrating: coding agents as the default interface, agent design (skills,
+      sub-agents, MCP, stop conditions) as a paid skill, model launches arriving in pairs as weather
+      not events, AI slop as the differentiator, and the AI agency model being publicly audited by its
+      own practitioners. Today's Anthropic Skills API GA and Cursor's goal-holding cloud agents sit
+      directly inside this shift.</p>
+
+    <h3 style="margin:20px 0 8px">Loose impression <span class="pill unranked">not counted</span></h3>
+    <div class="cards">
+      <div class="card">
+        <div class="top"><h3>Only 1 of 8 watchlist channels gave a confirmable signal</h3>
+          <div class="meta">impression only</div></div>
+        <p>The AI Daily Brief may have posted an 18 Aug episode on an AI engineering skills map for
+          knowledge workers, moderate confidence, title is search-summarized not directly confirmed.
+          The other 7 channels (Nate B Jones, Nate Herk, Nick Saraev, Jack Roberts, Liam Ottley,
+          David Ondrej, Leon van Zyl) returned nothing dated inside 7 days via WebSearch. That is not
+          evidence they were quiet, just that search cannot reliably surface this-week uploads.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:26px 0 8px">X chatter <span class="pill unranked">unranked</span></h3>
+    <p class="empty">No X API key, so nothing from X can be ranked. All five queries run, last 48h.
+      <b>Nothing cleared the two-independent-source bar today</b>, Claude Code Remote Control chatter,
+      an MCP adoption claim, and n8n workflow-generation posts were all single-source.</p>
+  </div>
+
+  <!-- ===== MODELS ===== -->
+  <div class="panel" id="models"><div class="cards">
+    <div class="card">
+      <div class="top"><h3>Grok 4.6 now available on Amazon Bedrock</h3>
+        <div class="meta">xAI · 18 to 19 Aug 2026</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">models</span></div>
+      <p>500k context window, configurable reasoning tiers (low/medium/high/xhigh), about a week
+        after its 12 Aug launch.</p>
+      <a class="src" href="https://x.ai/news/grok-4-6-amazon-bedrock">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">You can now run Grok inside AWS like it's just another model.</div>
+        <div class="why">Frontier models landing inside the big clouds' native catalogs lowers the
+          switching cost for any business already committed to that cloud, changing how model choice
+          gets scoped in a client build. <em class="tiepfx">Tie:</em> <em>a "which model, which cloud" segment, or an update to
+          the Mizan model-selection framework</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Hermes Agent v0.20.4</h3>
+        <div class="meta">Nous Research · 18 Aug 2026 (borderline)</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">models</span></div>
+      <p>Patch rollup of ~74 merged PRs since v0.20.0 "The Herald Release" (3 Aug: real-time voice,
+        A2A v1.0, signed webhooks). No major new capability, incremental fixes and perf.</p>
+      <a class="src" href="https://github.com/NousResearch/hermes-agent/releases">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Hermes just shipped its 74th fix since the big release.</div>
+        <div class="why">Confirms Nous Research is actively hardening the framework post-launch
+          rather than moving on, worth tracking since he follows Hermes specifically. <em class="tiepfx">Tie:</em> <em>a passing
+          mention inside a broader open-source-agents roundup, low priority alone</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- ===== AGENTS ===== -->
+  <div class="panel" id="agents"><div class="cards">
+    <div class="card">
+      <div class="top"><h3>Claude Code v2.1.236 and v2.1.237</h3>
+        <div class="meta">Anthropic · shipped after 2.1.235 (18 Aug), exact date not stamped</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>2.1.237 fixes prompt caching for LLM-gateway/custom-base-URL sessions, adds a built-in
+        "Concise" output style that leads with results and skips preamble. 2.1.236 adds
+        <code>ANTHROPIC_DEFAULT_MODEL</code>, <code>notify_when_idle</code> for cross-session
+        SendMessage, macOS sandbox hardening, TUI/rendering fixes.</p>
+      <a class="src" href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Claude Code just added a mode that skips the preamble entirely.</div>
+        <div class="why">A results-first output style plus idle-notify cross-session messaging both
+          point at agents running longer, more unattended stretches, the orchestration shift the
+          standing trend names. <em class="tiepfx">Tie:</em> <em>a "what changed in Claude Code this week" segment, or a Mizan
+          trust point about running current tooling</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Anthropic API platform: six things went GA the same day</h3>
+        <div class="meta">Anthropic · 19 Aug 2026</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>Enterprise Admin API GA, Files API GA (1TB/org, 500 req/min), <b>Agent Skills and the Skills
+        API GA</b>, Managed Agents web_search/web_fetch domain allow/block lists, self-hosted sandbox
+        memory stores, and a Console session-viewer redesign.</p>
+      <a class="src" href="https://platform.claude.com/docs/en/release-notes/api">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Anthropic shipped six things to GA on the same day, and Skills is one of them.</div>
+        <div class="why">Agent Skills leaving beta means the vendor now treats packaged, reusable
+          capability as production-ready, not a growing convention, directly validating how a repo
+          like this one is already organized. <em class="tiepfx">Tie:</em> <em>a build video wiring a real skill through the
+          now-GA API, or a client talking point on packaged skills vs. ad hoc prompting</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Cursor: Cloud Agents and Harness Improvements</h3>
+        <div class="meta">Cursor · 19 Aug 2026</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">agents</span></div>
+      <p>Cloud agents subscribe to events (PRs, Slack threads, scheduled tasks) and wake automatically,
+        hold a goal until met, and auto-drive PRs to completion (fixing CI, addressing bot comments)
+        on their own. Added non-blocking follow-up messages.</p>
+      <a class="src" href="https://cursor.com/changelog/08-19-26">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Cursor's agents can now hold a goal and just keep going.</div>
+        <div class="why">Event-subscribed agents that wake on a trigger and auto-drive to completion
+          is the "job, tools, stopping condition" pattern made literal in a mainstream coding tool.
+          <em class="tiepfx">Tie:</em> <em>a comparison build (Claude Code + skills vs. Cursor's autonomous loop), or a sales point
+          that this is the harness Mizan builds, now sold as a checkbox</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Google's A2A protocol moves to the Agentic AI Foundation</h3>
+        <div class="meta">Google / Linux Foundation · 17 Aug 2026 · found via general search</div></div>
+      <div><span class="pill kind">industry</span><span class="pill lenstag">agents</span></div>
+      <p>Agent2Agent (agent-to-agent communication, distinct from MCP's agent-to-tool role) is now
+        governed independently under the Linux Foundation's Agentic AI Foundation. 150+ orgs already
+        route production traffic through it, protocol v1.2, signed agent cards. Backers include
+        Google, Microsoft, Amazon, Anthropic, OpenAI, Shopify, Block.</p>
+      <a class="src" href="https://techstrong.ai/articles/google-moves-a2a-under-agentic-ai-foundation/">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">The protocol for agents talking to other agents just left Google's hands.</div>
+        <div class="why">Agent-to-agent communication is consolidating into real, vendor-neutral
+          infrastructure the way MCP did for tools, and it's already in production. <em class="tiepfx">Tie:</em> <em>an explainer
+          distinguishing MCP from A2A, or citing 150+ production orgs in Mizan pitches</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- ===== AUTOMATION ===== -->
+  <div class="panel" id="automation"><div class="cards">
+    <div class="card">
+      <div class="top"><h3>n8n patch wave: 2.35.4, 1.123.73, 2.36.2 pre-release</h3>
+        <div class="meta">n8n · 19 Aug 2026</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">automation</span></div>
+      <p>Bug fixes only: API decorator routes, Google Ads node metric selection, expression isolate
+        and VM engine improvements, API discovery route fixes. Too routine for a standalone angle.</p>
+      <a class="src" href="https://github.com/n8n-io/n8n/releases">Source ↗</a>
+    </div>
+  </div></div>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="panel" id="content"><div class="cards">
+    <div class="card">
+      <div class="top"><h3>ElevenLabs: async Flows APIs + reusable media asset APIs</h3>
+        <div class="meta">ElevenLabs · 17 Aug 2026 (just outside window, newest since last logged)</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">content</span></div>
+      <p>New async job endpoints for video/image/speech generation (pending/generating/completed/failed
+        + webhooks) and workspace media asset management (upload/list/retrieve/delete). Moves
+        ElevenLabs toward a production media pipeline.</p>
+      <a class="src" href="https://elevenlabs.io/docs/changelog">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">ElevenLabs just made long video jobs async instead of a blocking call.</div>
+        <div class="why">Webhook-driven job states and a real asset library are directly usable in
+          his own pipeline (youtube-OS, hyperframes-media), not just a spec update to read about.
+          <em class="tiepfx">Tie:</em> <em>a build segment wiring webhook-driven media generation into an existing automation</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top"><h3>Higgsfield Cinema Studio 4.0</h3>
+        <div class="meta">Higgsfield · 12 Aug 2026 (stale, never previously logged)</div></div>
+      <div><span class="pill kind">feature-drop</span><span class="pill lenstag">content</span></div>
+      <p>Independent light/color/camera/edit controls, 30+ camera-movement presets, a two-source
+        lighting console, 50+ color grades, a six-emotion acting console, forward/backward video
+        extend.</p>
+      <a class="src" href="https://higgsfield.ai/blog/cinema-studio-4-0">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Higgsfield's new studio mode gives you a full camera department inside a prompt.</div>
+        <div class="why">Tools that let a creator direct rather than just prompt are the ones
+          surviving the AI-slop backlash the standing trend already flagged. <em class="tiepfx">Tie:</em> <em>worth testing
+          against his own video pipeline for a "does this beat what I already do" segment</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+  </div></div>
+
+  <!-- ===== ECOM ===== -->
+  <div class="panel" id="ecom"><div class="cards">
+    <div class="card ecom">
+      <div class="top"><h3>Shopify Hydrogen developer preview update</h3>
+        <div class="meta">Shopify · 18 Aug 2026 · boundary/unconfirmed</div></div>
+      <div><span class="pill kind">docs-change</span><span class="pill lenstag">ecom</span></div>
+      <p>Cart session attribution so signed-in shoppers keep saved details through checkout instead of
+        falling to a guest flow, plus standard page-view events for Hydrogen storefronts. Low fit
+        with RABBIO stopped, reported for awareness only, no formal angle drafted.</p>
+      <a class="src" href="https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026">Source ↗</a>
+    </div>
+  </div></div>
+
+  <!-- ===== INDUSTRY ===== -->
+  <div class="panel" id="industry"><div class="cards">
+    <div class="card">
+      <div class="top"><h3>Claude accelerates protein design and analytical chemistry</h3>
+        <div class="meta">Anthropic Research · 18 Aug 2026</div></div>
+      <div><span class="pill kind">industry</span><span class="pill lenstag">industry</span></div>
+      <p>Independent wet-lab validation (Adaptyv Bio, Twist Bioscience): Claude (Opus 4.8 + Mythos
+        Preview) designed functional protein binders for 14 of 15 targets, 22 to 35% success vs. a
+        typical 10 to 15% industry rate. Opus 5 processed raw NMR/LC-MS data in ~20 min, matching
+        lab-grade purity readings. Capability stays gated pending a scientist access program.</p>
+      <a class="src" href="https://www.anthropic.com/research/Claude-accelerates-protein-design">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">Claude designed a working protein 14 times out of 15, roughly twice the industry hit rate.</div>
+        <div class="why">Independently validated, non-coding proof the model's usefulness extends
+          into hard science, useful shorthand in "how capable is this thing really" conversations
+          with a skeptical prospect. <em class="tiepfx">Tie:</em> <em>an explainer on unexpected non-coding AI use cases, or a
+          capability talking point for outreach</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top"><h3>OpenAI previews Private Safety Processing</h3>
+        <div class="meta">OpenAI · 19 Aug 2026</div></div>
+      <div><span class="pill kind">industry</span><span class="pill lenstag">industry</span></div>
+      <p>Testing with early customers a system that flags misuse patterns across related conversations
+        while preserving Zero Data Retention, no human access to content. Broader rollout targeted for
+        September. Distinct from already-logged ChatGPT-for-Teens and post-breach items.</p>
+      <a class="src" href="https://openai.com/index/offering-zero-data-retention-for-frontier-models/">Source ↗</a>
+      <div class="angle">
+        <div class="lbl">YouTube angle</div>
+        <div class="hook">OpenAI is testing a way to catch misuse without reading your data.</div>
+        <div class="why">Balancing a zero-data-retention promise against real-time misuse detection is
+          exactly the trust question a client asks before letting an agent touch real customer data.
+          <em class="tiepfx">Tie:</em> <em>a trust/safety talking point for enterprise-flavored outreach</em></div>
+        <div class="gate">⚠ needs demand check: <code>tools/ideas/demand.py</code></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top"><h3>OpenAI CFO reportedly targets a 2027 IPO</h3>
+        <div class="meta">OpenAI · 19 Aug 2026 · unconfirmed, single-source</div></div>
+      <div><span class="pill kind">industry</span><span class="pill lenstag">industry</span></div>
+      <p>Sarah Friar reportedly told employees OpenAI will go public in 2027 or sooner. No primary
+        source URL captured, aggregation only. Reported for awareness, no angle drafted.</p>
+    </div>
+  </div></div>
+
+  <!-- ===== CHANNELS ===== -->
+  <div class="panel" id="channels">
+    <p class="empty" style="margin-bottom:16px">Watchlist from <code>radar/channels.yml</code>, last 7
+      days. A silent channel is shown, not hidden, going quiet is information. This run used WebSearch
+      only (no OAuth), so confidence is low across the board.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="top"><h3>The AI Daily Brief</h3><div class="meta">daily_news · moderate confidence</div></div>
+        <ul class="vids"><li>Possible episode, 18 Aug: an AI engineering skills map for knowledge
+          workers <span class="meta">title is search-summarized, not directly confirmed</span></li></ul>
+      </div>
+      <div class="card">
+        <div class="top"><h3>AI News & Strategy Daily | Nate B Jones</h3><div class="meta">daily_news · no evidence found</div></div>
+      </div>
+      <div class="card">
+        <div class="top"><h3>Nate Herk, Nick Saraev, Jack Roberts, Liam Ottley, David Ondrej, Leon van Zyl</h3>
+          <div class="meta">builders · no evidence found via search this window</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TIP ===== -->
+  <div class="panel" id="tip">
+    <div class="tip">
+      <div class="lbl">Claude Code tip of the day</div>
+      <h3 style="margin:6px 0 8px">Use "remember that..."</h3>
+      <p style="margin:0;color:#cdd1db">Claude Code persists memory across sessions. "Remember I
+        always want 3 CTAs in emails" sticks without re-explaining every time.</p>
+    </div>
+  </div>
+
+  <!-- ===== ALL / SOURCES ===== -->
+  <div class="panel" id="all">
+    <footer>
+      <strong>Sources checked:</strong>
+      <div class="srclist">Anthropic Claude Code changelog, Anthropic API release notes, Anthropic
+        system prompts release notes, Anthropic news, Anthropic engineering blog, OpenAI ChatGPT
+        release notes, OpenAI API changelog, OpenAI news, Google Gemini API changelog, Google AI blog,
+        DeepMind blog, Cursor changelog, Vercel changelog, v0 changelog, Devin desktop changelog,
+        GitHub Copilot changelog, MCP spec, n8n releases, Make.com blog, Trigger.dev changelog,
+        Perplexity changelog, xAI news, Mistral news, Meta AI blog, DeepSeek news, Moonshot AI,
+        ElevenLabs changelog, HeyGen blog, Higgsfield, Runway changelog, Shopify changelog, Klaviyo
+        what's new, Meta for Business news, 5 X search queries, 8 channel watchlist searches, a
+        direct Hermes Agent GitHub check, and 2 verification searches (Anthropic profit, Google A2A).</div>
+      <p style="margin-top:12px"><strong>Unavailable this run:</strong> every vendor domain except
+        raw.githubusercontent.com, platform.claude.com and github.com returned EGRESS_BLOCKED on
+        direct WebFetch, anthropic.com, openai.com family, ai.google.dev, blog.google, deepmind.google,
+        cursor.com, vercel.com, v0.app, docs.devin.ai, github.blog, modelcontextprotocol.io, make.com,
+        trigger.dev, perplexity.ai, x.ai, mistral.ai, ai.meta.com, api-docs.deepseek.com,
+        moonshotai.github.io, heygen.com, higgsfield.ai, runwayml.com, elevenlabs.io,
+        changelog.shopify.com, klaviyo.com, facebook.com/business. All fell back to WebSearch.</p>
+      <p style="margin-top:12px"><strong>Notion StoryBank:</strong> not written this run, the Notion
+        MCP connector is not authorized in this session. All angles above are logged in this brief
+        only.</p>
+    </footer>
+  </div>
+
+  <footer>Generated by the <code>ai-radar</code> skill · mahmoudOS · 20 Aug 2026</footer>
+</div>
+
+<script>
+  document.querySelectorAll('.tab-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-tab');
+      document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+      document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+      btn.classList.add('active');
+      var panel = document.getElementById(id);
+      if(panel){panel.classList.add('active')}
+    });
+  });
+</script>
+</body>
+</html>
